@@ -41,6 +41,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 static GtkBuilder *builder;
 static GtkWidget *main_dlg;
+static CcPrintersPanel *cpp;
 
 /*----------------------------------------------------------------------------*/
 /* Prototypes                                                                 */
@@ -61,6 +62,56 @@ static gboolean close_prog (GtkWidget *widget, GdkEvent *event, gpointer data);
 /*----------------------------------------------------------------------------*/
 /* Initial configuration                                                      */
 /*----------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------*/
+/* Plugin interface */
+/*----------------------------------------------------------------------------*/
+
+#ifdef PLUGIN_NAME
+
+void init_plugin (void)
+{
+    setlocale (LC_ALL, "");
+    bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
+    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+    textdomain (GETTEXT_PACKAGE);
+
+    builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/ui/raindrop.ui");
+
+    cpp = g_object_new (CC_TYPE_PRINTERS_PANEL, NULL);
+}
+
+int plugin_tabs (void)
+{
+    return 1;
+}
+
+const char *tab_name (int tab)
+{
+    return C_("tab", "Printers");
+}
+
+const char *tab_id (int tab)
+{
+    return NULL;
+}
+
+GtkWidget *get_tab (int tab)
+{
+    return GTK_WIDGET (cpp);
+}
+
+gboolean reboot_needed (void)
+{
+    return FALSE;
+}
+
+void free_plugin (void)
+{
+    g_object_unref (builder);
+}
+
+#else
 
 /*----------------------------------------------------------------------------*/
 /* Main window button handlers                                                */
@@ -100,7 +151,7 @@ int main (int argc, char *argv[])
     main_dlg = NULL;
     gtk_init (&argc, &argv);
     
-    CcPrintersPanel *cpp = g_object_new (CC_TYPE_PRINTERS_PANEL, NULL);
+    cpp = g_object_new (CC_TYPE_PRINTERS_PANEL, NULL);
 
     builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/ui/piprint.ui");
 
@@ -125,6 +176,8 @@ int main (int argc, char *argv[])
 
     return 0;
 }
+
+#endif
 
 /* End of file */
 /*----------------------------------------------------------------------------*/
