@@ -1,36 +1,6 @@
 <?xml version="1.0"?>
 <interface>
   <requires lib="gtk+" version="3.12"/>
-  <object class="GtkBox" id="top-right-buttons">
-    <property name="visible">True</property>
-    <property name="spacing">6</property>
-    <child>
-      <object class="GtkButton" id="printer-add-button">
-        <property name="visible">True</property>
-        <property name="sensitive">True</property>
-        <property name="use_underline">True</property>
-        <property name="label" translatable="yes" comments="Translators: This button adds new printer.">Add…</property>
-        <style>
-          <class name="suggested-action"/>
-        </style>
-      </object>
-    </child>
-    <child>
-      <object class="GtkToggleButton" id="search-button">
-        <property name="visible">True</property>
-        <property name="margin-end">6</property> <!-- since we don't have access to the shell header bar -->
-        <style>
-          <class name="image-button"/>
-        </style>
-        <child>
-          <object class="GtkImage">
-            <property name="visible">True</property>
-            <property name="icon_name">system-search-symbolic</property>
-          </object>
-        </child>
-      </object>
-    </child>
-  </object>
 
 <object class="GtkOverlay" id="overlay">
   <property name="visible">True</property>
@@ -85,11 +55,11 @@
 <object class="GtkBox">
   <property name="visible">True</property>
   <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
-  <child>
+  <!--child>
     <object class="CcPermissionInfobar" id="permission-infobar">
       <property name="visible">True</property>
     </object>
-  </child>
+  </child-->
   <child>
 
   <object class="GtkStack" id="main-vbox">
@@ -268,6 +238,41 @@ doesn’t seem to be available.</property>
     </child>
   </object>
 </child>
+
+<child>
+  <object class="GtkBox" id="top-right-buttons">
+    <property name="visible">True</property>
+    <property name="spacing">6</property>
+    <child>
+      <object class="GtkButton" id="printer-add-button">
+        <property name="visible">True</property>
+        <property name="sensitive">True</property>
+        <property name="use_underline">True</property>
+        <property name="label" translatable="yes" comments="Translators: This button adds new printer.">Add…</property>
+        <style>
+          <class name="suggested-action"/>
+        </style>
+      </object>
+    </child>
+    <child>
+      <object class="GtkToggleButton" id="search-button">
+        <property name="visible">True</property>
+        <property name="margin-end">6</property> <!-- since we don't have access to the shell header bar -->
+        <style>
+          <class name="image-button"/>
+        </style>
+        <child>
+          <object class="GtkImage">
+            <property name="visible">True</property>
+            <property name="icon_name">system-search-symbolic</property>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</child>
+
+
 </object>
 
   </child>
