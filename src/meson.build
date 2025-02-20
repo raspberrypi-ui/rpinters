@@ -1,22 +1,3 @@
-panels_list += cappletname
-desktop = 'gnome-@0@-panel.desktop'.format(cappletname)
-
-desktop_in = configure_file(
-  input: desktop + '.in.in',
-  output: desktop + '.in',
-  configuration: desktop_conf
-)
-
-i18n.merge_file(
-  desktop,
-  type: 'desktop',
-  input: desktop_in,
-  output: desktop,
-  po_dir: po_dir,
-  install: true,
-  install_dir: control_center_desktopdir
-)
-
 sources = files(
   'cc-printers-panel.c',
   'pp-cups.c',
@@ -35,8 +16,15 @@ sources = files(
   'pp-printer-entry.c',
   'pp-printer.c',
   'pp-samba.c',
-  'pp-utils.c'
+  'pp-utils.c',
+  'cc-util.c'
 )
+
+ppsources = files (
+    'piprint.c'
+)
+
+sources += ppsources
 
 resource_data = files(
   'authentication-dialog.ui',
@@ -49,6 +37,10 @@ resource_data = files(
   'printers.ui'
 )
 
+gnome = import('gnome')
+
+cappletname = 'printers'
+
 sources += gnome.compile_resources(
   'cc-' + cappletname + '-resources',
   cappletname + '.gresource.xml',
@@ -57,19 +49,21 @@ sources += gnome.compile_resources(
   export: true
 )
 
-deps = common_deps + [
-  cups_dep,
-  m_dep,
-  polkit_gobject_dep,
-  dependency('smbclient')
-]
+add_global_arguments('-Wno-unused-result', language : 'c')
 
-printers_panel_lib = static_library(
-  cappletname,
-  sources: sources,
-  include_directories: [top_inc, common_inc, shell_inc],
-  dependencies: deps,
-  c_args: cflags + cups_cflags,
-)
-panels_libs += [ printers_panel_lib ]
+gtk = dependency ('gtk+-3.0')
+samba =   dependency('smbclient')
+cups = dependency('cups', version : '>= 1.4', required: false)
+polkit = dependency('polkit-gobject-1', version: '>= 0.103')
+gsettings = dependency('gsettings-desktop-schemas', version: '>= 42.alpha')
 
+deps = [ gtk, samba, cups, polkit, gsettings ]
+
+if meson.project_name().contains('rpcc')
+  shared_module(meson.project_name(), sources, dependencies: deps, install: true,
+        install_dir: get_option('libdir') / 'rpcc',
+        c_args : '-DPLUGIN_NAME="' + meson.project_name() + '"'
+  )
+else
+  executable (meson.project_name(), sources, dependencies: deps, install: true)
+endif
