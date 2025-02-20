@@ -18,11 +18,13 @@
 
 #pragma once
 
-#include <shell/cc-panel.h>
+//#include <shell/cc-panel.h>
+#include <glib-object.h>
+#include <gtk/gtk.h>
 
 G_BEGIN_DECLS
 
 #define CC_TYPE_PRINTERS_PANEL (cc_printers_panel_get_type ())
-G_DECLARE_FINAL_TYPE (CcPrintersPanel, cc_printers_panel, CC, PRINTERS_PANEL, CcPanel)
+G_DECLARE_FINAL_TYPE (CcPrintersPanel, cc_printers_panel, CC, PRINTERS_PANEL, GtkBin)
 
 G_END_DECLS

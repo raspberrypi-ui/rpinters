@@ -18,7 +18,7 @@
 
 #include <config.h>
 
-#include "shell/cc-object-storage.h"
+//#include "shell/cc-object-storage.h"
 
 #include "cc-printers-panel.h"
 #include "cc-printers-resources.h"
@@ -42,7 +42,7 @@
 #include "pp-printer-entry.h"
 #include "pp-job.h"
 
-#include "cc-permission-infobar.h"
+//#include "cc-permission-infobar.h"
 #include "cc-util.h"
 
 #define RENEW_INTERVAL        500
@@ -66,7 +66,7 @@
 
 struct _CcPrintersPanel
 {
-  CcPanel parent_instance;
+  GtkBin parent_instance;
 
   GtkBuilder *builder;
 
@@ -77,7 +77,7 @@ struct _CcPrintersPanel
   gboolean is_authorized;
 
   GSettings *lockdown_settings;
-  CcPermissionInfobar *permission_infobar;
+//  CcPermissionInfobar *permission_infobar;
 
   PpNewPrinterDialog   *pp_new_printer_dialog;
   PpPPDSelectionDialog *pp_ppd_selection_dialog;
@@ -108,7 +108,17 @@ struct _CcPrintersPanel
   GtkSizeGroup *size_group;
 };
 
-CC_PANEL_REGISTER (CcPrintersPanel, cc_printers_panel)
+GCancellable *can;
+GCancellable *get_cancellable (void)
+{
+  if (can == NULL)
+    can = g_cancellable_new ();
+
+  return can;
+}
+#define cc_panel_get_cancellable(a) get_cancellable()
+
+G_DEFINE_TYPE (CcPrintersPanel, cc_printers_panel, GTK_TYPE_BIN)
 
 typedef struct
 {
@@ -224,11 +234,11 @@ static void
 cc_printers_panel_constructed (GObject *object)
 {
   CcPrintersPanel *self = CC_PRINTERS_PANEL (object);
-  GtkWidget *widget;
-  CcShell *shell;
+  //GtkWidget *widget;
+  //CcShell *shell;
 
   G_OBJECT_CLASS (cc_printers_panel_parent_class)->constructed (object);
-
+#if 0
   shell = cc_panel_get_shell (CC_PANEL (self));
 
   widget = (GtkWidget*)
@@ -242,6 +252,7 @@ cc_printers_panel_constructed (GObject *object)
                            G_CALLBACK (gtk_search_bar_handle_event),
                            widget,
                            G_CONNECT_SWAPPED);
+#endif
 }
 
 static void
@@ -322,25 +333,25 @@ cc_printers_panel_dispose (GObject *object)
 
   G_OBJECT_CLASS (cc_printers_panel_parent_class)->dispose (object);
 }
-
+#if 0
 static const char *
 cc_printers_panel_get_help_uri (CcPanel *panel)
 {
   return "help:gnome-help/printing";
 }
-
+#endif
 static void
 cc_printers_panel_class_init (CcPrintersPanelClass *klass)
 {
   GObjectClass *object_class = G_OBJECT_CLASS (klass);
-  CcPanelClass *panel_class = CC_PANEL_CLASS (klass);
+  //CcPanelClass *panel_class = CC_PANEL_CLASS (klass);
 
   object_class->get_property = cc_printers_panel_get_property;
   object_class->set_property = cc_printers_panel_set_property;
   object_class->constructed = cc_printers_panel_constructed;
   object_class->dispose = cc_printers_panel_dispose;
 
-  panel_class->get_help_uri = cc_printers_panel_get_help_uri;
+  //panel_class->get_help_uri = cc_printers_panel_get_help_uri;
 
   g_object_class_override_property (object_class, PROP_PARAMETERS, "parameters");
 }
@@ -533,8 +544,9 @@ attach_to_cups_notifier_cb (GObject      *source_object,
       self->subscription_renewal_id =
         g_timeout_add_seconds (RENEW_INTERVAL, renew_subscription, self);
 
-      self->cups_proxy = cc_object_storage_create_dbus_proxy_sync (G_BUS_TYPE_SYSTEM,
+      self->cups_proxy = g_dbus_proxy_new_for_bus_sync (G_BUS_TYPE_SYSTEM,
                                                                    G_DBUS_PROXY_FLAGS_NONE,
+                                                                   NULL,
                                                                    CUPS_DBUS_NAME,
                                                                    CUPS_DBUS_PATH,
                                                                    CUPS_DBUS_INTERFACE,
@@ -1245,7 +1257,7 @@ cc_printers_panel_init (CcPrintersPanel *self)
   GtkWidget              *widget;
   PpCups                 *cups;
   g_autoptr(GError)       error = NULL;
-  gchar                  *objects[] = { "overlay", "permission-infobar", "top-right-buttons", "printer-add-button", "search-button", NULL };
+  gchar                  *objects[] = { "overlay", "top-right-buttons", "printer-add-button", "search-button", NULL };
   guint                   builder_result;
 
   g_resources_register (cc_printers_get_resource ());
@@ -1259,7 +1271,7 @@ cc_printers_panel_init (CcPrintersPanel *self)
                                                  g_free,
                                                  NULL);
 
-  g_type_ensure (CC_TYPE_PERMISSION_INFOBAR);
+  //g_type_ensure (CC_TYPE_PERMISSION_INFOBAR);
 
   g_object_set_data_full (self->reference, "self", self, NULL);
 
@@ -1285,8 +1297,8 @@ cc_printers_panel_init (CcPrintersPanel *self)
     gtk_builder_get_object (self->builder, "notification-dismiss-button");
   g_signal_connect_object (widget, "clicked", G_CALLBACK (on_notification_dismissed), self, G_CONNECT_SWAPPED);
 
-  self->permission_infobar = (CcPermissionInfobar*)
-    gtk_builder_get_object (self->builder, "permission-infobar");
+  //self->permission_infobar = (CcPermissionInfobar*)
+  //  gtk_builder_get_object (self->builder, "permission-infobar");
 
   /* add the top level widget */
   top_widget = (GtkWidget*)
@@ -1335,8 +1347,8 @@ cc_printers_panel_init (CcPrintersPanel *self)
                                self,
                                G_CONNECT_SWAPPED | G_CONNECT_AFTER);
 
-      cc_permission_infobar_set_permission (self->permission_infobar,
-                                            self->permission);
+    //  cc_permission_infobar_set_permission (self->permission_infobar,
+    //                                        self->permission);
 
       on_permission_changed (self);
     }
