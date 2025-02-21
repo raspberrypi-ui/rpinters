@@ -31,11 +31,9 @@
     <property name="modal">True</property>
     <property name="destroy_with_parent">True</property>
     <property name="type_hint">dialog</property>
-    <property name="use_header_bar">1</property>
-    <child internal-child="headerbar">
-      <object class="GtkHeaderBar" id="headerbar">
+    <child internal-child="action_area">
+      <object class="GtkButtonBox" id="headerbar">
         <property name="visible">True</property>
-        <property name="show-close-button">False</property>
         <child>
           <object class="GtkStack" id="headerbar-topleft-buttons">
             <property name="visible">True</property>
@@ -83,9 +81,6 @@
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_underline">True</property>
-                <style>
-                  <class name="suggested-action"/>
-                </style>
               </object>
               <packing>
                 <property name="name">addprinter-page</property>
@@ -98,9 +93,6 @@
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_underline">True</property>
-                <style>
-                  <class name="suggested-action"/>
-                </style>
               </object>
               <packing>
                 <property name="name">unlock-button</property>
@@ -115,9 +107,6 @@
                 <property name="has_default">True</property>
                 <property name="receives_default">True</property>
                 <property name="use_underline">True</property>
-                <style>
-                  <class name="suggested-action"/>
-                </style>
               </object>
               <packing>
                 <property name="name">authentication-page</property>

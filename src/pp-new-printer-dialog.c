@@ -345,7 +345,8 @@ on_authenticate (PpNewPrinterDialog *self)
 
   pp_samba_set_auth_info (PP_SAMBA (self->samba_host), username, password);
 
-  gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+  //gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+  gtk_window_set_title (GTK_WINDOW (WID ("dialog")), _("Add Printer"));
   go_to_page (self, ADDPRINTER_PAGE);
 
   g_object_get (PP_HOST (self->samba_host), "hostname", &hostname, NULL);
@@ -359,8 +360,9 @@ on_authentication_required (PpNewPrinterDialog *self)
   g_autofree gchar          *title = NULL;
   g_autofree gchar          *text = NULL;
 
-  gtk_header_bar_set_subtitle (GTK_HEADER_BAR (WID ("headerbar")), NULL);
-  gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Unlock Print Server"));
+  //gtk_header_bar_set_subtitle (GTK_HEADER_BAR (WID ("headerbar")), NULL);
+  //gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Unlock Print Server"));
+  gtk_window_set_title (GTK_WINDOW (WID ("dialog")), _("Unlock Print Server"));
 
   g_object_get (self->samba_host, "hostname", &hostname, NULL);
   /* Translators: Samba server needs authentication of the user to show list of its printers. */
@@ -402,7 +404,8 @@ on_go_back_button_clicked (PpNewPrinterDialog *self)
   g_clear_object (&self->samba_host);
 
   go_to_page (self, ADDPRINTER_PAGE);
-  gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+  //gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+  gtk_window_set_title (GTK_WINDOW (WID ("dialog")), _("Add Printer"));
   gtk_widget_set_sensitive (WID ("new-printer-add-button"), FALSE);
 
   gtk_tree_selection_unselect_all (gtk_tree_view_get_selection (self->treeview));
@@ -786,16 +789,18 @@ update_dialog_state (PpNewPrinterDialog *self)
               self->samba_authenticated_searching ||
               self->samba_searching;
 
-  header = WID ("headerbar");
+  header = WID ("dialog");
   stack = WID ("stack");
 
   if (searching)
     {
-      gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
+      //gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
+      gtk_window_set_title (GTK_WINDOW (header), _("Add Printer - Searching for Printers"));
     }
   else
     {
-      gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
+      //gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
+      gtk_window_set_title (GTK_WINDOW (header), _("Add Printer"));
     }
 
   if (gtk_tree_model_get_iter_first (GTK_TREE_MODEL (self->store), &iter))
