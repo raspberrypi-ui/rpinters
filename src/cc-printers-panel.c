@@ -649,6 +649,7 @@ free_dests (CcPrintersPanel *self)
   self->num_dests = 0;
 }
 
+#ifdef UNDONOTIFY
 static void
 on_printer_deletion_undone (CcPrintersPanel *self)
 {
@@ -736,6 +737,43 @@ on_printer_deleted (CcPrintersPanel *self,
 
   self->remove_printer_timeout_id = g_timeout_add_seconds (10, G_SOURCE_FUNC (on_remove_printer_timeout), self);
 }
+#else
+static void
+on_printer_deleted (CcPrintersPanel *self,
+                    PpPrinterEntry  *printer_entry)
+{
+  g_autofree gchar *printer_name = NULL;
+
+  g_object_get (printer_entry,
+                "printer-name", &printer_name,
+                NULL);
+
+  self->deleted_printer_name = g_strdup (printer_name);
+
+  if (self->deleted_printer_name != NULL)
+    {
+      PpPrinter *printer;
+
+      printer = pp_printer_new (self->deleted_printer_name);
+      /* The reference tells to the callback whether
+         printers panel was already destroyed so
+         it knows whether it can access the list
+         of deleted printers in it (see below).
+       */
+      pp_printer_delete_async (printer,
+                               NULL,
+                               printer_removed_cb,
+                               g_object_ref (self->reference));
+
+      /* List of printers which were recently deleted but are still available
+         in CUPS due to async nature of the method (e.g. quick deletion
+         of several printers).
+       */
+      self->deleted_printers = g_list_prepend (self->deleted_printers, self->deleted_printer_name);
+      self->deleted_printer_name = NULL;
+    }
+}
+#endif
 
 static void
 on_printer_renamed (CcPrintersPanel *self,
@@ -1299,6 +1337,7 @@ cc_printers_panel_init (CcPrintersPanel *self)
       return;
     }
 
+#ifdef UNDONOTIFY
   self->notification = (GtkRevealer*)
     gtk_builder_get_object (self->builder, "notification");
 
@@ -1309,6 +1348,7 @@ cc_printers_panel_init (CcPrintersPanel *self)
   widget = (GtkWidget*)
     gtk_builder_get_object (self->builder, "notification-dismiss-button");
   g_signal_connect_object (widget, "clicked", G_CALLBACK (on_notification_dismissed), self, G_CONNECT_SWAPPED);
+#endif
 
   self->permission_infobar = (CcPermissionInfobar*)
     gtk_builder_get_object (self->builder, "permission-infobar");
