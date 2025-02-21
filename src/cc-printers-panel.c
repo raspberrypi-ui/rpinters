@@ -240,6 +240,7 @@ cc_printers_panel_constructed (GObject *object)
 #endif
 
   G_OBJECT_CLASS (cc_printers_panel_parent_class)->constructed (object);
+
 #if 0
   shell = cc_panel_get_shell (CC_PANEL (self));
 
@@ -335,6 +336,7 @@ cc_printers_panel_dispose (GObject *object)
 
   G_OBJECT_CLASS (cc_printers_panel_parent_class)->dispose (object);
 }
+
 #if 0
 static const char *
 cc_printers_panel_get_help_uri (CcPanel *panel)
@@ -342,6 +344,7 @@ cc_printers_panel_get_help_uri (CcPanel *panel)
   return "help:gnome-help/printing";
 }
 #endif
+
 static void
 cc_printers_panel_class_init (CcPrintersPanelClass *klass)
 {
@@ -1259,7 +1262,7 @@ cc_printers_panel_init (CcPrintersPanel *self)
   GtkWidget              *widget;
   PpCups                 *cups;
   g_autoptr(GError)       error = NULL;
-  gchar                  *objects[] = { "overlay", "top-right-buttons", "printer-add-button", "search-button", NULL };
+  gchar                  *objects[] = { "overlay", "permission-infobar", "top-right-buttons", "printer-add-button", "search-button", NULL };
   guint                   builder_result;
 
   g_resources_register (cc_printers_get_resource ());
