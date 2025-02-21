@@ -18,7 +18,8 @@ sources = files(
   'pp-samba.c',
   'pp-utils.c',
   'cc-util.c',
-  'cc-permission-infobar.c'
+  'cc-permission-infobar.c',
+  'list-box-helper.c'
 )
 
 ppsources = files (
