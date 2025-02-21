@@ -55,11 +55,11 @@
 <object class="GtkBox">
   <property name="visible">True</property>
   <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
-  <!--child>
+  <child>
     <object class="CcPermissionInfobar" id="permission-infobar">
       <property name="visible">True</property>
     </object>
-  </child-->
+  </child>
   <child>
 
   <object class="GtkStack" id="main-vbox">

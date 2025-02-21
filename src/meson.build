@@ -17,7 +17,8 @@ sources = files(
   'pp-printer.c',
   'pp-samba.c',
   'pp-utils.c',
-  'cc-util.c'
+  'cc-util.c',
+  'cc-permission-infobar.c'
 )
 
 ppsources = files (
@@ -46,6 +47,18 @@ sources += gnome.compile_resources(
   cappletname + '.gresource.xml',
   c_name: 'cc_' + cappletname,
   dependencies: resource_data,
+  export: true
+)
+
+cresource_data = files(
+  'cc-permission-infobar.ui',
+)
+
+sources += gnome.compile_resources(
+  'cc-common-resources',
+  'common.gresource.xml',
+  c_name: 'cc_common',
+  dependencies: cresource_data,
   export: true
 )
 

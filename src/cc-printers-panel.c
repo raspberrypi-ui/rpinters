@@ -42,7 +42,7 @@
 #include "pp-printer-entry.h"
 #include "pp-job.h"
 
-//#include "cc-permission-infobar.h"
+#include "cc-permission-infobar.h"
 #include "cc-util.h"
 
 #define RENEW_INTERVAL        500
@@ -77,7 +77,7 @@ struct _CcPrintersPanel
   gboolean is_authorized;
 
   GSettings *lockdown_settings;
-//  CcPermissionInfobar *permission_infobar;
+  CcPermissionInfobar *permission_infobar;
 
   PpNewPrinterDialog   *pp_new_printer_dialog;
   PpPPDSelectionDialog *pp_ppd_selection_dialog;
@@ -1273,7 +1273,7 @@ cc_printers_panel_init (CcPrintersPanel *self)
                                                  g_free,
                                                  NULL);
 
-  //g_type_ensure (CC_TYPE_PERMISSION_INFOBAR);
+  g_type_ensure (CC_TYPE_PERMISSION_INFOBAR);
 
   g_object_set_data_full (self->reference, "self", self, NULL);
 
@@ -1299,8 +1299,8 @@ cc_printers_panel_init (CcPrintersPanel *self)
     gtk_builder_get_object (self->builder, "notification-dismiss-button");
   g_signal_connect_object (widget, "clicked", G_CALLBACK (on_notification_dismissed), self, G_CONNECT_SWAPPED);
 
-  //self->permission_infobar = (CcPermissionInfobar*)
-  //  gtk_builder_get_object (self->builder, "permission-infobar");
+  self->permission_infobar = (CcPermissionInfobar*)
+    gtk_builder_get_object (self->builder, "permission-infobar");
 
   /* add the top level widget */
   top_widget = (GtkWidget*)
@@ -1349,8 +1349,8 @@ cc_printers_panel_init (CcPrintersPanel *self)
                                self,
                                G_CONNECT_SWAPPED | G_CONNECT_AFTER);
 
-    //  cc_permission_infobar_set_permission (self->permission_infobar,
-    //                                        self->permission);
+      cc_permission_infobar_set_permission (self->permission_infobar,
+                                            self->permission);
 
       on_permission_changed (self);
     }
