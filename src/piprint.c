@@ -40,16 +40,20 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*----------------------------------------------------------------------------*/
 
 static GtkBuilder *builder;
-static GtkWidget *main_dlg;
 static CcPrintersPanel *cpp;
+#ifndef PLUGIN_NAME
+static GtkWidget *main_dlg;
+#endif
 
 /*----------------------------------------------------------------------------*/
 /* Prototypes                                                                 */
 /*----------------------------------------------------------------------------*/
 
+#ifndef PLUGIN_NAME
 static gboolean cancel_main (GtkButton *button, gpointer data);
 static gboolean ok_main (GtkButton *button, gpointer data);
 static gboolean close_prog (GtkWidget *widget, GdkEvent *event, gpointer data);
+#endif
 
 /*----------------------------------------------------------------------------*/
 /* Function definitions                                                       */
@@ -76,7 +80,7 @@ void init_plugin (void)
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
     textdomain (GETTEXT_PACKAGE);
 
-    builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/ui/raindrop.ui");
+    builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/ui/piprint.ui");
 
     cpp = g_object_new (CC_TYPE_PRINTERS_PANEL, NULL);
 }
