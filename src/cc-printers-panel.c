@@ -233,9 +233,11 @@ cc_printers_panel_set_property (GObject      *object,
 static void
 cc_printers_panel_constructed (GObject *object)
 {
+#if 0
   CcPrintersPanel *self = CC_PRINTERS_PANEL (object);
-  //GtkWidget *widget;
-  //CcShell *shell;
+  GtkWidget *widget;
+  CcShell *shell;
+#endif
 
   G_OBJECT_CLASS (cc_printers_panel_parent_class)->constructed (object);
 #if 0
@@ -353,7 +355,7 @@ cc_printers_panel_class_init (CcPrintersPanelClass *klass)
 
   //panel_class->get_help_uri = cc_printers_panel_get_help_uri;
 
-  g_object_class_override_property (object_class, PROP_PARAMETERS, "parameters");
+  //g_object_class_override_property (object_class, PROP_PARAMETERS, "parameters");
 }
 
 static void
