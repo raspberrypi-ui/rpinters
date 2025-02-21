@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <requires lib="gtk+" version="3.14"/>
+  <object class="GtkListStore" id="devices-liststore">
+    <columns>
+      <!-- column-name device_gicon -->
+      <column type="GIcon"/>
+      <!-- column-name device_name -->
+      <column type="gchararray"/>
+      <!-- column-name device_display_name -->
+      <column type="gchararray"/>
+      <!-- column-name device_description -->
+      <column type="gchararray"/>
+      <!-- column-name server_needs_authentication -->
+      <column type="gboolean"/>
+      <!-- column-name device_visible -->
+      <column type="gboolean"/>
+      <!-- column-name device -->
+      <column type="GObject"/>
+    </columns>
+  </object>
+  <object class="GtkTreeModelFilter" id="devices-model-filter">
+    <property name="child_model">devices-liststore</property>
+  </object>
   <object class="GtkDialog" id="dialog">
     <property name="width_request">480</property>
     <property name="height_request">490</property>
@@ -144,6 +165,7 @@
                           <object class="GtkTreeView" id="devices-treeview">
                             <property name="visible">True</property>
                             <property name="can_focus">True</property>
+                            <property name="model">devices-model-filter</property>
                             <property name="headers_visible">False</property>
                             <property name="enable-grid-lines">GTK_TREE_VIEW_GRID_LINES_HORIZONTAL</property>
                             <child internal-child="selection">

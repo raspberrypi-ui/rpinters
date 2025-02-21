@@ -469,8 +469,8 @@ pp_new_printer_dialog_init (PpNewPrinterDialog *self)
   GtkWidget                 *widget;
   g_autoptr(GError)          error = NULL;
   gchar                     *objects[] = { "dialog",
-//                                           "devices-liststore",
-//                                           "devices-model-filter",
+                                           "devices-liststore",
+                                           "devices-model-filter",
                                            NULL };
   guint                      builder_result;
 
@@ -495,13 +495,9 @@ pp_new_printer_dialog_init (PpNewPrinterDialog *self)
 
   self->treeview = GTK_TREE_VIEW (WID ("devices-treeview"));
 
-  //self->store = GTK_LIST_STORE (gtk_builder_get_object (self->builder, "devices-liststore"));
+  self->store = GTK_LIST_STORE (gtk_builder_get_object (self->builder, "devices-liststore"));
 
-  //self->filter = GTK_TREE_MODEL_FILTER (gtk_builder_get_object (self->builder, "devices-model-filter"));
-
-  self->store = gtk_list_store_new (7, G_TYPE_ICON, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_STRING, G_TYPE_BOOLEAN, G_TYPE_BOOLEAN, PP_TYPE_PRINT_DEVICE);
-  self->filter = GTK_TREE_MODEL_FILTER (gtk_tree_model_filter_new (GTK_TREE_MODEL (self->store), NULL));
-  gtk_tree_view_set_model (GTK_TREE_VIEW (self->treeview), GTK_TREE_MODEL (self->filter));
+  self->filter = GTK_TREE_MODEL_FILTER (gtk_builder_get_object (self->builder, "devices-model-filter"));
 
   /* Connect signals */
   g_signal_connect_object (self->dialog, "response", G_CALLBACK (new_printer_dialog_response_cb), self, G_CONNECT_SWAPPED);
