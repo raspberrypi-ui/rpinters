@@ -1045,11 +1045,11 @@ update_sensitivity (gpointer user_data)
       cups_server[0] != '/')
     local_server = FALSE;
 
-  widget = (GtkWidget*) gtk_builder_get_object (self->builder, "search-button");
-  gtk_widget_set_visible (widget, !no_cups);
+  //widget = (GtkWidget*) gtk_builder_get_object (self->builder, "search-button");
+  //gtk_widget_set_visible (widget, !no_cups);
 
-  widget = (GtkWidget*) gtk_builder_get_object (self->builder, "search-bar");
-  gtk_widget_set_visible (widget, !no_cups);
+  //widget = (GtkWidget*) gtk_builder_get_object (self->builder, "search-bar");
+  //gtk_widget_set_visible (widget, !no_cups);
 
   widget = (GtkWidget*) gtk_builder_get_object (self->builder, "printer-add-button");
   gtk_widget_set_visible (widget, local_server && self->is_authorized && !no_cups && !self->new_printer_name);
@@ -1169,8 +1169,8 @@ filter_function (GtkListBoxRow *row,
                  gpointer       user_data)
 {
   CcPrintersPanel        *self = (CcPrintersPanel*) user_data;
-  GtkWidget              *search_entry;
-  gboolean                retval;
+  //GtkWidget              *search_entry;
+  gboolean                retval = TRUE;
   g_autofree gchar       *search = NULL;
   g_autofree gchar       *name = NULL;
   g_autofree gchar       *location = NULL;
@@ -1183,6 +1183,7 @@ filter_function (GtkListBoxRow *row,
                 "printer-location", &printer_location,
                 NULL);
 
+#if 0
   search_entry = (GtkWidget*)
     gtk_builder_get_object (self->builder, "search-entry");
 
@@ -1201,6 +1202,7 @@ filter_function (GtkListBoxRow *row,
       if (location != NULL)
           retval = retval || (strstr (location, search) != NULL);
     }
+#endif
 
   if (self->deleted_printer_name != NULL &&
       g_strcmp0 (self->deleted_printer_name, printer_name) == 0)
@@ -1262,7 +1264,7 @@ cc_printers_panel_init (CcPrintersPanel *self)
   GtkWidget              *widget;
   PpCups                 *cups;
   g_autoptr(GError)       error = NULL;
-  gchar                  *objects[] = { "overlay", "permission-infobar", "top-right-buttons", "printer-add-button", "search-button", NULL };
+  gchar                  *objects[] = { "overlay", "permission-infobar", "top-right-buttons", "printer-add-button", NULL };
   guint                   builder_result;
 
   g_resources_register (cc_printers_get_resource ());
@@ -1324,10 +1326,10 @@ cc_printers_panel_init (CcPrintersPanel *self)
                                 filter_function,
                                 self,
                                 NULL);
-  g_signal_connect_swapped (gtk_builder_get_object (self->builder, "search-entry"),
-                            "search-changed",
-                            G_CALLBACK (gtk_list_box_invalidate_filter),
-                            widget);
+  //g_signal_connect_swapped (gtk_builder_get_object (self->builder, "search-entry"),
+  //                          "search-changed",
+  //                          G_CALLBACK (gtk_list_box_invalidate_filter),
+  //                          widget);
   gtk_list_box_set_sort_func (GTK_LIST_BOX (widget),
                               sort_function,
                               NULL,

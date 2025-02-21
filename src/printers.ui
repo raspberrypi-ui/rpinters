@@ -93,20 +93,6 @@
                 <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
 
                 <child>
-                  <object class="GtkSearchBar" id="search-bar">
-                    <property name="visible">True</property>
-                    <property name="hexpand">True</property>
-                    <property name="search_mode_enabled" bind-source="search-button" bind-property="active" bind-flags="bidirectional" />
-                    <child>
-                      <object class="GtkSearchEntry" id="search-entry">
-                        <property name="visible">True</property>
-                        <property name="width_chars">30</property>
-                      </object>
-                    </child>
-                  </object>
-                </child>
-
-                <child>
                   <object class="GtkScrolledWindow" id="scrolled-window">
                     <property name="visible">True</property>
                     <property name="hscrollbar-policy">GTK_POLICY_NEVER</property>
@@ -261,21 +247,6 @@
                 <property name="sensitive">True</property>
                 <property name="use_underline">True</property>
                 <property name="label" translatable="yes" comments="Translators: This button adds new printer.">Add…</property>
-              </object>
-            </child>
-            <child>
-              <object class="GtkToggleButton" id="search-button">
-                <property name="visible">True</property>
-                <property name="margin-end">6</property> <!-- since we don't have access to the shell header bar -->
-                <style>
-                  <class name="image-button"/>
-                </style>
-                <child>
-                  <object class="GtkImage">
-                    <property name="visible">True</property>
-                    <property name="icon_name">system-search-symbolic</property>
-                  </object>
-                </child>
               </object>
             </child>
           </object>
