@@ -738,40 +738,46 @@ on_printer_deleted (CcPrintersPanel *self,
   self->remove_printer_timeout_id = g_timeout_add_seconds (10, G_SOURCE_FUNC (on_remove_printer_timeout), self);
 }
 #else
-static void
-on_printer_deleted (CcPrintersPanel *self,
-                    PpPrinterEntry  *printer_entry)
+static void confirm_yes (GtkButton *, CcPrintersPanel *self)
 {
-  g_autofree gchar *printer_name = NULL;
+    gtk_widget_destroy (GTK_WIDGET (gtk_builder_get_object (self->builder, "modal")));
 
-  g_object_get (printer_entry,
-                "printer-name", &printer_name,
-                NULL);
-
-  self->deleted_printer_name = g_strdup (printer_name);
-
-  if (self->deleted_printer_name != NULL)
+    if (self->deleted_printer_name != NULL)
     {
-      PpPrinter *printer;
+        PpPrinter *printer = pp_printer_new (self->deleted_printer_name);
+        pp_printer_delete_async (printer, NULL, printer_removed_cb, g_object_ref (self->reference));
 
-      printer = pp_printer_new (self->deleted_printer_name);
-      /* The reference tells to the callback whether
-         printers panel was already destroyed so
-         it knows whether it can access the list
-         of deleted printers in it (see below).
-       */
-      pp_printer_delete_async (printer,
-                               NULL,
-                               printer_removed_cb,
-                               g_object_ref (self->reference));
-
-      /* List of printers which were recently deleted but are still available
-         in CUPS due to async nature of the method (e.g. quick deletion
-         of several printers).
-       */
-      self->deleted_printers = g_list_prepend (self->deleted_printers, self->deleted_printer_name);
-      self->deleted_printer_name = NULL;
+        self->deleted_printers = g_list_prepend (self->deleted_printers, self->deleted_printer_name);
+        self->deleted_printer_name = NULL;
     }
+}
+
+static void confirm_no (GtkButton *, CcPrintersPanel *self)
+{
+    gtk_widget_destroy (GTK_WIDGET (gtk_builder_get_object (self->builder, "modal")));
+
+    g_free (self->deleted_printer_name);
+    self->deleted_printer_name = NULL;
+}
+
+static void confirm_message (const char *msg, CcPrintersPanel *self)
+{
+    gtk_builder_add_from_file (self->builder, PACKAGE_DATA_DIR "/ui/piprint.ui", NULL);
+
+    gtk_label_set_text (GTK_LABEL (gtk_builder_get_object (self->builder, "modal_msg")), msg);
+    g_signal_connect (gtk_builder_get_object (self->builder, "modal_ok"), "clicked", G_CALLBACK (confirm_yes), self);
+    g_signal_connect (gtk_builder_get_object (self->builder, "modal_cancel"), "clicked", G_CALLBACK (confirm_no), self);
+    gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (self->builder, "modal")));
+}
+
+static void on_printer_deleted (CcPrintersPanel *self, PpPrinterEntry  *printer_entry)
+{
+    g_autofree gchar *printer_name = NULL;
+
+    g_object_get (printer_entry, "printer-name", &printer_name, NULL);
+    self->deleted_printer_name = g_strdup (printer_name);
+
+    confirm_message (_("Are you sure you want to remove this printer?"), self);
 }
 #endif
 
