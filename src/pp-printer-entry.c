@@ -961,7 +961,7 @@ pp_printer_entry_update (PpPrinterEntry *self,
   gtk_label_set_text (self->printer_status, printer_status);
   gtk_label_set_text (self->printer_name_label, instance);
   g_signal_handlers_block_by_func (self->printer_default_checkbutton, set_as_default_printer, self);
-  gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (self->printer_default_checkbutton), printer.is_default);
+  gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (self->printer_default_checkbutton), printer.is_default);
   g_signal_handlers_unblock_by_func (self->printer_default_checkbutton, set_as_default_printer, self);
 
   self->printer_make_and_model = sanitize_printer_model (printer_make_and_model);
