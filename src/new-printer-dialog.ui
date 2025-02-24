@@ -124,8 +124,6 @@
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <property name="orientation">vertical</property>
-        <property name="spacing">10</property>
-        <property name="border_width">0</property>
         <child>
           <object class="GtkStack" id="dialog-stack">
             <property name="visible">True</property>
@@ -261,7 +259,6 @@
                           <object class="GtkBox" id="box1">
                             <property name="visible">True</property>
                             <property name="can_focus">False</property>
-                            <property name="border_width">4</property>
                             <child>
                               <object class="GtkSearchEntry" id="search-entry">
                                 <property name="visible">True</property>
@@ -271,8 +268,6 @@
                                 <property name="truncate_multiline">True</property>
                                 <property name="invisible_char_set">True</property>
                                 <property name="placeholder_text" translatable="yes" comments="Translators: The entered text should contain network address of a printer or a text which will filter found devices (their names and locations)">Enter a network address or search for a printer</property>
-                                <property name="margin_start">40</property>
-                                <property name="margin_end">40</property>
                               </object>
                               <packing>
                                 <property name="expand">True</property>
@@ -395,6 +390,11 @@
               </packing>
             </child>
           </object>
+          <packing>
+            <property name="expand">True</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
         </child>
       </object>
     </child>
