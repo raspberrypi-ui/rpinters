@@ -1100,8 +1100,8 @@ update_sensitivity (gpointer user_data)
   widget = (GtkWidget*) gtk_builder_get_object (self->builder, "printer-add-button");
   gtk_widget_set_visible (widget, local_server && self->is_authorized && !no_cups && !self->new_printer_name);
 
-  widget = (GtkWidget*) gtk_builder_get_object (self->builder, "printer-add-button2");
-  gtk_widget_set_sensitive (widget, local_server && self->is_authorized && !no_cups && !self->new_printer_name);
+  //widget = (GtkWidget*) gtk_builder_get_object (self->builder, "printer-add-button2");
+  //gtk_widget_set_sensitive (widget, local_server && self->is_authorized && !no_cups && !self->new_printer_name);
 }
 
 static void
@@ -1368,9 +1368,9 @@ cc_printers_panel_init (CcPrintersPanel *self)
     gtk_builder_get_object (self->builder, "printer-add-button");
   g_signal_connect_object (widget, "clicked", G_CALLBACK (printer_add_cb), self, G_CONNECT_SWAPPED);
 
-  widget = (GtkWidget*)
-    gtk_builder_get_object (self->builder, "printer-add-button2");
-  g_signal_connect_object (widget, "clicked", G_CALLBACK (printer_add_cb), self, G_CONNECT_SWAPPED);
+  //widget = (GtkWidget*)
+  //  gtk_builder_get_object (self->builder, "printer-add-button2");
+  //g_signal_connect_object (widget, "clicked", G_CALLBACK (printer_add_cb), self, G_CONNECT_SWAPPED);
 
   widget = (GtkWidget*)
     gtk_builder_get_object (self->builder, "content");
