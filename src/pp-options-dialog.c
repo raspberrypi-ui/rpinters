@@ -887,7 +887,6 @@ pp_options_dialog_new (gchar   *printer_name,
   PpOptionsDialog *self;
 
   self = g_object_new (pp_options_dialog_get_type (),
-                       "use-header-bar", 1,
                        NULL);
 
   self->printer_name = g_strdup (printer_name);
@@ -931,6 +930,12 @@ pp_options_dialog_dispose (GObject *object)
   G_OBJECT_CLASS (pp_options_dialog_parent_class)->dispose (object);
 }
 
+static void
+close_wd (PpOptionsDialog *self)
+{
+  gtk_dialog_response (&self->parent_instance, 0);
+}
+
 void
 pp_options_dialog_class_init (PpOptionsDialogClass *klass)
 {
@@ -950,6 +955,7 @@ pp_options_dialog_class_init (PpOptionsDialogClass *klass)
 
   gtk_widget_class_bind_template_callback (widget_class, category_selection_changed_cb);
   gtk_widget_class_bind_template_callback (widget_class, test_page_cb);
+  gtk_widget_class_bind_template_callback (widget_class, close_wd);
 }
 
 void
