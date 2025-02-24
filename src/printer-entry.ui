@@ -1,71 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interface>
   <!-- interface-requires gtk+ 3.8 -->
-  <object class="GtkPopover" id="printer-menu">
-
+  <object class="GtkMenu" id="printer-menu">
     <child>
-      <object class="GtkGrid">
+      <object class="GtkMenuItem">
         <property name="visible">True</property>
-        <property name="margin">10</property>
-
-        <child>
-          <object class="GtkModelButton">
-            <property name="visible">True</property>
-            <property name="text" translatable="yes">Printing Options</property>
-            <signal name="clicked" handler="on_show_printer_options_dialog"/>
-          </object>
-          <packing>
-            <property name="left-attach">1</property>
-            <property name="top-attach">0</property>
-          </packing>
-        </child>
-
-        <child>
-          <object class="GtkModelButton">
-            <property name="visible">True</property>
-            <property name="text" translatable="yes">Printer Details</property>
-            <signal name="clicked" handler="on_show_printer_details_dialog"/>
-          </object>
-          <packing>
-            <property name="left-attach">1</property>
-            <property name="top-attach">1</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkCheckButton" id="printer_default_checkbutton">
-            <property name="visible">True</property>
-            <property name="valign">center</property>
-            <property name="label" translatable="yes" comments="Set this printer as default">Use Printer by Default</property>
-            <signal name="toggled" handler="set_as_default_printer"/>
-          </object>
-          <packing>
-            <property name="left-attach">0</property>
-            <property name="top-attach">2</property>
-            <property name="width">3</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkModelButton" id="clean_heads_menuitem">
-            <property name="visible">False</property>
-            <property name="text" translatable="yes" comments="Translators: This button executes command which cleans print heads of the printer.">Clean Print Heads</property>
-	    <signal name="clicked" handler="clean_heads"/>
-	  </object>
-          <packing>
-            <property name="left-attach">1</property>
-            <property name="top-attach">3</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkModelButton" id="remove_printer_menuitem">
-            <property name="visible">True</property>
-            <property name="text" translatable="yes">Remove Printer</property>
-            <signal name="clicked" handler="remove_printer"/>
-          </object>
-          <packing>
-            <property name="left-attach">1</property>
-            <property name="top-attach">4</property>
-          </packing>
-        </child>
+        <property name="label" translatable="yes">Printing Options</property>
+        <signal name="activate" handler="on_show_printer_options_dialog"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Printer Details</property>
+        <signal name="activate" handler="on_show_printer_details_dialog"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="printer_default_checkbutton">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes" comments="Set this printer as default">Use Printer by Default</property>
+        <signal name="activate" handler="set_as_default_printer"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="clean_heads_menuitem">
+        <property name="visible">False</property>
+        <property name="label" translatable="yes" comments="Translators: This button executes command which cleans print heads of the printer.">Clean Print Heads</property>
+        <signal name="activate" handler="clean_heads"/>
+      </object>
+    </child>
+    <child>
+      <object class="GtkMenuItem" id="remove_printer_menuitem">
+        <property name="visible">True</property>
+        <property name="label" translatable="yes">Remove Printer</property>
+        <signal name="activate" handler="remove_printer"/>
       </object>
     </child>
   </object>
@@ -171,7 +140,7 @@
                 <child>
                   <object class="GtkMenuButton">
                     <property name="visible">True</property>
-                    <property name="popover">printer-menu</property>
+                    <property name="popup">printer-menu</property>
                     <child>
                       <object class="GtkImage">
                         <property name="visible">True</property>
