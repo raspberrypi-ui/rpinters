@@ -943,7 +943,21 @@ pp_printer_entry_update (PpPrinterEntry *self,
   g_free (self->printer_hostname);
   self->printer_hostname = printer_get_hostname (printer_type, device_uri, printer_uri);
 
-  gtk_image_set_from_icon_name (self->printer_icon, printer_icon_name, GTK_ICON_SIZE_DIALOG);
+  if (printer.is_default)
+  {
+    GtkIconInfo *ii = gtk_icon_theme_lookup_icon (gtk_icon_theme_get_default (), printer_icon_name, 48, GTK_ICON_LOOKUP_FORCE_SIZE);
+    GdkPixbuf *ip = gtk_icon_info_load_icon (ii, NULL);
+
+    GtkIconInfo *iid = gtk_icon_theme_lookup_icon (gtk_icon_theme_get_default (), "emblem-default", 16, GTK_ICON_LOOKUP_FORCE_SIZE);
+    GdkPixbuf *ipd = gtk_icon_info_load_icon (iid, NULL);
+    gdk_pixbuf_composite (ipd, ip, 32, 32, 16, 16, 32, 32, 1, 1, GDK_INTERP_BILINEAR, 255);
+    gtk_image_set_from_pixbuf (self->printer_icon, ip);
+    g_object_unref (ii);
+    g_object_unref (iid);
+    g_object_unref (ip);
+    g_object_unref (ipd);
+  }
+  else gtk_image_set_from_icon_name (self->printer_icon, printer_icon_name, GTK_ICON_SIZE_DIALOG);
   gtk_label_set_text (self->printer_status, printer_status);
   gtk_label_set_text (self->printer_name_label, instance);
   g_signal_handlers_block_by_func (self->printer_default_checkbutton, set_as_default_printer, self);
