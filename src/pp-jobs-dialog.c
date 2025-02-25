@@ -505,7 +505,6 @@ pp_jobs_dialog_new (const gchar *printer_name)
   g_autofree gchar *title = NULL;
 
   self = g_object_new (PP_TYPE_JOBS_DIALOG,
-                       "use-header-bar", 1,
                        NULL);
 
   self->printer_name = g_strdup (printer_name);
@@ -570,6 +569,12 @@ pp_jobs_dialog_dispose (GObject *object)
 }
 
 static void
+close_wd (PpJobsDialog *self)
+{
+  gtk_dialog_response (&self->parent_instance, 0);
+}
+
+static void
 pp_jobs_dialog_class_init (PpJobsDialogClass *klass)
 {
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
@@ -598,6 +603,7 @@ pp_jobs_dialog_class_init (PpJobsDialogClass *klass)
   gtk_widget_class_bind_template_callback (widget_class, on_clear_all_button_clicked);
   gtk_widget_class_bind_template_callback (widget_class, auth_entries_activated);
   gtk_widget_class_bind_template_callback (widget_class, auth_entries_changed);
+  gtk_widget_class_bind_template_callback (widget_class, close_wd);
 
   object_class->dispose = pp_jobs_dialog_dispose;
 }
