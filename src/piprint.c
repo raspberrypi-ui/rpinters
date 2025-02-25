@@ -174,7 +174,7 @@ int main (int argc, char *argv[])
     
     g_object_unref (builder);
 
-    gtk_widget_show_all (main_dlg);
+    gtk_widget_show (main_dlg);
 
     gtk_main ();
 
