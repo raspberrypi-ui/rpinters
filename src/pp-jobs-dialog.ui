@@ -199,7 +199,7 @@
           <object class="GtkInfoBar" id="authentication_infobar">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="border_width">0</property>
+            <property name="border_width">5</property>
             <property name="orientation">vertical</property>
             <property name="spacing">12</property>
             <child internal-child="action_area">
