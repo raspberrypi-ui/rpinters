@@ -125,6 +125,7 @@
                     <property name="can_focus">True</property>
                     <property name="sensitive">False</property>
                     <property name="label" translatable="yes">No Active Jobs</property>
+                    <property name="width-request">150</property>
                     <signal name="clicked" handler="show_jobs_dialog"/>
                   </object>
                 </child>
