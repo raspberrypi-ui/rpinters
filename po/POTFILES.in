@@ -1,5 +1,5 @@
 [encoding: UTF-8]
-src/piprint.c
+src/rpinters.c
 src/cc-permission-infobar.c
 src/cc-printers-panel.c
 src/cc-util.c
@@ -22,7 +22,7 @@ src/pp-printer.c
 src/pp-printer-entry.c
 src/pp-samba.c
 src/pp-utils.c
-[type: gettext/glade] data/piprint.ui
+[type: gettext/glade] data/rpinters.ui
 [type: gettext/glade] src/authentication-dialog.ui
 [type: gettext/glade] src/cc-permission-infobar.ui
 [type: gettext/glade] src/new-printer-dialog.ui
@@ -33,4 +33,4 @@ src/pp-utils.c
 [type: gettext/glade] src/printer-entry.ui
 [type: gettext/glade] src/printers.ui
 # files added by intltool-prepare
-data/piprint.desktop.in
+data/rpinters.desktop.in

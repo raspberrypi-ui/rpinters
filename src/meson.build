@@ -23,7 +23,7 @@ sources = files(
 )
 
 ppsources = files (
-    'piprint.c'
+    'rpinters.c'
 )
 
 sources += ppsources

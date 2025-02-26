@@ -154,7 +154,7 @@ int main (int argc, char *argv[])
     
     cpp = g_object_new (CC_TYPE_PRINTERS_PANEL, NULL);
 
-    builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/ui/piprint.ui");
+    builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/ui/rpinters.ui");
 
     main_dlg = (GtkWidget *) gtk_builder_get_object (builder, "main_window");
     g_signal_connect (main_dlg, "delete_event", G_CALLBACK (close_prog), NULL);
