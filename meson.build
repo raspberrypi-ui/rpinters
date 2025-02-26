@@ -2,7 +2,7 @@ project ('piprint','c')
 
 build_standalone = true
 build_plugin = true
-plugin_name = 'rpcc' + meson.project_name()
+plugin_name = 'rpcc_' + meson.project_name()
 
 share_dir = join_paths(get_option('prefix'), 'share')
 resource_dir = join_paths(share_dir, meson.project_name())
@@ -17,5 +17,6 @@ add_project_arguments('-DGETTEXT_PACKAGE="' + gettext_package + '"', language : 
 add_project_arguments('-DPACKAGE_LOCALE_DIR="' + share_dir + '/locale"', language : 'c' )
 add_project_link_arguments('-lcrypt', language : 'c' )
 
+subdir('po')
 subdir('src')
 subdir('data')
