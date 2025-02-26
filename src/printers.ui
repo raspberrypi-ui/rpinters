@@ -56,6 +56,9 @@
       <object class="GtkBox">
         <property name="visible">True</property>
         <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <style>
+          <class name="background"/>
+        </style>
 
         <child>
           <object class="CcPermissionInfobar" id="permission-infobar">
@@ -232,6 +235,7 @@
           <object class="GtkBox" id="top-right-buttons">
             <property name="visible">True</property>
             <property name="spacing">5</property>
+            <property name="border-width">10</property>
             <child>
               <object class="GtkButton" id="printer-add-button">
                 <property name="visible">True</property>
