@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Printers
+Comment=Add and configure printers
+Icon=printer
+Exec=piprint
+Terminal=false
+Categories=Settings;
+StartupNotify=true

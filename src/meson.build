@@ -66,18 +66,22 @@ sources += gnome.compile_resources(
 add_global_arguments('-Wno-unused-result', language : 'c')
 
 gtk = dependency ('gtk+-3.0')
-samba =   dependency('smbclient')
+samba = dependency('smbclient')
 cups = dependency('cups', version : '>= 1.4', required: false)
 polkit = dependency('polkit-gobject-1', version: '>= 0.103')
 gsettings = dependency('gsettings-desktop-schemas', version: '>= 42.alpha')
 
 deps = [ gtk, samba, cups, polkit, gsettings ]
 
-if meson.project_name().contains('rpcc')
-  shared_module(meson.project_name(), sources, dependencies: deps, install: true,
-        install_dir: get_option('libdir') / 'rpcc',
-        c_args : '-DPLUGIN_NAME="' + meson.project_name() + '"'
+if build_plugin
+  shared_module(plugin_name, sources, dependencies: deps, install: true,
+    install_dir: get_option('libdir') / 'rpcc',
+    c_args : [ '-DPACKAGE_DATA_DIR="' + presource_dir + '"', '-DPLUGIN_NAME="' + plugin_name + '"' ]
   )
-else
-  executable (meson.project_name(), sources, dependencies: deps, install: true)
+endif
+
+if build_standalone
+  executable (meson.project_name(), sources, dependencies: deps, install: true,
+    c_args : '-DPACKAGE_DATA_DIR="' + resource_dir + '"'
+  )
 endif
