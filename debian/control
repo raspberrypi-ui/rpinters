@@ -1,0 +1,14 @@
+Source: rpinters
+Section: unknown
+Priority: optional
+Maintainer: Simon Long <simon@raspberrypi.com>
+Build-Depends: debhelper-compat (= 13), meson, libgtk-3-dev (>= 3.24), intltool (>= 0.40.0),
+ libsmbclient-dev, libpolkit-gobject-1-dev, gsettings-desktop-schemas-dev, libcups2-dev
+Standards-Version: 4.5.1
+Homepage: http://raspberrypi.com/
+
+Package: rpinters
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libgtk-3-0 (>= 3.24), system-config-printer-common
+Description: Printer configuration tool for Raspberry Pi Desktop
+ Port of gnome-control-center Printers panel

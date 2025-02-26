@@ -67,7 +67,7 @@ add_global_arguments('-Wno-unused-result', language : 'c')
 
 gtk = dependency ('gtk+-3.0')
 samba = dependency('smbclient')
-cups = dependency('cups', version : '>= 1.4', required: false)
+cups = dependency('cups', version : '>= 1.4')
 polkit = dependency('polkit-gobject-1', version: '>= 0.103')
 gsettings = dependency('gsettings-desktop-schemas', version: '>= 42.alpha')
 
