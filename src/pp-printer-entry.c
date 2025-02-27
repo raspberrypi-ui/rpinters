@@ -984,6 +984,8 @@ pp_printer_entry_update (PpPrinterEntry *self,
   else
     {
       gtk_label_set_text (self->printer_location_address_label, location);
+      gtk_widget_show (GTK_WIDGET (self->printer_location_label));
+      gtk_widget_show (GTK_WIDGET (self->printer_location_address_label));
     }
 
   ink_supply_is_empty = supply_level_is_empty (self);
