@@ -171,6 +171,7 @@ printer_rename_dbus_cb (GObject      *source_object,
       if (ret_error[0] != '\0')
         {
           g_warning ("cups-pk-helper: renaming of printer %s failed: %s", old_printer_name, ret_error);
+          g_task_set_task_data (task, (gpointer) ret_error, NULL);
         }
       else
         {

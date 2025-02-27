@@ -781,6 +781,21 @@ static void on_printer_deleted (CcPrintersPanel *self, PpPrinterEntry  *printer_
 }
 #endif
 
+static void ok_clicked (GtkButton *button, CcPrintersPanel *self)
+{
+    gtk_widget_destroy (GTK_WIDGET (gtk_builder_get_object (self->builder, "modal")));
+}
+
+void message (const char *msg, CcPrintersPanel *self)
+{
+    gtk_builder_add_from_file (self->builder, PACKAGE_DATA_DIR "/ui/rpinters.ui", NULL);
+
+    gtk_label_set_text (GTK_LABEL (gtk_builder_get_object (self->builder, "modal_msg")), msg);
+    g_signal_connect (gtk_builder_get_object (self->builder, "modal_ok"), "clicked", G_CALLBACK (ok_clicked), self);
+    gtk_widget_hide (GTK_WIDGET (gtk_builder_get_object (self->builder, "modal_cancel")));
+    gtk_widget_show (GTK_WIDGET (gtk_builder_get_object (self->builder, "modal")));
+}
+
 static void
 on_printer_renamed (CcPrintersPanel *self,
                     gchar           *new_name,

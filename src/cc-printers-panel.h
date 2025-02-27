@@ -28,3 +28,5 @@ G_BEGIN_DECLS
 G_DECLARE_FINAL_TYPE (CcPrintersPanel, cc_printers_panel, CC, PRINTERS_PANEL, GtkBin)
 
 G_END_DECLS
+
+extern void message (const char *msg, CcPrintersPanel *self);

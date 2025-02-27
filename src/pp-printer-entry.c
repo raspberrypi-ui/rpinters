@@ -31,6 +31,8 @@
 #include "pp-printer.h"
 #include "pp-utils.h"
 
+#include "cc-printers-panel.h"
+
 #define SUPPLY_BAR_HEIGHT 8
 
 typedef struct
@@ -397,6 +399,18 @@ supply_levels_draw_cb (PpPrinterEntry *self,
   return TRUE;
 }
 
+CcPrintersPanel *get_panel (PpPrinterEntry *ppe)
+{
+  GtkWidget *obj = GTK_WIDGET (ppe);
+
+  while (1)
+  {
+    obj = gtk_widget_get_parent (obj);
+    if (G_OBJECT_TYPE (obj) == CC_TYPE_PRINTERS_PANEL) break;
+  }
+  return (CcPrintersPanel *) obj;
+}
+
 static void
 on_printer_rename_cb (GObject      *source_object,
                       GAsyncResult *result,
@@ -406,7 +420,12 @@ on_printer_rename_cb (GObject      *source_object,
   g_autofree gchar *printer_name = NULL;
 
   if (!pp_printer_rename_finish (PP_PRINTER (source_object), result, NULL))
+  {
+    char *text = g_strdup_printf ("Could not rename printer : %s", (char *) g_task_get_task_data (G_TASK (result)));
+    message (text, get_panel (self));
+    g_free (text);
     return;
+  }
 
   g_object_get (PP_PRINTER (source_object),
                 "printer-name", &printer_name,
