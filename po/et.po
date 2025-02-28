@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GNOME Control Center MASTER\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"POT-Creation-Date: 2025-02-28 15:40+0000\n"
 "PO-Revision-Date: 2014-05-13 10:38+0300\n"
 "Last-Translator: Mattias Põldaru <mahfiaz@gmail.com>\n"
 "Language-Team: Estonian <gnome-et@linux.ee>\n"
@@ -291,10 +291,12 @@ msgid "Automatic configuration"
 msgstr "A_utomaatne sisselogimine"
 
 #. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
 #. Translators: This is the title presented at top of the dialog.
 #: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
-#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+#: ../src/pp-new-printer-dialog.c:798 ../src/pp-new-printer-dialog.c:805
+#: ../src/new-printer-dialog.ui.h:2
 msgid "Add Printer"
 msgstr "Printeri lisamine"
 
@@ -318,46 +320,45 @@ msgid "Enter username and password to view printers on %s."
 msgstr ""
 "Sisesta kasutajanimi ja parool, et näha masinas %s saadaolevaid printereid."
 
-#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #: ../src/pp-new-printer-dialog.c:798
 #, fuzzy
-msgid "Add Printer - Searching for Printers"
+msgid "Searching for Printers"
 msgstr "Võrke ei otsita"
 
 #. Translators: The found device is a printer connected via USB
-#: ../src/pp-new-printer-dialog.c:1616
+#: ../src/pp-new-printer-dialog.c:1618
 msgid "USB"
 msgstr "USB"
 
 #. Translators: The found device is a printer connected via serial port
-#: ../src/pp-new-printer-dialog.c:1621
+#: ../src/pp-new-printer-dialog.c:1623
 msgid "Serial Port"
 msgstr "Jadaport"
 
 #. Translators: The found device is a printer connected via parallel port
-#: ../src/pp-new-printer-dialog.c:1628
+#: ../src/pp-new-printer-dialog.c:1630
 msgid "Parallel Port"
 msgstr "Paralleelport"
 
 #. Translators: The found device is a printer connected via Bluetooth
-#: ../src/pp-new-printer-dialog.c:1633
+#: ../src/pp-new-printer-dialog.c:1635
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
 #. Translators: Location of found network printer (e.g. Kitchen, Reception)
-#: ../src/pp-new-printer-dialog.c:1670
+#: ../src/pp-new-printer-dialog.c:1672
 #, c-format
 msgid "Location: %s"
 msgstr "Asukoht: %s"
 
 #. Translators: Network address of found printer
-#: ../src/pp-new-printer-dialog.c:1675
+#: ../src/pp-new-printer-dialog.c:1677
 #, c-format
 msgid "Address: %s"
 msgstr "Aadress: %s"
 
 #. Translators: This item is a server which needs authentication to show its printers
-#: ../src/pp-new-printer-dialog.c:1702
+#: ../src/pp-new-printer-dialog.c:1704
 msgid "Server requires authentication"
 msgstr "Server nõuab autentimist"
 
@@ -866,7 +867,7 @@ msgstr ""
 #. Translators: This button adds new printer.
 #: ../src/printers.ui.h:8
 #, fuzzy
-msgid "Add Printer…"
+msgid "Add a Printer…"
 msgstr "Printeri lisamine"
 
 # paistab välimuse eelistuste all ühevärvilise tausta tooltip'ina

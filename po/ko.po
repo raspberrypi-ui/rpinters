@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-control-center\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"POT-Creation-Date: 2025-02-28 15:40+0000\n"
 "PO-Revision-Date: 2020-08-29 19:08+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
@@ -295,10 +295,12 @@ msgid "Automatic configuration"
 msgstr "자동 로그인(_U)"
 
 #. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
 #. Translators: This is the title presented at top of the dialog.
 #: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
-#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+#: ../src/pp-new-printer-dialog.c:798 ../src/pp-new-printer-dialog.c:805
+#: ../src/new-printer-dialog.ui.h:2
 msgid "Add Printer"
 msgstr "프린터 추가"
 
@@ -320,46 +322,44 @@ msgstr "%s 잠금 해제."
 msgid "Enter username and password to view printers on %s."
 msgstr "%s의 프린터를 보려면 사용자 이름과 암호를 입력하십시오."
 
-#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #: ../src/pp-new-printer-dialog.c:798
-#, fuzzy
-msgid "Add Printer - Searching for Printers"
+msgid "Searching for Printers"
 msgstr "프린터 검색 중"
 
 #. Translators: The found device is a printer connected via USB
-#: ../src/pp-new-printer-dialog.c:1616
+#: ../src/pp-new-printer-dialog.c:1618
 msgid "USB"
 msgstr "USB"
 
 #. Translators: The found device is a printer connected via serial port
-#: ../src/pp-new-printer-dialog.c:1621
+#: ../src/pp-new-printer-dialog.c:1623
 msgid "Serial Port"
 msgstr "직렬 포트"
 
 #. Translators: The found device is a printer connected via parallel port
-#: ../src/pp-new-printer-dialog.c:1628
+#: ../src/pp-new-printer-dialog.c:1630
 msgid "Parallel Port"
 msgstr "병렬 포트"
 
 #. Translators: The found device is a printer connected via Bluetooth
-#: ../src/pp-new-printer-dialog.c:1633
+#: ../src/pp-new-printer-dialog.c:1635
 msgid "Bluetooth"
 msgstr "블루투스"
 
 #. Translators: Location of found network printer (e.g. Kitchen, Reception)
-#: ../src/pp-new-printer-dialog.c:1670
+#: ../src/pp-new-printer-dialog.c:1672
 #, c-format
 msgid "Location: %s"
 msgstr "위치: %s"
 
 #. Translators: Network address of found printer
-#: ../src/pp-new-printer-dialog.c:1675
+#: ../src/pp-new-printer-dialog.c:1677
 #, c-format
 msgid "Address: %s"
 msgstr "주소: %s"
 
 #. Translators: This item is a server which needs authentication to show its printers
-#: ../src/pp-new-printer-dialog.c:1702
+#: ../src/pp-new-printer-dialog.c:1704
 msgid "Server requires authentication"
 msgstr "서버에 인증이 필요합니다"
 
@@ -848,7 +848,6 @@ msgstr ""
 
 #. Translators: This button adds new printer.
 #: ../src/printers.ui.h:8
-#, fuzzy
-msgid "Add Printer…"
+msgid "Add a Printer…"
 msgstr "프린터 추가…"
 

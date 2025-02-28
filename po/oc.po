@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-control-center HEAD\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"POT-Creation-Date: 2025-02-28 15:41+0000\n"
 "PO-Revision-Date: 2019-11-26 11:33+0200\n"
 "Last-Translator: Cedric <cvalmary@yahoo.fr>\n"
 "Language-Team: Tot en òc\n"
@@ -281,10 +281,12 @@ msgid "Automatic configuration"
 msgstr "Connexion a_utomatica"
 
 #. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
 #. Translators: This is the title presented at top of the dialog.
 #: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
-#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+#: ../src/pp-new-printer-dialog.c:798 ../src/pp-new-printer-dialog.c:805
+#: ../src/new-printer-dialog.ui.h:2
 msgid "Add Printer"
 msgstr "Apondre una imprimenta"
 
@@ -308,46 +310,44 @@ msgstr ""
 "Picatz vòstre nom d’utilizaire e vòtre senhal per afichar las imprimentas "
 "sus %s."
 
-#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #: ../src/pp-new-printer-dialog.c:798
-#, fuzzy
-msgid "Add Printer - Searching for Printers"
+msgid "Searching for Printers"
 msgstr "Recèrca d’imprimentas"
 
 #. Translators: The found device is a printer connected via USB
-#: ../src/pp-new-printer-dialog.c:1616
+#: ../src/pp-new-printer-dialog.c:1618
 msgid "USB"
 msgstr "USB"
 
 #. Translators: The found device is a printer connected via serial port
-#: ../src/pp-new-printer-dialog.c:1621
+#: ../src/pp-new-printer-dialog.c:1623
 msgid "Serial Port"
 msgstr "Pòrt seria"
 
 #. Translators: The found device is a printer connected via parallel port
-#: ../src/pp-new-printer-dialog.c:1628
+#: ../src/pp-new-printer-dialog.c:1630
 msgid "Parallel Port"
 msgstr "Pòrt parallèl"
 
 #. Translators: The found device is a printer connected via Bluetooth
-#: ../src/pp-new-printer-dialog.c:1633
+#: ../src/pp-new-printer-dialog.c:1635
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
 #. Translators: Location of found network printer (e.g. Kitchen, Reception)
-#: ../src/pp-new-printer-dialog.c:1670
+#: ../src/pp-new-printer-dialog.c:1672
 #, c-format
 msgid "Location: %s"
 msgstr "Emplaçament : %s"
 
 #. Translators: Network address of found printer
-#: ../src/pp-new-printer-dialog.c:1675
+#: ../src/pp-new-printer-dialog.c:1677
 #, c-format
 msgid "Address: %s"
 msgstr "Adreça : %s"
 
 #. Translators: This item is a server which needs authentication to show its printers
-#: ../src/pp-new-printer-dialog.c:1702
+#: ../src/pp-new-printer-dialog.c:1704
 msgid "Server requires authentication"
 msgstr "Lo servidor necessita una autentificacion"
 
@@ -839,7 +839,6 @@ msgstr ""
 
 #. Translators: This button adds new printer.
 #: ../src/printers.ui.h:8
-#, fuzzy
-msgid "Add Printer…"
+msgid "Add a Printer…"
 msgstr "Apondre una imprimenta…"
 

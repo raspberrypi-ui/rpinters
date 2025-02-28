@@ -795,7 +795,9 @@ update_dialog_state (PpNewPrinterDialog *self)
   if (searching)
     {
       //gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
-      gtk_window_set_title (GTK_WINDOW (header), _("Add Printer - Searching for Printers"));
+      char *title = g_strdup_printf ("%s - %s", _("Add Printer"), _("Searching for Printers"));
+      gtk_window_set_title (GTK_WINDOW (header), title);
+      g_free (title);
     }
   else
     {

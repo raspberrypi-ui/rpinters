@@ -32,7 +32,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-control-center master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"POT-Creation-Date: 2025-02-28 15:41+0000\n"
 "PO-Revision-Date: 2020-08-30 10:45-0400\n"
 "Last-Translator: Boyuan Yang <073plan@gmail.com>\n"
 "Language-Team: Chinese (China) <i18n-zh@googlegroups.com>\n"
@@ -296,10 +296,12 @@ msgid "Automatic configuration"
 msgstr "自动登录(_U)"
 
 #. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
 #. Translators: This is the title presented at top of the dialog.
 #: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
-#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+#: ../src/pp-new-printer-dialog.c:798 ../src/pp-new-printer-dialog.c:805
+#: ../src/new-printer-dialog.ui.h:2
 msgid "Add Printer"
 msgstr "添加打印机"
 
@@ -321,46 +323,44 @@ msgstr "解锁 %s。"
 msgid "Enter username and password to view printers on %s."
 msgstr "输入用户名和密码以查看 %s 上的打印机。"
 
-#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #: ../src/pp-new-printer-dialog.c:798
-#, fuzzy
-msgid "Add Printer - Searching for Printers"
+msgid "Searching for Printers"
 msgstr "正在搜索打印机"
 
 #. Translators: The found device is a printer connected via USB
-#: ../src/pp-new-printer-dialog.c:1616
+#: ../src/pp-new-printer-dialog.c:1618
 msgid "USB"
 msgstr "USB"
 
 #. Translators: The found device is a printer connected via serial port
-#: ../src/pp-new-printer-dialog.c:1621
+#: ../src/pp-new-printer-dialog.c:1623
 msgid "Serial Port"
 msgstr "串口"
 
 #. Translators: The found device is a printer connected via parallel port
-#: ../src/pp-new-printer-dialog.c:1628
+#: ../src/pp-new-printer-dialog.c:1630
 msgid "Parallel Port"
 msgstr "并口"
 
 #. Translators: The found device is a printer connected via Bluetooth
-#: ../src/pp-new-printer-dialog.c:1633
+#: ../src/pp-new-printer-dialog.c:1635
 msgid "Bluetooth"
 msgstr "蓝牙"
 
 #. Translators: Location of found network printer (e.g. Kitchen, Reception)
-#: ../src/pp-new-printer-dialog.c:1670
+#: ../src/pp-new-printer-dialog.c:1672
 #, c-format
 msgid "Location: %s"
 msgstr "位置：%s"
 
 #. Translators: Network address of found printer
-#: ../src/pp-new-printer-dialog.c:1675
+#: ../src/pp-new-printer-dialog.c:1677
 #, c-format
 msgid "Address: %s"
 msgstr "地址：%s"
 
 #. Translators: This item is a server which needs authentication to show its printers
-#: ../src/pp-new-printer-dialog.c:1702
+#: ../src/pp-new-printer-dialog.c:1704
 msgid "Server requires authentication"
 msgstr "服务器要求认证"
 
@@ -845,7 +845,6 @@ msgstr "抱歉，系统打印服务似乎不可用。"
 
 #. Translators: This button adds new printer.
 #: ../src/printers.ui.h:8
-#, fuzzy
-msgid "Add Printer…"
+msgid "Add a Printer…"
 msgstr "添加打印机…"
 

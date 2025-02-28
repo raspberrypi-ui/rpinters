@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gnome-control-center.master.ta\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"POT-Creation-Date: 2025-02-28 15:41+0000\n"
 "PO-Revision-Date: 2014-09-15 16:27+0630\n"
 "Last-Translator: Shantha kumar <shkumar@redhat.com>\n"
 "Language-Team: American English <kde-i18n-doc@kde.org>\n"
@@ -298,10 +298,12 @@ msgid "Automatic configuration"
 msgstr "தானியங்கி கட்டமைப்பு"
 
 #. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
 #. Translators: This is the title presented at top of the dialog.
 #: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
-#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+#: ../src/pp-new-printer-dialog.c:798 ../src/pp-new-printer-dialog.c:805
+#: ../src/new-printer-dialog.ui.h:2
 msgid "Add Printer"
 msgstr "அச்சுப்பொறியைச் சேர்"
 
@@ -325,46 +327,45 @@ msgid "Enter username and password to view printers on %s."
 msgstr ""
 "%s இல் கிடைக்கும் அச்சுப்பொறிகளைக் காண உங்கள் பயனர் பெயர் மற்றும் கடவுச்சொல்லை உள்ளிடவும்."
 
-#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #: ../src/pp-new-printer-dialog.c:798
 #, fuzzy
-msgid "Add Printer - Searching for Printers"
+msgid "Searching for Printers"
 msgstr "வலையமைப்புகளை தேடவில்லை"
 
 #. Translators: The found device is a printer connected via USB
-#: ../src/pp-new-printer-dialog.c:1616
+#: ../src/pp-new-printer-dialog.c:1618
 msgid "USB"
 msgstr "USB"
 
 #. Translators: The found device is a printer connected via serial port
-#: ../src/pp-new-printer-dialog.c:1621
+#: ../src/pp-new-printer-dialog.c:1623
 msgid "Serial Port"
 msgstr "வரிசை துறை"
 
 #. Translators: The found device is a printer connected via parallel port
-#: ../src/pp-new-printer-dialog.c:1628
+#: ../src/pp-new-printer-dialog.c:1630
 msgid "Parallel Port"
 msgstr "இணையான துறை"
 
 #. Translators: The found device is a printer connected via Bluetooth
-#: ../src/pp-new-printer-dialog.c:1633
+#: ../src/pp-new-printer-dialog.c:1635
 msgid "Bluetooth"
 msgstr "ப்ளூடூத்"
 
 #. Translators: Location of found network printer (e.g. Kitchen, Reception)
-#: ../src/pp-new-printer-dialog.c:1670
+#: ../src/pp-new-printer-dialog.c:1672
 #, c-format
 msgid "Location: %s"
 msgstr "இடம்: %s"
 
 #. Translators: Network address of found printer
-#: ../src/pp-new-printer-dialog.c:1675
+#: ../src/pp-new-printer-dialog.c:1677
 #, c-format
 msgid "Address: %s"
 msgstr "முகவரி: %s"
 
 #. Translators: This item is a server which needs authentication to show its printers
-#: ../src/pp-new-printer-dialog.c:1702
+#: ../src/pp-new-printer-dialog.c:1704
 msgid "Server requires authentication"
 msgstr "சேவையகத்திற்கு அங்கீகாரம் தேவைப்படுகிறது"
 
@@ -877,6 +878,6 @@ msgstr ""
 #. Translators: This button adds new printer.
 #: ../src/printers.ui.h:8
 #, fuzzy
-msgid "Add Printer…"
+msgid "Add a Printer…"
 msgstr "அச்சுப்பொறியைச் சேர்"
 
