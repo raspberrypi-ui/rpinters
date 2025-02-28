@@ -78,6 +78,7 @@ void init_plugin (void)
     setlocale (LC_ALL, "");
     bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
+    textdomain (GETTEXT_PACKAGE);
 
     cpp = g_object_new (CC_TYPE_PRINTERS_PANEL, NULL);
 }
@@ -109,6 +110,13 @@ gboolean reboot_needed (void)
 
 void free_plugin (void)
 {
+}
+
+const char *dgetfixt (const char *domain, const char *msgctxid)
+{
+    const char *text = dgettext (domain, msgctxid);
+    if (!strchr (text, 0x04)) return text;
+    return dgettext (domain, strchr (msgctxid, 0x04) + 1);
 }
 
 #else

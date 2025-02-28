@@ -20,10 +20,6 @@
 
 //#include "shell/cc-object-storage.h"
 
-#include "cc-printers-panel.h"
-#include "cc-printers-resources.h"
-#include "pp-printer.h"
-
 #include <string.h>
 #include <glib/gi18n-lib.h>
 #include <glib/gstdio.h>
@@ -34,6 +30,10 @@
 #include <cups/ppd.h>
 
 #include <math.h>
+
+#include "cc-printers-panel.h"
+#include "cc-printers-resources.h"
+#include "pp-printer.h"
 
 #include "pp-new-printer-dialog.h"
 #include "pp-ppd-selection-dialog.h"

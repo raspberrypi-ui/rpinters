@@ -18,13 +18,13 @@
  * Author: Marek Kasik <mkasik@redhat.com>
  */
 
-#include "pp-samba.h"
-
 #include "config.h"
 
 #include <glib/gi18n.h>
 #include <libsmbclient.h>
 #include <errno.h>
+
+#include "pp-samba.h"
 
 #define POLL_DELAY 100000
 

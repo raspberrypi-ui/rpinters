@@ -20,9 +20,9 @@
 
 #include "config.h"
 
-#include "pp-host.h"
-
 #include <glib/gi18n.h>
+
+#include "pp-host.h"
 
 #define BUFFER_LENGTH 1024
 
