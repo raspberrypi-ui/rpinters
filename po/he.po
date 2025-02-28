@@ -1,0 +1,842 @@
+# translation of gnome-control-center.HEAD.he.po to Hebrew
+# translation of gnome-control-center.gnome-2-0.he.po to Hebrew
+# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) 2005 THE PACKAGE'S COPYRIGHT HOLDER.
+# Gil 'Dolfin' Osher <dolfin@rpg.org.il>, 2002,2003.
+# Yuval Tanny, 2005.
+# Yaron Shahrabani <sh.yaron@gmail.com>, 2010, 2011.
+# Yosef Or Boczko <yoseforb@gmail.com>, 2013-2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-control-center.HEAD.he\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"PO-Revision-Date: 2020-09-29 03:13+0300\n"
+"Last-Translator: Yosef Or Boczko <yoseforb@gmail.com>\n"
+"Language-Team: Hebrew <yoseforb@gmail.com>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n>2||n==0) ? 1 : 2\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#: ../src/rpinters.c:93
+#, fuzzy
+msgctxt "tab"
+msgid "Printers"
+msgstr "מדפסות"
+
+#. Translators: %s is the printer name
+#: ../src/cc-printers-panel.c:725
+#, c-format
+msgid "Printer “%s” has been deleted"
+msgstr "מדפסת „%s” הוסרה"
+
+#: ../src/cc-printers-panel.c:780
+#, fuzzy
+msgid "Are you sure you want to remove this printer?"
+msgstr "האם אכן ברצונך להסיר את החשבון?"
+
+#. Translators: Addition of the new printer failed.
+#: ../src/cc-printers-panel.c:1046
+msgid "Failed to add new printer."
+msgstr "הוספת המדפסת החדשה נכשלה."
+
+#. Translators: The XML file containing user interface can not be loaded
+#: ../src/cc-printers-panel.c:1357
+#, c-format
+msgid "Could not load ui: %s"
+msgstr "לא ניתן לטעון את מנשק המשתמש: %s"
+
+#: ../src/cc-util.c:127
+msgid "Today"
+msgstr "היום"
+
+#: ../src/cc-util.c:131
+msgid "Yesterday"
+msgstr "אתמול"
+
+#. Translators: This is a date format string in the style of "Feb 24".
+#: ../src/cc-util.c:138
+msgid "%b %e"
+msgstr "%e ב%b"
+
+#. Translators: This is a date format string in the style of "Feb 24, 2013".
+#: ../src/cc-util.c:143
+msgid "%b %e, %Y"
+msgstr "%e ב%b, 2013"
+
+#: ../src/cc-util.c:165
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "שעה"
+msgstr[1] "%d שעות"
+msgstr[2] "שעתיים"
+
+#: ../src/cc-util.c:166
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "דקה"
+msgstr[1] "%d דקות"
+msgstr[2] "2 דקות"
+
+#: ../src/cc-util.c:167
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d שניות"
+msgstr[1] "%d שניות"
+msgstr[2] "%d שניות"
+
+#. 5 hours 2 minutes 12 seconds
+#: ../src/cc-util.c:174
+#, c-format
+msgctxt "hours minutes seconds"
+msgid "%s %s %s"
+msgstr "‏%s, ‏%s ו־%s"
+
+#. 5 hours 2 minutes
+#: ../src/cc-util.c:179
+#, c-format
+msgctxt "hours minutes"
+msgid "%s %s"
+msgstr "‏%s ו־%s"
+
+#. 5 hours
+#: ../src/cc-util.c:184
+#, c-format
+msgctxt "hours"
+msgid "%s"
+msgstr "%s"
+
+#. 2 minutes 12 seconds
+#: ../src/cc-util.c:192
+#, c-format
+msgctxt "minutes seconds"
+msgid "%s %s"
+msgstr "‏%s ו־%s"
+
+#. 2 minutes
+#: ../src/cc-util.c:197
+#, c-format
+msgctxt "minutes"
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/cc-util.c:208
+msgid "0 seconds"
+msgstr "0 שניות"
+
+#. Translators: This is the title of the dialog. %s is the printer name.
+#: ../src/pp-details-dialog.c:73 ../src/pp-details-dialog.c:371
+#, c-format
+msgid "%s Details"
+msgstr "פרטי %s"
+
+#: ../src/pp-details-dialog.c:120
+msgid "No suitable driver found"
+msgstr "לא נמצא מנהל התקן מתאים"
+
+#: ../src/pp-details-dialog.c:247
+msgid "Select PPD File"
+msgstr "בחירת קובץ PPD"
+
+#: ../src/pp-details-dialog.c:250 ../data/rpinters.ui.h:4
+#: ../src/new-printer-dialog.ui.h:3
+msgid "_Cancel"
+msgstr "_ביטול"
+
+#: ../src/pp-details-dialog.c:251
+msgid "_Open"
+msgstr "_פתיחה"
+
+#: ../src/pp-details-dialog.c:256
+msgid ""
+"PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
+"PPD.GZ)"
+msgstr ""
+"קובצי הגדרות מדפסת של PostScript ‏(‎*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *.PPD.GZ)"
+
+#. Translators: The found device is a JetDirect printer
+#: ../src/pp-host.c:478
+msgid "JetDirect Printer"
+msgstr "מדפסת JetDirect"
+
+#. Translators: The found device is a Line Printer Daemon printer
+#: ../src/pp-host.c:713
+msgid "LPD Printer"
+msgstr "מדפסת LPD"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:64 ../src/pp-ppd-option-widget.c:69
+msgid "One Sided"
+msgstr "חד־צדדי"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:66 ../src/pp-ppd-option-widget.c:71
+msgid "Long Edge (Standard)"
+msgstr "שול ארוך (רגיל)"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:68 ../src/pp-ppd-option-widget.c:73
+msgid "Short Edge (Flip)"
+msgstr "שול קצר (היפוך אנכי)"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:70
+msgid "Portrait"
+msgstr "לאורך"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:72
+msgid "Landscape"
+msgstr "לרוחב"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:74
+msgid "Reverse landscape"
+msgstr "לרוחב הפוך"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:76
+msgid "Reverse portrait"
+msgstr "לאורך הפוך"
+
+#. Translators: Job's state (job is waiting to be printed)
+#: ../src/pp-jobs-dialog.c:222
+msgctxt "print job"
+msgid "Pending"
+msgstr "ממתינה"
+
+#. Translators: Job's state (job is held for printing)
+#: ../src/pp-jobs-dialog.c:228
+msgctxt "print job"
+msgid "Paused"
+msgstr "מושהית"
+
+#. Translators: Job's state (job needs authentication to proceed further)
+#: ../src/pp-jobs-dialog.c:233
+msgctxt "print job"
+msgid "Authentication required"
+msgstr "נדרש אימות"
+
+#. Translators: Job's state (job is currently printing)
+#: ../src/pp-jobs-dialog.c:238
+msgctxt "print job"
+msgid "Processing"
+msgstr "מעבדת"
+
+#. Translators: Job's state (job has been stopped)
+#: ../src/pp-jobs-dialog.c:242
+msgctxt "print job"
+msgid "Stopped"
+msgstr "נעצרה"
+
+#. Translators: Job's state (job has been canceled)
+#: ../src/pp-jobs-dialog.c:246
+msgctxt "print job"
+msgid "Canceled"
+msgstr "בוטלה"
+
+#. Translators: Job's state (job has aborted due to error)
+#: ../src/pp-jobs-dialog.c:250
+msgctxt "print job"
+msgid "Aborted"
+msgstr "נפסקה"
+
+#. Translators: Job's state (job has completed successfully)
+#: ../src/pp-jobs-dialog.c:254
+msgctxt "print job"
+msgid "Completed"
+msgstr "הושלמה"
+
+#. Translators: This label shows how many jobs of this printer needs to be authenticated to be printed.
+#: ../src/pp-jobs-dialog.c:363
+#, c-format
+msgid "%u Job Requires Authentication"
+msgid_plural "%u Jobs Require Authentication"
+msgstr[0] "הדפסה אחת דורשת אימות"
+msgstr[1] "%u הדפסות דורשות אימות"
+msgstr[2] "%u הדפסות דורשות אימות"
+
+#. Translators: This is the printer name for which we are showing the active jobs
+#: ../src/pp-jobs-dialog.c:519
+#, c-format
+msgctxt "Printer jobs dialog title"
+msgid "%s — Active Jobs"
+msgstr "%s - הדפסות פעילות"
+
+#. Translators: The printer needs authentication info to print.
+#: ../src/pp-jobs-dialog.c:523
+#, c-format
+msgid "Enter credentials to print from %s."
+msgstr "יש להזין אישור על מנת להדפיס מ־%s."
+
+#. Translators: Name of job which makes printer to autoconfigure itself
+#: ../src/pp-new-printer.c:1210
+msgid "Automatic configuration"
+msgstr "תצורה אוטומטית"
+
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
+#. Translators: This is the title presented at top of the dialog.
+#: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
+#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+msgid "Add Printer"
+msgstr "הוספת מדפסת"
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (WID ("headerbar")), NULL);
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Unlock Print Server"));
+#: ../src/pp-new-printer-dialog.c:365
+msgid "Unlock Print Server"
+msgstr "שחרור שרת הדפסה"
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:369
+#, c-format
+msgid "Unlock %s."
+msgstr "שחרור %s."
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:373
+#, c-format
+msgid "Enter username and password to view printers on %s."
+msgstr "יש להזין שם משתמש וססמה להצגת מדפסות על %s."
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
+#: ../src/pp-new-printer-dialog.c:798
+#, fuzzy
+msgid "Add Printer - Searching for Printers"
+msgstr "חיפוש מדפסות"
+
+#. Translators: The found device is a printer connected via USB
+#: ../src/pp-new-printer-dialog.c:1616
+msgid "USB"
+msgstr "USB"
+
+#. Translators: The found device is a printer connected via serial port
+#: ../src/pp-new-printer-dialog.c:1621
+msgid "Serial Port"
+msgstr "יציאה טורית"
+
+#. Translators: The found device is a printer connected via parallel port
+#: ../src/pp-new-printer-dialog.c:1628
+msgid "Parallel Port"
+msgstr "יציאה מקבילית"
+
+#. Translators: The found device is a printer connected via Bluetooth
+#: ../src/pp-new-printer-dialog.c:1633
+msgid "Bluetooth"
+msgstr "בלוטות'"
+
+#. Translators: Location of found network printer (e.g. Kitchen, Reception)
+#: ../src/pp-new-printer-dialog.c:1670
+#, c-format
+msgid "Location: %s"
+msgstr "מיקום: %s"
+
+#. Translators: Network address of found printer
+#: ../src/pp-new-printer-dialog.c:1675
+#, c-format
+msgid "Address: %s"
+msgstr "כתובת: %s"
+
+#. Translators: This item is a server which needs authentication to show its printers
+#: ../src/pp-new-printer-dialog.c:1702
+msgid "Server requires authentication"
+msgstr "אימות _פנימי"
+
+#: ../src/pp-options-dialog.c:87
+msgid "Two Sided"
+msgstr "דו־צדדי"
+
+#: ../src/pp-options-dialog.c:88
+msgid "Paper Type"
+msgstr "סוג הנייר"
+
+#: ../src/pp-options-dialog.c:89
+msgid "Paper Source"
+msgstr "מקור הנייר"
+
+#: ../src/pp-options-dialog.c:90
+msgid "Output Tray"
+msgstr "מגש הפלט"
+
+#: ../src/pp-options-dialog.c:91
+msgctxt "printing option"
+msgid "Resolution"
+msgstr "הבחנה"
+
+#: ../src/pp-options-dialog.c:92
+msgid "GhostScript pre-filtering"
+msgstr "סינון קדם של GhostScript"
+
+#. Translators: This option sets number of pages printed on one sheet
+#: ../src/pp-options-dialog.c:530
+msgid "Pages per side"
+msgstr "עמודים לצד"
+
+#. Translators: This option sets whether to print on both sides of paper
+#: ../src/pp-options-dialog.c:542
+msgid "Two-sided"
+msgstr "דו־צדדי"
+
+#. Translators: This option sets orientation of print (portrait, landscape...)
+#: ../src/pp-options-dialog.c:554
+msgid "Orientation"
+msgstr "כיוון"
+
+#. Translators: "General" tab contains general printer options
+#: ../src/pp-options-dialog.c:651
+msgctxt "Printer Option Group"
+msgid "General"
+msgstr "כללי"
+
+#. Translators: "Page Setup" tab contains settings related to pages (page size, paper source, etc.)
+#: ../src/pp-options-dialog.c:654
+msgctxt "Printer Option Group"
+msgid "Page Setup"
+msgstr "הגדרת עמוד"
+
+#. Translators: "Installable Options" tab contains settings of presence of installed options (amount of RAM, duplex unit, etc.)
+#: ../src/pp-options-dialog.c:657
+msgctxt "Printer Option Group"
+msgid "Installable Options"
+msgstr "אפשרויות הניתנות להתקנה"
+
+#. Translators: "Job" tab contains settings for jobs
+#: ../src/pp-options-dialog.c:660
+msgctxt "Printer Option Group"
+msgid "Job"
+msgstr "משימה"
+
+#. Translators: "Image Quality" tab contains settings for quality of output print (e.g. resolution)
+#: ../src/pp-options-dialog.c:663
+msgctxt "Printer Option Group"
+msgid "Image Quality"
+msgstr "איכות התמונה"
+
+#. Translators: "Color" tab contains color settings (e.g. color printing)
+#: ../src/pp-options-dialog.c:666
+msgctxt "Printer Option Group"
+msgid "Color"
+msgstr "צבע"
+
+#. Translators: "Finishing" tab contains finishing settings (e.g. booklet printing)
+#: ../src/pp-options-dialog.c:669
+msgctxt "Printer Option Group"
+msgid "Finishing"
+msgstr "גימור"
+
+#. Translators: "Advanced" tab contains all others settings
+#: ../src/pp-options-dialog.c:672
+msgctxt "Printer Option Group"
+msgid "Advanced"
+msgstr "מתקדם"
+
+#. Translators: Name of job which makes printer to print test page
+#. Translators: This button triggers the printing of a test page.
+#: ../src/pp-options-dialog.c:863 ../src/pp-options-dialog.ui.h:2
+msgid "Test Page"
+msgstr "דף בדיקה"
+
+#. Translators: Name of job which makes printer to print test page
+#: ../src/pp-options-dialog.c:876
+msgid "Test page"
+msgstr "דף בדיקה"
+
+#. Translators: this is an option of "Paper Source"
+#: ../src/pp-ppd-option-widget.c:75 ../src/pp-ppd-option-widget.c:77
+#: ../src/pp-ppd-option-widget.c:85
+msgid "Auto Select"
+msgstr "בחירה אוטומטית"
+
+#. Translators: this is an option of "Paper Source"
+#. Translators: this is an option of "Resolution"
+#: ../src/pp-ppd-option-widget.c:79 ../src/pp-ppd-option-widget.c:81
+#: ../src/pp-ppd-option-widget.c:83 ../src/pp-ppd-option-widget.c:87
+msgid "Printer Default"
+msgstr "בררת המחדל של המדפסת"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:89
+msgid "Embed GhostScript fonts only"
+msgstr "הטמעת גופני GhostScript בלבד"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:91
+msgid "Convert to PS level 1"
+msgstr "המרה ל־PostScript רמה 1"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:93
+msgid "Convert to PS level 2"
+msgstr "המרה ל־PostScript רמה 2"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:95
+msgid "No pre-filtering"
+msgstr "אין סינון קדם"
+
+#. Translators: Name of column showing printer manufacturers
+#: ../src/pp-ppd-selection-dialog.c:233
+msgid "Manufacturer"
+msgstr "יצרן"
+
+#. Translators: Name of column showing printer drivers
+#: ../src/pp-ppd-selection-dialog.c:250 ../src/pp-details-dialog.ui.h:5
+msgid "Driver"
+msgstr "מנהל התקן"
+
+#: ../src/pp-printer-entry.c:427 ../src/pp-printer-entry.c:429
+#, fuzzy, c-format
+msgid "Could not rename printer : %s"
+msgstr "לא ניתן להעלות את קובץ ממשק המשתמש: %s"
+
+#: ../src/pp-printer-entry.c:427
+msgid "another printer already has that name."
+msgstr ""
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:612 ../src/printer-entry.ui.h:8
+msgid "No Active Jobs"
+msgstr "אין משימות פעילות"
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:617
+#, c-format
+msgid "%u Job"
+msgid_plural "%u Jobs"
+msgstr[0] "הדפסה אחת"
+msgstr[1] "%u הדפסות"
+msgstr[2] "%u הדפסות"
+
+#. Translators: Name of job which makes printer to clean its heads
+#: ../src/pp-printer-entry.c:735
+msgid "Clean print heads"
+msgstr "ניקוי ראשי ההדפסה"
+
+#. Translators: The printer is low on toner
+#: ../src/pp-printer-entry.c:786
+msgid "Low on toner"
+msgstr "הטונר כמעט נגמר"
+
+#. Translators: The printer has no toner left
+#: ../src/pp-printer-entry.c:788
+msgid "Out of toner"
+msgstr "נגמר הטונר"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:791
+msgid "Low on developer"
+msgstr "נותר מעט נייר צילום"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:794
+msgid "Out of developer"
+msgstr "נגמר נייר הצילום"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:796
+msgid "Low on a marker supply"
+msgstr "נותרה מעט אספקת צבע"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:798
+msgid "Out of a marker supply"
+msgstr "נגמרה אספקת הצבע"
+
+#. Translators: One or more covers on the printer are open
+#: ../src/pp-printer-entry.c:800
+msgid "Open cover"
+msgstr "הכיסוי פתוח"
+
+#. Translators: One or more doors on the printer are open
+#: ../src/pp-printer-entry.c:802
+msgid "Open door"
+msgstr "הדלת פתוחה"
+
+#. Translators: At least one input tray is low on media
+#: ../src/pp-printer-entry.c:804
+msgid "Low on paper"
+msgstr "נותר מעט נייר"
+
+#. Translators: At least one input tray is empty
+#: ../src/pp-printer-entry.c:806
+msgid "Out of paper"
+msgstr "נגמר הנייר"
+
+#. Translators: The printer is offline
+#: ../src/pp-printer-entry.c:808
+msgctxt "printer state"
+msgid "Offline"
+msgstr "מנותקת"
+
+#. Translators: Someone has stopped the Printer
+#. Translators: Printer's state (no jobs can be processed)
+#: ../src/pp-printer-entry.c:810 ../src/pp-printer-entry.c:953
+msgctxt "printer state"
+msgid "Stopped"
+msgstr "נעצרה"
+
+#. Translators: The printer marker supply waste receptacle is almost full
+#: ../src/pp-printer-entry.c:812
+msgid "Waste receptacle almost full"
+msgstr "כלי קיבול הפסולת כמעט מלא"
+
+#. Translators: The printer marker supply waste receptacle is full
+#: ../src/pp-printer-entry.c:814
+msgid "Waste receptacle full"
+msgstr "כלי קיבול הפסולת מלא"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:816
+msgid "The optical photo conductor is near end of life"
+msgstr "הפוטו מוליך האופטי עומד לסיים את חייו"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:818
+msgid "The optical photo conductor is no longer functioning"
+msgstr "הפוטו מוליך האופטי אינו מתפקד עוד"
+
+#. Translators: Printer's state (can start new job without waiting)
+#: ../src/pp-printer-entry.c:939
+msgctxt "printer state"
+msgid "Ready"
+msgstr "מוכנה"
+
+#. Translators: Printer's state (printer is ready but doesn't accept new jobs)
+#: ../src/pp-printer-entry.c:944
+msgctxt "printer state"
+msgid "Does not accept jobs"
+msgstr "אין עבודות"
+
+#. Translators: Printer's state (jobs are processing)
+#: ../src/pp-printer-entry.c:949
+msgctxt "printer state"
+msgid "Processing"
+msgstr "מעבדת"
+
+#: ../data/rpinters.ui.h:1
+msgid "Printers"
+msgstr "מדפסות"
+
+#: ../data/rpinters.ui.h:2 ../src/authentication-dialog.ui.h:2
+#: ../src/ppd-selection-dialog.ui.h:2
+msgid "Cancel"
+msgstr "ביטול"
+
+#: ../data/rpinters.ui.h:3
+#, fuzzy
+msgid "OK"
+msgstr "_אישור"
+
+#: ../data/rpinters.ui.h:5
+msgid "_OK"
+msgstr "_אישור"
+
+#: ../src/authentication-dialog.ui.h:1
+msgid " "
+msgstr " "
+
+#: ../src/authentication-dialog.ui.h:3
+msgid "Authenticate"
+msgstr "אימות"
+
+#. Translators: This is a username on a print server.
+#: ../src/authentication-dialog.ui.h:4 ../src/new-printer-dialog.ui.h:13
+#: ../src/pp-jobs-dialog.ui.h:4
+msgid "Username"
+msgstr "שם משתמש"
+
+#. Translators: This is a password needed for printing.
+#: ../src/authentication-dialog.ui.h:5 ../src/new-printer-dialog.ui.h:14
+#: ../src/pp-jobs-dialog.ui.h:6
+msgid "Password"
+msgstr "ססמה"
+
+#: ../src/authentication-dialog.ui.h:6 ../src/new-printer-dialog.ui.h:11
+msgid "Authentication Required"
+msgstr "נדרש אימות"
+
+#: ../src/cc-permission-infobar.ui.h:1
+msgid "Unlock…"
+msgstr "שחרור…"
+
+#: ../src/cc-permission-infobar.ui.h:2
+msgid "Unlock to Change Settings"
+msgstr "שחרור לשינוי הגדרות"
+
+#: ../src/cc-permission-infobar.ui.h:3
+msgid "Some settings must be unlocked before they can be changed."
+msgstr "יש לשחרר חלק מההגדרות בכדי לבצע בהן שינויים."
+
+#: ../src/new-printer-dialog.ui.h:4
+msgid "_Add"
+msgstr "הו_ספה"
+
+#. Translators: This buttons submits the credentials for the selected server.
+#: ../src/new-printer-dialog.ui.h:6
+msgid "_Unlock"
+msgstr "_שחרור"
+
+#. Translators: No printers were detected
+#: ../src/new-printer-dialog.ui.h:8
+msgid "No Printers Found"
+msgstr "לא נמצא מדפסות"
+
+#. Translators: The entered text should contain network address of a printer or a text which will filter found devices (their names and locations)
+#: ../src/new-printer-dialog.ui.h:10
+msgid "Enter a network address or search for a printer"
+msgstr "יש להזין כתובת רשת או חיפוש מדפסת"
+
+#: ../src/new-printer-dialog.ui.h:12
+msgid "Enter username and password to view printers on Print Server."
+msgstr "יש להזין שם משתמש וססמה להצגת מדפסות זמינות על שרת ההדפסה."
+
+#: ../src/pp-details-dialog.ui.h:1 ../src/pp-jobs-dialog.ui.h:11
+#: ../src/pp-options-dialog.ui.h:3
+msgid "Close"
+msgstr "סגירה"
+
+#: ../src/pp-details-dialog.ui.h:2
+msgid "Name"
+msgstr "שם"
+
+#: ../src/pp-details-dialog.ui.h:3 ../src/printer-entry.ui.h:11
+msgid "Location"
+msgstr "מיקום"
+
+#: ../src/pp-details-dialog.ui.h:4
+msgid "Address"
+msgstr "כתובת"
+
+#: ../src/pp-details-dialog.ui.h:6
+msgid "Searching for preferred drivers…"
+msgstr "מתבצע חיפוש אחר מנהלי ההתקנים המועדפים…"
+
+#: ../src/pp-details-dialog.ui.h:7
+msgid "Search for Drivers"
+msgstr "חיפוש התקנים"
+
+#: ../src/pp-details-dialog.ui.h:8
+msgid "Select from Database…"
+msgstr "בחירה ממסד הנתונים…"
+
+#: ../src/pp-details-dialog.ui.h:9
+msgid "Install PPD File…"
+msgstr "התקנת קובץ PPD…"
+
+#: ../src/ppd-selection-dialog.ui.h:1
+msgid "Select Printer Driver"
+msgstr "בחירת מנהל התקן למדפסת"
+
+#: ../src/ppd-selection-dialog.ui.h:3
+msgid "Select"
+msgstr "בחירה"
+
+#: ../src/ppd-selection-dialog.ui.h:4
+msgid "Loading drivers database…"
+msgstr "מסד נתוני מנהלי ההתקנים נטען…"
+
+#. Translators: This is a windows domain used with SMB protocol.
+#: ../src/pp-jobs-dialog.ui.h:2
+msgid "Domain"
+msgstr "מתחם"
+
+#. Translators: This button authenticates all print jobs and send them for printing.
+#: ../src/pp-jobs-dialog.ui.h:8
+msgid "A_uthenticate"
+msgstr "אי_מות"
+
+#. Translators: this action removes (purges) all the listed jobs from the list.
+#: ../src/pp-jobs-dialog.ui.h:10
+msgid "Clear All"
+msgstr "ניקוי הכול"
+
+#. Translators: This button pop up authentication dialog for print jobs which need credentials.
+#: ../src/pp-jobs-dialog.ui.h:13
+msgid "_Authenticate"
+msgstr "_אימות"
+
+#. Translators: this label describes the dialog empty state, with no jobs listed.
+#: ../src/pp-jobs-dialog.ui.h:15
+msgid "No Active Printer Jobs"
+msgstr "אין משימת הדפסה פעילה"
+
+#: ../src/printer-entry.ui.h:1
+msgid "Printing Options"
+msgstr "אפשרויות הדפסה"
+
+#: ../src/printer-entry.ui.h:2
+msgid "Printer Details"
+msgstr "פרטי מדפסת"
+
+#. Set this printer as default
+#: ../src/printer-entry.ui.h:4
+msgid "Use Printer by Default"
+msgstr "הגדרת המדפסת כבררת מחדל"
+
+#. Translators: This button executes command which cleans print heads of the printer.
+#: ../src/printer-entry.ui.h:6
+msgid "Clean Print Heads"
+msgstr "ניקוי ראשי ההדפסה"
+
+#: ../src/printer-entry.ui.h:7
+msgid "Remove Printer"
+msgstr "הסרת מדפסת"
+
+#: ../src/printer-entry.ui.h:9
+msgid "Options"
+msgstr "אפשרויות"
+
+#: ../src/printer-entry.ui.h:10
+msgid "Model"
+msgstr "דגם"
+
+#: ../src/printer-entry.ui.h:12
+msgid "Ink Level"
+msgstr "רמת הדיו"
+
+#. Translators: This is the message which follows the printer error.
+#: ../src/printer-entry.ui.h:14
+msgid "Please restart when the problem is resolved."
+msgstr "יש להפעיל מחדש כאשר הבעיה נפתרת."
+
+#. Translators: This is the button which restarts the printer.
+#: ../src/printer-entry.ui.h:16
+msgid "Restart"
+msgstr "הפעלה מחדש"
+
+#. Translators: This is the button which allows undoing the removal of the printer.
+#: ../src/printers.ui.h:2
+msgid "Undo"
+msgstr "ביטול"
+
+#: ../src/printers.ui.h:3
+msgid "No printers"
+msgstr "אין מדפסות בנמצא"
+
+#. Translators: The CUPS server is not running (we can not connect to it).
+#: ../src/printers.ui.h:5
+#, fuzzy
+msgid ""
+"Sorry! The system printing service\n"
+"        doesn’t seem to be available."
+msgstr ""
+"כפי הנראה, שירותי ההדפסה של המערכת\n"
+"אינם זמינים, עמך הסליחה!"
+
+#. Translators: This button adds new printer.
+#: ../src/printers.ui.h:8
+#, fuzzy
+msgid "Add Printer…"
+msgstr "הוספת מדפסת…"
+

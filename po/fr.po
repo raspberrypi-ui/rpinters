@@ -1,0 +1,874 @@
+# French translation of gnome-control-center.
+# Copyright (C) 1998-2020 Free Software Foundation, Inc.
+# This file is under the same license as the gnome-control-center package.
+#
+# Vincent Renardias <vincent@ldsol.com>, 1998-1999.
+# Fabrice Bellet <fabrice.bellet@imag.fr>, 1999.
+# Thibaut Cousin <thibaut.cousin@clermont.in2p3.fr>, 1999.
+# Joaquim Fellmann <joaquim@hrnet.fr>, 2000.
+# Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+# Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+# Mathieu Gauthier-Pilote <mathieu.g.p@videotron.ca>, 2002.
+# Sebastien Oustric <sebastien.oustric@laposte.net>, 2002.
+# Simon Manlay <simon@solintech.fr>, 2005.
+# Vincent Untz <vuntz@gnome.org>, 2005.
+# Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+# Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+# Benoît Dejean <benoit@placenet.org>, 2006.
+# Samuel Mutel <samuel.mutel@free.fr>, 2006.
+# Damien Durand <splinux@fedoraproject.org>, 2006.
+# Marc Lorber <linux-lorber@club-internet.fr>, 2006.
+# Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+# Christophe Benz <christophe.benz@gmail.com>, 2007.
+# Bruno Brouard <annoa.b@gmail.com>, 2008-2012.
+# Laurent Coudeur <laurentc@iol.ie>, 2009, 2010.
+# Gérard Baylard <Geodebay@gmail.com>, 2011.
+# Grawok <grawok@gmx.com>, 2012.
+# Alain Lojewski <allomervan@gmail.com>, 2011-2018.
+# Julien Hardelin <jhardlin@orange.fr>, 2013.
+# Alexandre Franke <alexandre.franke@gmail.com>, 2013-2018.
+# Guillaume Bernard <associations@guillaume-bernard.fr>, 2015-2018.
+# Erwan Georget <dremor@dremor.info>, 2015.
+# Claude Paroz <claude@2xlibre.net>, 2007-2020.
+# Charles Monzat <charles.monzat@free.fr>, 2016-2019.
+# Thibault Martin <mail@thibaultmart.in>, 2020.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-control-center HEAD\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"PO-Revision-Date: 2020-09-18 12:46+0200\n"
+"Last-Translator: Thibault Martin <mail@thibaultmart.in>\n"
+"Language-Team: French <gnomefr@traduc.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Generator: Gtranslator 3.36.0\n"
+
+#: ../src/rpinters.c:93
+#, fuzzy
+msgctxt "tab"
+msgid "Printers"
+msgstr "Imprimantes"
+
+#. Translators: %s is the printer name
+#: ../src/cc-printers-panel.c:725
+#, c-format
+msgid "Printer “%s” has been deleted"
+msgstr "L’imprimante « %s » a été supprimée"
+
+#: ../src/cc-printers-panel.c:780
+#, fuzzy
+msgid "Are you sure you want to remove this printer?"
+msgstr "Voulez-vous vraiment révoquer le compte distant de %s ?"
+
+#. Translators: Addition of the new printer failed.
+#: ../src/cc-printers-panel.c:1046
+msgid "Failed to add new printer."
+msgstr "L’ajout de la nouvelle imprimante a échoué."
+
+#. Translators: The XML file containing user interface can not be loaded
+#: ../src/cc-printers-panel.c:1357
+#, c-format
+msgid "Could not load ui: %s"
+msgstr "Impossible de charger l’interface utilisateur : %s"
+
+#: ../src/cc-util.c:127
+msgid "Today"
+msgstr "Aujourd’hui"
+
+#: ../src/cc-util.c:131
+msgid "Yesterday"
+msgstr "Hier"
+
+#. Translators: This is a date format string in the style of "Feb 24".
+#: ../src/cc-util.c:138
+msgid "%b %e"
+msgstr "%b %e"
+
+#. Translators: This is a date format string in the style of "Feb 24, 2013".
+#: ../src/cc-util.c:143
+msgid "%b %e, %Y"
+msgstr "%b %e, %Y"
+
+#: ../src/cc-util.c:165
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d heure"
+msgstr[1] "%d heures"
+
+#: ../src/cc-util.c:166
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minute"
+msgstr[1] "%d minutes"
+
+#: ../src/cc-util.c:167
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d seconde"
+msgstr[1] "%d secondes"
+
+#. 5 hours 2 minutes 12 seconds
+#: ../src/cc-util.c:174
+#, c-format
+msgctxt "hours minutes seconds"
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. 5 hours 2 minutes
+#: ../src/cc-util.c:179
+#, c-format
+msgctxt "hours minutes"
+msgid "%s %s"
+msgstr "%s %s"
+
+#. 5 hours
+#: ../src/cc-util.c:184
+#, c-format
+msgctxt "hours"
+msgid "%s"
+msgstr "%s"
+
+#. 2 minutes 12 seconds
+#: ../src/cc-util.c:192
+#, c-format
+msgctxt "minutes seconds"
+msgid "%s %s"
+msgstr "%s %s"
+
+#. 2 minutes
+#: ../src/cc-util.c:197
+#, c-format
+msgctxt "minutes"
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/cc-util.c:208
+msgid "0 seconds"
+msgstr "0 seconde"
+
+#. Translators: This is the title of the dialog. %s is the printer name.
+#: ../src/pp-details-dialog.c:73 ../src/pp-details-dialog.c:371
+#, c-format
+msgid "%s Details"
+msgstr "Informations sur %s"
+
+#: ../src/pp-details-dialog.c:120
+msgid "No suitable driver found"
+msgstr "Aucun pilote adéquat trouvé"
+
+#: ../src/pp-details-dialog.c:247
+msgid "Select PPD File"
+msgstr "Sélectionnez un fichier PPD"
+
+#: ../src/pp-details-dialog.c:250 ../data/rpinters.ui.h:4
+#: ../src/new-printer-dialog.ui.h:3
+msgid "_Cancel"
+msgstr "A_nnuler"
+
+#: ../src/pp-details-dialog.c:251
+msgid "_Open"
+msgstr "_Ouvrir"
+
+#: ../src/pp-details-dialog.c:256
+msgid ""
+"PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
+"PPD.GZ)"
+msgstr ""
+"Fichiers de description PostScript de l’imprimante (*.ppd, *.PPD, *.ppd.gz, "
+"*.PPD.gz, *.PPD.GZ)"
+
+#. Translators: The found device is a JetDirect printer
+#: ../src/pp-host.c:478
+msgid "JetDirect Printer"
+msgstr "Imprimante JetDirect"
+
+#. Translators: The found device is a Line Printer Daemon printer
+#: ../src/pp-host.c:713
+msgid "LPD Printer"
+msgstr "Imprimante LPD"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:64 ../src/pp-ppd-option-widget.c:69
+msgid "One Sided"
+msgstr "Recto"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:66 ../src/pp-ppd-option-widget.c:71
+msgid "Long Edge (Standard)"
+msgstr "Bord long (standard)"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:68 ../src/pp-ppd-option-widget.c:73
+msgid "Short Edge (Flip)"
+msgstr "Bord court (retourné)"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:70
+msgid "Portrait"
+msgstr "Portrait"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:72
+msgid "Landscape"
+msgstr "Paysage"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:74
+msgid "Reverse landscape"
+msgstr "Paysage inversé"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:76
+msgid "Reverse portrait"
+msgstr "Portrait inversé"
+
+#. Translators: Job's state (job is waiting to be printed)
+#: ../src/pp-jobs-dialog.c:222
+msgctxt "print job"
+msgid "Pending"
+msgstr "En attente"
+
+#. Translators: Job's state (job is held for printing)
+#: ../src/pp-jobs-dialog.c:228
+msgctxt "print job"
+msgid "Paused"
+msgstr "En pause"
+
+#. Translators: Job's state (job needs authentication to proceed further)
+#: ../src/pp-jobs-dialog.c:233
+msgctxt "print job"
+msgid "Authentication required"
+msgstr "Authentification requise"
+
+#. Translators: Job's state (job is currently printing)
+#: ../src/pp-jobs-dialog.c:238
+msgctxt "print job"
+msgid "Processing"
+msgstr "Traitement en cours"
+
+#. Translators: Job's state (job has been stopped)
+#: ../src/pp-jobs-dialog.c:242
+msgctxt "print job"
+msgid "Stopped"
+msgstr "Arrêtée"
+
+#. Translators: Job's state (job has been canceled)
+#: ../src/pp-jobs-dialog.c:246
+msgctxt "print job"
+msgid "Canceled"
+msgstr "Interrompue"
+
+#. Translators: Job's state (job has aborted due to error)
+#: ../src/pp-jobs-dialog.c:250
+msgctxt "print job"
+msgid "Aborted"
+msgstr "Annulée"
+
+#. Translators: Job's state (job has completed successfully)
+#: ../src/pp-jobs-dialog.c:254
+msgctxt "print job"
+msgid "Completed"
+msgstr "Terminée"
+
+#. Translators: This label shows how many jobs of this printer needs to be authenticated to be printed.
+#: ../src/pp-jobs-dialog.c:363
+#, c-format
+msgid "%u Job Requires Authentication"
+msgid_plural "%u Jobs Require Authentication"
+msgstr[0] "%u tâche nécessite une authentification"
+msgstr[1] "%u tâches nécessitent une authentification"
+
+#. Translators: This is the printer name for which we are showing the active jobs
+#: ../src/pp-jobs-dialog.c:519
+#, c-format
+msgctxt "Printer jobs dialog title"
+msgid "%s — Active Jobs"
+msgstr "%s - tâches d’impression actives"
+
+#. Translators: The printer needs authentication info to print.
+#: ../src/pp-jobs-dialog.c:523
+#, c-format
+msgid "Enter credentials to print from %s."
+msgstr ""
+"Saisissez vos informations d’authentification pour imprimer à partir de %s."
+
+#. Translators: Name of job which makes printer to autoconfigure itself
+#: ../src/pp-new-printer.c:1210
+#, fuzzy
+msgid "Automatic configuration"
+msgstr "Connexion a_utomatique"
+
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
+#. Translators: This is the title presented at top of the dialog.
+#: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
+#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+msgid "Add Printer"
+msgstr "Ajouter une imprimante"
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (WID ("headerbar")), NULL);
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Unlock Print Server"));
+#: ../src/pp-new-printer-dialog.c:365
+msgid "Unlock Print Server"
+msgstr "Déverrouiller le serveur d’imprimantes"
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:369
+#, c-format
+msgid "Unlock %s."
+msgstr "Déverrouiller %s."
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:373
+#, c-format
+msgid "Enter username and password to view printers on %s."
+msgstr ""
+"Saisissez votre nom d’utilisateur et votre mot de passe pour afficher les "
+"imprimantes sur %s."
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
+#: ../src/pp-new-printer-dialog.c:798
+#, fuzzy
+msgid "Add Printer - Searching for Printers"
+msgstr "Recherche d’imprimantes"
+
+#. Translators: The found device is a printer connected via USB
+#: ../src/pp-new-printer-dialog.c:1616
+msgid "USB"
+msgstr "USB"
+
+#. Translators: The found device is a printer connected via serial port
+#: ../src/pp-new-printer-dialog.c:1621
+msgid "Serial Port"
+msgstr "Port série"
+
+#. Translators: The found device is a printer connected via parallel port
+#: ../src/pp-new-printer-dialog.c:1628
+msgid "Parallel Port"
+msgstr "Port parallèle"
+
+#. Translators: The found device is a printer connected via Bluetooth
+#: ../src/pp-new-printer-dialog.c:1633
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#. Translators: Location of found network printer (e.g. Kitchen, Reception)
+#: ../src/pp-new-printer-dialog.c:1670
+#, c-format
+msgid "Location: %s"
+msgstr "Emplacement : %s"
+
+#. Translators: Network address of found printer
+#: ../src/pp-new-printer-dialog.c:1675
+#, c-format
+msgid "Address: %s"
+msgstr "Adresse : %s"
+
+#. Translators: This item is a server which needs authentication to show its printers
+#: ../src/pp-new-printer-dialog.c:1702
+msgid "Server requires authentication"
+msgstr "Le serveur nécessite une authentification"
+
+#: ../src/pp-options-dialog.c:87
+msgid "Two Sided"
+msgstr "Recto verso"
+
+#: ../src/pp-options-dialog.c:88
+msgid "Paper Type"
+msgstr "Type de papier"
+
+#: ../src/pp-options-dialog.c:89
+msgid "Paper Source"
+msgstr "Source du papier"
+
+#: ../src/pp-options-dialog.c:90
+msgid "Output Tray"
+msgstr "Bac de sortie"
+
+#: ../src/pp-options-dialog.c:91
+msgctxt "printing option"
+msgid "Resolution"
+msgstr "Résolution"
+
+#: ../src/pp-options-dialog.c:92
+msgid "GhostScript pre-filtering"
+msgstr "Pré-filtrage GhostScript"
+
+#. Translators: This option sets number of pages printed on one sheet
+#: ../src/pp-options-dialog.c:530
+msgid "Pages per side"
+msgstr "Pages par côté"
+
+#. Translators: This option sets whether to print on both sides of paper
+#: ../src/pp-options-dialog.c:542
+msgid "Two-sided"
+msgstr "Recto-verso"
+
+#. Translators: This option sets orientation of print (portrait, landscape...)
+#: ../src/pp-options-dialog.c:554
+msgid "Orientation"
+msgstr "Orientation"
+
+#. Translators: "General" tab contains general printer options
+#: ../src/pp-options-dialog.c:651
+msgctxt "Printer Option Group"
+msgid "General"
+msgstr "Général"
+
+#. Translators: "Page Setup" tab contains settings related to pages (page size, paper source, etc.)
+#: ../src/pp-options-dialog.c:654
+msgctxt "Printer Option Group"
+msgid "Page Setup"
+msgstr "Mise en page"
+
+#. Translators: "Installable Options" tab contains settings of presence of installed options (amount of RAM, duplex unit, etc.)
+#: ../src/pp-options-dialog.c:657
+msgctxt "Printer Option Group"
+msgid "Installable Options"
+msgstr "Options installables"
+
+#. Translators: "Job" tab contains settings for jobs
+#: ../src/pp-options-dialog.c:660
+msgctxt "Printer Option Group"
+msgid "Job"
+msgstr "Tâche"
+
+#. Translators: "Image Quality" tab contains settings for quality of output print (e.g. resolution)
+#: ../src/pp-options-dialog.c:663
+msgctxt "Printer Option Group"
+msgid "Image Quality"
+msgstr "Qualité de l’image"
+
+#. Translators: "Color" tab contains color settings (e.g. color printing)
+#: ../src/pp-options-dialog.c:666
+msgctxt "Printer Option Group"
+msgid "Color"
+msgstr "Couleur"
+
+#. Translators: "Finishing" tab contains finishing settings (e.g. booklet printing)
+#: ../src/pp-options-dialog.c:669
+msgctxt "Printer Option Group"
+msgid "Finishing"
+msgstr "Finition"
+
+#. Translators: "Advanced" tab contains all others settings
+#: ../src/pp-options-dialog.c:672
+msgctxt "Printer Option Group"
+msgid "Advanced"
+msgstr "Avancé"
+
+#. Translators: Name of job which makes printer to print test page
+#. Translators: This button triggers the printing of a test page.
+#: ../src/pp-options-dialog.c:863 ../src/pp-options-dialog.ui.h:2
+msgid "Test Page"
+msgstr "Page de test"
+
+#. Translators: Name of job which makes printer to print test page
+#: ../src/pp-options-dialog.c:876
+msgid "Test page"
+msgstr "Page de test"
+
+#. Translators: this is an option of "Paper Source"
+#: ../src/pp-ppd-option-widget.c:75 ../src/pp-ppd-option-widget.c:77
+#: ../src/pp-ppd-option-widget.c:85
+msgid "Auto Select"
+msgstr "Sélection automatique"
+
+#. Translators: this is an option of "Paper Source"
+#. Translators: this is an option of "Resolution"
+#: ../src/pp-ppd-option-widget.c:79 ../src/pp-ppd-option-widget.c:81
+#: ../src/pp-ppd-option-widget.c:83 ../src/pp-ppd-option-widget.c:87
+msgid "Printer Default"
+msgstr "Option par défaut de l’imprimante"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:89
+msgid "Embed GhostScript fonts only"
+msgstr "Incorporer seulement les polices GhostScript"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:91
+msgid "Convert to PS level 1"
+msgstr "Convertir en PS de niveau 1"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:93
+msgid "Convert to PS level 2"
+msgstr "Convertir en PS de niveau 2"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:95
+msgid "No pre-filtering"
+msgstr "Aucun pré-filtrage"
+
+#. Translators: Name of column showing printer manufacturers
+#: ../src/pp-ppd-selection-dialog.c:233
+msgid "Manufacturer"
+msgstr "Fabricant"
+
+#. Translators: Name of column showing printer drivers
+#: ../src/pp-ppd-selection-dialog.c:250 ../src/pp-details-dialog.ui.h:5
+msgid "Driver"
+msgstr "Pilote"
+
+#: ../src/pp-printer-entry.c:427 ../src/pp-printer-entry.c:429
+#, fuzzy, c-format
+msgid "Could not rename printer : %s"
+msgstr "Impossible de charger l’interface utilisateur : %s"
+
+#: ../src/pp-printer-entry.c:427
+msgid "another printer already has that name."
+msgstr ""
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:612 ../src/printer-entry.ui.h:8
+msgid "No Active Jobs"
+msgstr "Aucune tâche d’impression active"
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:617
+#, c-format
+msgid "%u Job"
+msgid_plural "%u Jobs"
+msgstr[0] "%u tâche"
+msgstr[1] "%u tâches"
+
+#. Translators: Name of job which makes printer to clean its heads
+#: ../src/pp-printer-entry.c:735
+msgid "Clean print heads"
+msgstr "Nettoyage des têtes d’impression"
+
+#. Translators: The printer is low on toner
+#: ../src/pp-printer-entry.c:786
+msgid "Low on toner"
+msgstr "Toner pratiquement épuisé"
+
+#. Translators: The printer has no toner left
+#: ../src/pp-printer-entry.c:788
+msgid "Out of toner"
+msgstr "Plus de toner"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:791
+msgid "Low on developer"
+msgstr "Révélateur pratiquement épuisé"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:794
+msgid "Out of developer"
+msgstr "Plus de révélateur"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:796
+msgid "Low on a marker supply"
+msgstr "Cartouche de couleur pratiquement vide"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:798
+msgid "Out of a marker supply"
+msgstr "Cartouche de couleur vide"
+
+#. Translators: One or more covers on the printer are open
+#: ../src/pp-printer-entry.c:800
+msgid "Open cover"
+msgstr "Couvercle ouvert"
+
+#. Translators: One or more doors on the printer are open
+#: ../src/pp-printer-entry.c:802
+msgid "Open door"
+msgstr "Porte ouverte"
+
+#. Translators: At least one input tray is low on media
+#: ../src/pp-printer-entry.c:804
+msgid "Low on paper"
+msgstr "Pratiquement plus de papier"
+
+#. Translators: At least one input tray is empty
+#: ../src/pp-printer-entry.c:806
+msgid "Out of paper"
+msgstr "Plus de papier"
+
+#. Translators: The printer is offline
+#: ../src/pp-printer-entry.c:808
+msgctxt "printer state"
+msgid "Offline"
+msgstr "Hors ligne"
+
+#. Translators: Someone has stopped the Printer
+#. Translators: Printer's state (no jobs can be processed)
+#: ../src/pp-printer-entry.c:810 ../src/pp-printer-entry.c:953
+msgctxt "printer state"
+msgid "Stopped"
+msgstr "Arrêtée"
+
+#. Translators: The printer marker supply waste receptacle is almost full
+#: ../src/pp-printer-entry.c:812
+msgid "Waste receptacle almost full"
+msgstr "Récipient à déchets pratiquement plein"
+
+#. Translators: The printer marker supply waste receptacle is full
+#: ../src/pp-printer-entry.c:814
+msgid "Waste receptacle full"
+msgstr "Récipient à déchets plein"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:816
+msgid "The optical photo conductor is near end of life"
+msgstr "Le photo-conducteur optique est pratiquement en fin de vie"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:818
+msgid "The optical photo conductor is no longer functioning"
+msgstr "Le photo-conducteur optique n’est plus en état"
+
+#. Translators: Printer's state (can start new job without waiting)
+#: ../src/pp-printer-entry.c:939
+msgctxt "printer state"
+msgid "Ready"
+msgstr "Prête"
+
+#. Translators: Printer's state (printer is ready but doesn't accept new jobs)
+#: ../src/pp-printer-entry.c:944
+msgctxt "printer state"
+msgid "Does not accept jobs"
+msgstr "N’accepte plus de tâche supplémentaire"
+
+#. Translators: Printer's state (jobs are processing)
+#: ../src/pp-printer-entry.c:949
+msgctxt "printer state"
+msgid "Processing"
+msgstr "Traitement en cours"
+
+#: ../data/rpinters.ui.h:1
+msgid "Printers"
+msgstr "Imprimantes"
+
+#: ../data/rpinters.ui.h:2 ../src/authentication-dialog.ui.h:2
+#: ../src/ppd-selection-dialog.ui.h:2
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ../data/rpinters.ui.h:3
+#, fuzzy
+msgid "OK"
+msgstr "_Valider"
+
+#: ../data/rpinters.ui.h:5
+msgid "_OK"
+msgstr "_Valider"
+
+#: ../src/authentication-dialog.ui.h:1
+msgid " "
+msgstr " "
+
+#: ../src/authentication-dialog.ui.h:3
+msgid "Authenticate"
+msgstr "Authentification"
+
+#. Translators: This is a username on a print server.
+#: ../src/authentication-dialog.ui.h:4 ../src/new-printer-dialog.ui.h:13
+#: ../src/pp-jobs-dialog.ui.h:4
+msgid "Username"
+msgstr "Nom d’utilisateur"
+
+#. Translators: This is a password needed for printing.
+#: ../src/authentication-dialog.ui.h:5 ../src/new-printer-dialog.ui.h:14
+#: ../src/pp-jobs-dialog.ui.h:6
+msgid "Password"
+msgstr "Mot de passe"
+
+#: ../src/authentication-dialog.ui.h:6 ../src/new-printer-dialog.ui.h:11
+msgid "Authentication Required"
+msgstr "Authentification requise"
+
+#: ../src/cc-permission-infobar.ui.h:1
+msgid "Unlock…"
+msgstr "Déverrouiller…"
+
+#: ../src/cc-permission-infobar.ui.h:2
+msgid "Unlock to Change Settings"
+msgstr "Déverrouiller pour modifier les paramètres"
+
+#: ../src/cc-permission-infobar.ui.h:3
+msgid "Some settings must be unlocked before they can be changed."
+msgstr ""
+"Certains paramètres doivent être déverrouillés avant de pouvoir être "
+"modifiés."
+
+#: ../src/new-printer-dialog.ui.h:4
+msgid "_Add"
+msgstr "_Ajouter"
+
+#. Translators: This buttons submits the credentials for the selected server.
+#: ../src/new-printer-dialog.ui.h:6
+msgid "_Unlock"
+msgstr "_Déverrouiller"
+
+#. Translators: No printers were detected
+#: ../src/new-printer-dialog.ui.h:8
+msgid "No Printers Found"
+msgstr "Aucune imprimante trouvée"
+
+#. Translators: The entered text should contain network address of a printer or a text which will filter found devices (their names and locations)
+#: ../src/new-printer-dialog.ui.h:10
+msgid "Enter a network address or search for a printer"
+msgstr "Saisissez l’adresse d’un réseau ou recherchez une imprimante"
+
+#: ../src/new-printer-dialog.ui.h:12
+msgid "Enter username and password to view printers on Print Server."
+msgstr ""
+"Saisissez votre nom d’utilisateur et votre mot de passe pour afficher les "
+"imprimantes sur le serveur."
+
+#: ../src/pp-details-dialog.ui.h:1 ../src/pp-jobs-dialog.ui.h:11
+#: ../src/pp-options-dialog.ui.h:3
+#, fuzzy
+msgid "Close"
+msgstr "_Fermer"
+
+#: ../src/pp-details-dialog.ui.h:2
+msgid "Name"
+msgstr "Nom"
+
+#: ../src/pp-details-dialog.ui.h:3 ../src/printer-entry.ui.h:11
+msgid "Location"
+msgstr "Emplacement"
+
+#: ../src/pp-details-dialog.ui.h:4
+msgid "Address"
+msgstr "Adresse"
+
+#: ../src/pp-details-dialog.ui.h:6
+msgid "Searching for preferred drivers…"
+msgstr "Recherche des pilotes préférés…"
+
+#: ../src/pp-details-dialog.ui.h:7
+msgid "Search for Drivers"
+msgstr "Rechercher des pilotes"
+
+#: ../src/pp-details-dialog.ui.h:8
+msgid "Select from Database…"
+msgstr "Sélectionner à partir de la base de données…"
+
+#: ../src/pp-details-dialog.ui.h:9
+msgid "Install PPD File…"
+msgstr "Installer le fichier PPD…"
+
+#: ../src/ppd-selection-dialog.ui.h:1
+msgid "Select Printer Driver"
+msgstr "Sélectionner un pilote d’imprimante"
+
+#: ../src/ppd-selection-dialog.ui.h:3
+msgid "Select"
+msgstr "Sélectionner"
+
+#: ../src/ppd-selection-dialog.ui.h:4
+msgid "Loading drivers database…"
+msgstr "Chargement de la base de données des pilotes…"
+
+#. Translators: This is a windows domain used with SMB protocol.
+#: ../src/pp-jobs-dialog.ui.h:2
+msgid "Domain"
+msgstr "Domaine"
+
+#. Translators: This button authenticates all print jobs and send them for printing.
+#: ../src/pp-jobs-dialog.ui.h:8
+msgid "A_uthenticate"
+msgstr "A_uthentification"
+
+#. Translators: this action removes (purges) all the listed jobs from the list.
+#: ../src/pp-jobs-dialog.ui.h:10
+msgid "Clear All"
+msgstr "Tout effacer"
+
+#. Translators: This button pop up authentication dialog for print jobs which need credentials.
+#: ../src/pp-jobs-dialog.ui.h:13
+msgid "_Authenticate"
+msgstr "_Authentification"
+
+#. Translators: this label describes the dialog empty state, with no jobs listed.
+#: ../src/pp-jobs-dialog.ui.h:15
+msgid "No Active Printer Jobs"
+msgstr "Aucune tâche d’impression active"
+
+#: ../src/printer-entry.ui.h:1
+msgid "Printing Options"
+msgstr "Options d’impression"
+
+#: ../src/printer-entry.ui.h:2
+msgid "Printer Details"
+msgstr "Informations sur l’imprimante"
+
+#. Set this printer as default
+#: ../src/printer-entry.ui.h:4
+msgid "Use Printer by Default"
+msgstr "Utiliser comme imprimante par défaut"
+
+#. Translators: This button executes command which cleans print heads of the printer.
+#: ../src/printer-entry.ui.h:6
+msgid "Clean Print Heads"
+msgstr "Nettoyer les têtes d’impression"
+
+#: ../src/printer-entry.ui.h:7
+msgid "Remove Printer"
+msgstr "Supprimer l’imprimante"
+
+#: ../src/printer-entry.ui.h:9
+#, fuzzy
+msgid "Options"
+msgstr "Options…"
+
+#: ../src/printer-entry.ui.h:10
+msgid "Model"
+msgstr "Modèle"
+
+#: ../src/printer-entry.ui.h:12
+msgid "Ink Level"
+msgstr "Niveau d’encre"
+
+#. Translators: This is the message which follows the printer error.
+#: ../src/printer-entry.ui.h:14
+msgid "Please restart when the problem is resolved."
+msgstr "Veuillez redémarrer après résolution du problème."
+
+#. Translators: This is the button which restarts the printer.
+#: ../src/printer-entry.ui.h:16
+msgid "Restart"
+msgstr "Redémarrer"
+
+#. Translators: This is the button which allows undoing the removal of the printer.
+#: ../src/printers.ui.h:2
+msgid "Undo"
+msgstr "Annuler"
+
+#: ../src/printers.ui.h:3
+msgid "No printers"
+msgstr "Aucune imprimante"
+
+#. Translators: The CUPS server is not running (we can not connect to it).
+#: ../src/printers.ui.h:5
+#, fuzzy
+msgid ""
+"Sorry! The system printing service\n"
+"        doesn’t seem to be available."
+msgstr ""
+"Désolé ! Le service d’impression du système\n"
+"ne semble pas être disponible."
+
+#. Translators: This button adds new printer.
+#: ../src/printers.ui.h:8
+#, fuzzy
+msgid "Add Printer…"
+msgstr "Ajouter une imprimante…"
+

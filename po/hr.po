@@ -1,0 +1,847 @@
+# Translation of gnome-control-center 2.0 for Croatiann
+# Copyright (C) Croatiann team
+# Translators: Automatski Prijevod <>,Danijel Studen <dstuden@vuka.hr>,Denis Lackovic <delacko@fly.srk.fer.hr>,Robert Sedak <robert.sedak@sk.t-com.hr>,Vedran Vyroubal <vedran.vyroubal@inet.hr>,Miroslav Sabljić <civija@ubuntu-hr.org>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-control-center 2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"PO-Revision-Date: 2020-09-03 19:59+0200\n"
+"Last-Translator: gogo <trebelnik2@gmail.com>\n"
+"Language-Team: Croatian <lokalizacija@linux.hr>\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Launchpad-Export-Date: 2016-10-09 11:56+0000\n"
+"X-Generator: Poedit 2.4.1\n"
+
+#: ../src/rpinters.c:93
+#, fuzzy
+msgctxt "tab"
+msgid "Printers"
+msgstr "Pisači"
+
+#. Translators: %s is the printer name
+#: ../src/cc-printers-panel.c:725
+#, c-format
+msgid "Printer “%s” has been deleted"
+msgstr "Pisač “%s” je obrisan"
+
+#: ../src/cc-printers-panel.c:780
+#, fuzzy
+msgid "Are you sure you want to remove this printer?"
+msgstr "Sigurno želite ukloniti ovaj račun?"
+
+#. Translators: Addition of the new printer failed.
+#: ../src/cc-printers-panel.c:1046
+msgid "Failed to add new printer."
+msgstr "Neuspjelo dodavanje novoga pisača."
+
+#. Translators: The XML file containing user interface can not be loaded
+#: ../src/cc-printers-panel.c:1357
+#, c-format
+msgid "Could not load ui: %s"
+msgstr "Nemoguće učitati kor. sučelje: %s"
+
+#: ../src/cc-util.c:127
+msgid "Today"
+msgstr "Danas"
+
+#: ../src/cc-util.c:131
+msgid "Yesterday"
+msgstr "Jučer"
+
+#. Translators: This is a date format string in the style of "Feb 24".
+#: ../src/cc-util.c:138
+msgid "%b %e"
+msgstr "%e %b"
+
+#. Translators: This is a date format string in the style of "Feb 24, 2013".
+#: ../src/cc-util.c:143
+msgid "%b %e, %Y"
+msgstr "%e %b, %Y"
+
+#: ../src/cc-util.c:165
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d sat"
+msgstr[1] "%d sata"
+msgstr[2] "%d sati"
+
+#: ../src/cc-util.c:166
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d minuta"
+msgstr[1] "%d minute"
+msgstr[2] "%d minuta"
+
+#: ../src/cc-util.c:167
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d sekunda"
+msgstr[1] "%d sekunde"
+msgstr[2] "%d sekundi"
+
+#. 5 hours 2 minutes 12 seconds
+#: ../src/cc-util.c:174
+#, c-format
+msgctxt "hours minutes seconds"
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. 5 hours 2 minutes
+#: ../src/cc-util.c:179
+#, c-format
+msgctxt "hours minutes"
+msgid "%s %s"
+msgstr "%s %s"
+
+#. 5 hours
+#: ../src/cc-util.c:184
+#, c-format
+msgctxt "hours"
+msgid "%s"
+msgstr "%s"
+
+#. 2 minutes 12 seconds
+#: ../src/cc-util.c:192
+#, c-format
+msgctxt "minutes seconds"
+msgid "%s %s"
+msgstr "%s %s"
+
+#. 2 minutes
+#: ../src/cc-util.c:197
+#, c-format
+msgctxt "minutes"
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/cc-util.c:208
+msgid "0 seconds"
+msgstr "0 sekundi"
+
+#. Translators: This is the title of the dialog. %s is the printer name.
+#: ../src/pp-details-dialog.c:73 ../src/pp-details-dialog.c:371
+#, c-format
+msgid "%s Details"
+msgstr "%s pojedinosti"
+
+#: ../src/pp-details-dialog.c:120
+msgid "No suitable driver found"
+msgstr "Nije pronađen odgovarajući upravljački program"
+
+#: ../src/pp-details-dialog.c:247
+msgid "Select PPD File"
+msgstr "Odaberi PPD datoteku"
+
+#: ../src/pp-details-dialog.c:250 ../data/rpinters.ui.h:4
+#: ../src/new-printer-dialog.ui.h:3
+msgid "_Cancel"
+msgstr "_Odustani"
+
+#: ../src/pp-details-dialog.c:251
+msgid "_Open"
+msgstr "_Otvori"
+
+#: ../src/pp-details-dialog.c:256
+msgid ""
+"PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
+"PPD.GZ)"
+msgstr ""
+"Datoteka opisa PostSkripta pisača (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *.PPD."
+"GZ)"
+
+#. Translators: The found device is a JetDirect printer
+#: ../src/pp-host.c:478
+msgid "JetDirect Printer"
+msgstr "JetDirect pisač"
+
+#. Translators: The found device is a Line Printer Daemon printer
+#: ../src/pp-host.c:713
+msgid "LPD Printer"
+msgstr "LPD pisač"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:64 ../src/pp-ppd-option-widget.c:69
+msgid "One Sided"
+msgstr "Jednostrano"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:66 ../src/pp-ppd-option-widget.c:71
+msgid "Long Edge (Standard)"
+msgstr "Dugom stranom (standardno)"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:68 ../src/pp-ppd-option-widget.c:73
+msgid "Short Edge (Flip)"
+msgstr "Kratkom stranom (okrenuto)"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:70
+msgid "Portrait"
+msgstr "Uspravno"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:72
+msgid "Landscape"
+msgstr "Položeno"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:74
+msgid "Reverse landscape"
+msgstr "Obrnuto položeno"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:76
+msgid "Reverse portrait"
+msgstr "Obrnuto uspravno"
+
+#. Translators: Job's state (job is waiting to be printed)
+#: ../src/pp-jobs-dialog.c:222
+msgctxt "print job"
+msgid "Pending"
+msgstr "Na čekanju"
+
+#. Translators: Job's state (job is held for printing)
+#: ../src/pp-jobs-dialog.c:228
+msgctxt "print job"
+msgid "Paused"
+msgstr "Pauzirano"
+
+#. Translators: Job's state (job needs authentication to proceed further)
+#: ../src/pp-jobs-dialog.c:233
+msgctxt "print job"
+msgid "Authentication required"
+msgstr "Potrebna je ovjera"
+
+#. Translators: Job's state (job is currently printing)
+#: ../src/pp-jobs-dialog.c:238
+msgctxt "print job"
+msgid "Processing"
+msgstr "Obrada"
+
+#. Translators: Job's state (job has been stopped)
+#: ../src/pp-jobs-dialog.c:242
+msgctxt "print job"
+msgid "Stopped"
+msgstr "Zaustavljen"
+
+#. Translators: Job's state (job has been canceled)
+#: ../src/pp-jobs-dialog.c:246
+msgctxt "print job"
+msgid "Canceled"
+msgstr "Otkazan"
+
+#. Translators: Job's state (job has aborted due to error)
+#: ../src/pp-jobs-dialog.c:250
+msgctxt "print job"
+msgid "Aborted"
+msgstr "Prekinut"
+
+#. Translators: Job's state (job has completed successfully)
+#: ../src/pp-jobs-dialog.c:254
+msgctxt "print job"
+msgid "Completed"
+msgstr "Završen"
+
+#. Translators: This label shows how many jobs of this printer needs to be authenticated to be printed.
+#: ../src/pp-jobs-dialog.c:363
+#, c-format
+msgid "%u Job Requires Authentication"
+msgid_plural "%u Jobs Require Authentication"
+msgstr[0] "%u zadatak zahtijeva ovjeru"
+msgstr[1] "%u zadatka zahtijevaju ovjeru"
+msgstr[2] "%u zadataka zahtijeva ovjeru"
+
+#. Translators: This is the printer name for which we are showing the active jobs
+#: ../src/pp-jobs-dialog.c:519
+#, c-format
+msgctxt "Printer jobs dialog title"
+msgid "%s — Active Jobs"
+msgstr "%s — aktivnih zadataka"
+
+#. Translators: The printer needs authentication info to print.
+#: ../src/pp-jobs-dialog.c:523
+#, c-format
+msgid "Enter credentials to print from %s."
+msgstr "Upišite korisničko ime i lozinku za ispis sa %s."
+
+#. Translators: Name of job which makes printer to autoconfigure itself
+#: ../src/pp-new-printer.c:1210
+#, fuzzy
+msgid "Automatic configuration"
+msgstr "A_utomatska prijava"
+
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
+#. Translators: This is the title presented at top of the dialog.
+#: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
+#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+msgid "Add Printer"
+msgstr "Dodaj pisač"
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (WID ("headerbar")), NULL);
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Unlock Print Server"));
+#: ../src/pp-new-printer-dialog.c:365
+msgid "Unlock Print Server"
+msgstr "Otključaj poslužitelj pisača"
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:369
+#, c-format
+msgid "Unlock %s."
+msgstr "Otključaj %s."
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:373
+#, c-format
+msgid "Enter username and password to view printers on %s."
+msgstr ""
+"Upišite korisničko ime i lozinku kako bi vidjeli pisače dostupne na %s."
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
+#: ../src/pp-new-printer-dialog.c:798
+#, fuzzy
+msgid "Add Printer - Searching for Printers"
+msgstr "Pretraživanje pisača"
+
+#. Translators: The found device is a printer connected via USB
+#: ../src/pp-new-printer-dialog.c:1616
+msgid "USB"
+msgstr "USB"
+
+#. Translators: The found device is a printer connected via serial port
+#: ../src/pp-new-printer-dialog.c:1621
+msgid "Serial Port"
+msgstr "Serijski priključak"
+
+#. Translators: The found device is a printer connected via parallel port
+#: ../src/pp-new-printer-dialog.c:1628
+msgid "Parallel Port"
+msgstr "Paralelni priključak"
+
+#. Translators: The found device is a printer connected via Bluetooth
+#: ../src/pp-new-printer-dialog.c:1633
+msgid "Bluetooth"
+msgstr "Bluetooth"
+
+#. Translators: Location of found network printer (e.g. Kitchen, Reception)
+#: ../src/pp-new-printer-dialog.c:1670
+#, c-format
+msgid "Location: %s"
+msgstr "Lokacija: %s"
+
+#. Translators: Network address of found printer
+#: ../src/pp-new-printer-dialog.c:1675
+#, c-format
+msgid "Address: %s"
+msgstr "Adresa: %s"
+
+#. Translators: This item is a server which needs authentication to show its printers
+#: ../src/pp-new-printer-dialog.c:1702
+msgid "Server requires authentication"
+msgstr "Poslužitelj zahtijeva ovjeru"
+
+#: ../src/pp-options-dialog.c:87
+msgid "Two Sided"
+msgstr "Obostrano"
+
+#: ../src/pp-options-dialog.c:88
+msgid "Paper Type"
+msgstr "Vrsta papira"
+
+#: ../src/pp-options-dialog.c:89
+msgid "Paper Source"
+msgstr "Izvor papira"
+
+#: ../src/pp-options-dialog.c:90
+msgid "Output Tray"
+msgstr "Izlazna ladica"
+
+#: ../src/pp-options-dialog.c:91
+msgctxt "printing option"
+msgid "Resolution"
+msgstr "Razlučivost"
+
+#: ../src/pp-options-dialog.c:92
+msgid "GhostScript pre-filtering"
+msgstr "GhostSkripta predfiltriranja"
+
+#. Translators: This option sets number of pages printed on one sheet
+#: ../src/pp-options-dialog.c:530
+msgid "Pages per side"
+msgstr "Stranica po listu"
+
+#. Translators: This option sets whether to print on both sides of paper
+#: ../src/pp-options-dialog.c:542
+msgid "Two-sided"
+msgstr "Obostrano"
+
+#. Translators: This option sets orientation of print (portrait, landscape...)
+#: ../src/pp-options-dialog.c:554
+msgid "Orientation"
+msgstr "Orijentacija"
+
+#. Translators: "General" tab contains general printer options
+#: ../src/pp-options-dialog.c:651
+msgctxt "Printer Option Group"
+msgid "General"
+msgstr "Općenito"
+
+#. Translators: "Page Setup" tab contains settings related to pages (page size, paper source, etc.)
+#: ../src/pp-options-dialog.c:654
+msgctxt "Printer Option Group"
+msgid "Page Setup"
+msgstr "Postavke ispisa"
+
+#. Translators: "Installable Options" tab contains settings of presence of installed options (amount of RAM, duplex unit, etc.)
+#: ../src/pp-options-dialog.c:657
+msgctxt "Printer Option Group"
+msgid "Installable Options"
+msgstr "Mogućnosti instaliranja"
+
+#. Translators: "Job" tab contains settings for jobs
+#: ../src/pp-options-dialog.c:660
+msgctxt "Printer Option Group"
+msgid "Job"
+msgstr "Zadatak"
+
+#. Translators: "Image Quality" tab contains settings for quality of output print (e.g. resolution)
+#: ../src/pp-options-dialog.c:663
+msgctxt "Printer Option Group"
+msgid "Image Quality"
+msgstr "Kvaliteta slike"
+
+#. Translators: "Color" tab contains color settings (e.g. color printing)
+#: ../src/pp-options-dialog.c:666
+msgctxt "Printer Option Group"
+msgid "Color"
+msgstr "Boja"
+
+#. Translators: "Finishing" tab contains finishing settings (e.g. booklet printing)
+#: ../src/pp-options-dialog.c:669
+msgctxt "Printer Option Group"
+msgid "Finishing"
+msgstr "Završavanje"
+
+#. Translators: "Advanced" tab contains all others settings
+#: ../src/pp-options-dialog.c:672
+msgctxt "Printer Option Group"
+msgid "Advanced"
+msgstr "Napredno"
+
+#. Translators: Name of job which makes printer to print test page
+#. Translators: This button triggers the printing of a test page.
+#: ../src/pp-options-dialog.c:863 ../src/pp-options-dialog.ui.h:2
+msgid "Test Page"
+msgstr "Testna stranica"
+
+#. Translators: Name of job which makes printer to print test page
+#: ../src/pp-options-dialog.c:876
+msgid "Test page"
+msgstr "Testna stranica"
+
+#. Translators: this is an option of "Paper Source"
+#: ../src/pp-ppd-option-widget.c:75 ../src/pp-ppd-option-widget.c:77
+#: ../src/pp-ppd-option-widget.c:85
+msgid "Auto Select"
+msgstr "Automatski odabir"
+
+#. Translators: this is an option of "Paper Source"
+#. Translators: this is an option of "Resolution"
+#: ../src/pp-ppd-option-widget.c:79 ../src/pp-ppd-option-widget.c:81
+#: ../src/pp-ppd-option-widget.c:83 ../src/pp-ppd-option-widget.c:87
+msgid "Printer Default"
+msgstr "Zadani pisač"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:89
+msgid "Embed GhostScript fonts only"
+msgstr "Ugradi samo Ghostskript slova"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:91
+msgid "Convert to PS level 1"
+msgstr "Prevedi u PS razine 1"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:93
+msgid "Convert to PS level 2"
+msgstr "Prevedi u PS razine 2"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:95
+msgid "No pre-filtering"
+msgstr "Bez prevođenja"
+
+#. Translators: Name of column showing printer manufacturers
+#: ../src/pp-ppd-selection-dialog.c:233
+msgid "Manufacturer"
+msgstr "Proizvođač"
+
+#. Translators: Name of column showing printer drivers
+#: ../src/pp-ppd-selection-dialog.c:250 ../src/pp-details-dialog.ui.h:5
+msgid "Driver"
+msgstr "Upravljački program"
+
+#: ../src/pp-printer-entry.c:427 ../src/pp-printer-entry.c:429
+#, fuzzy, c-format
+msgid "Could not rename printer : %s"
+msgstr "Nemoguće učitati kor. sučelje: %s"
+
+#: ../src/pp-printer-entry.c:427
+msgid "another printer already has that name."
+msgstr ""
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:612 ../src/printer-entry.ui.h:8
+msgid "No Active Jobs"
+msgstr "Nema aktivnih zadataka ispisa"
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:617
+#, c-format
+msgid "%u Job"
+msgid_plural "%u Jobs"
+msgstr[0] "%u zadatak"
+msgstr[1] "%u zadatka"
+msgstr[2] "%u zadataka"
+
+#. Translators: Name of job which makes printer to clean its heads
+#: ../src/pp-printer-entry.c:735
+msgid "Clean print heads"
+msgstr "Čišćenje glava pisača"
+
+#. Translators: The printer is low on toner
+#: ../src/pp-printer-entry.c:786
+msgid "Low on toner"
+msgstr "Ponestaje tinte u toneru"
+
+#. Translators: The printer has no toner left
+#: ../src/pp-printer-entry.c:788
+msgid "Out of toner"
+msgstr "Ponestalo tinte u toneru"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:791
+msgid "Low on developer"
+msgstr "Razvijatelj nizak"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:794
+msgid "Out of developer"
+msgstr "Ponestalo razvijatelja"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:796
+msgid "Low on a marker supply"
+msgstr "Ponestaje tinte"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:798
+msgid "Out of a marker supply"
+msgstr "Ponestalo tinte"
+
+#. Translators: One or more covers on the printer are open
+#: ../src/pp-printer-entry.c:800
+msgid "Open cover"
+msgstr "Otvoren je poklopac"
+
+#. Translators: One or more doors on the printer are open
+#: ../src/pp-printer-entry.c:802
+msgid "Open door"
+msgstr "Otvorena su vratašca"
+
+#. Translators: At least one input tray is low on media
+#: ../src/pp-printer-entry.c:804
+msgid "Low on paper"
+msgstr "Ponestaje papira"
+
+#. Translators: At least one input tray is empty
+#: ../src/pp-printer-entry.c:806
+msgid "Out of paper"
+msgstr "Ponestalo papira"
+
+#. Translators: The printer is offline
+#: ../src/pp-printer-entry.c:808
+msgctxt "printer state"
+msgid "Offline"
+msgstr "Nije povezan"
+
+#. Translators: Someone has stopped the Printer
+#. Translators: Printer's state (no jobs can be processed)
+#: ../src/pp-printer-entry.c:810 ../src/pp-printer-entry.c:953
+msgctxt "printer state"
+msgid "Stopped"
+msgstr "Zaustavljen"
+
+#. Translators: The printer marker supply waste receptacle is almost full
+#: ../src/pp-printer-entry.c:812
+msgid "Waste receptacle almost full"
+msgstr "Pisačeva kantica za otpad je skoro puna"
+
+#. Translators: The printer marker supply waste receptacle is full
+#: ../src/pp-printer-entry.c:814
+msgid "Waste receptacle full"
+msgstr "Pisačeva kantica za otpad je puna"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:816
+msgid "The optical photo conductor is near end of life"
+msgstr "Optički fotografski vodič je pri kraju vijeka trajanja"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:818
+msgid "The optical photo conductor is no longer functioning"
+msgstr "Optički fotografski vodič je istrošen"
+
+#. Translators: Printer's state (can start new job without waiting)
+#: ../src/pp-printer-entry.c:939
+msgctxt "printer state"
+msgid "Ready"
+msgstr "Spreman"
+
+#. Translators: Printer's state (printer is ready but doesn't accept new jobs)
+#: ../src/pp-printer-entry.c:944
+msgctxt "printer state"
+msgid "Does not accept jobs"
+msgstr "Ne prihvaća zadatke"
+
+#. Translators: Printer's state (jobs are processing)
+#: ../src/pp-printer-entry.c:949
+msgctxt "printer state"
+msgid "Processing"
+msgstr "Obrada"
+
+#: ../data/rpinters.ui.h:1
+msgid "Printers"
+msgstr "Pisači"
+
+#: ../data/rpinters.ui.h:2 ../src/authentication-dialog.ui.h:2
+#: ../src/ppd-selection-dialog.ui.h:2
+msgid "Cancel"
+msgstr "Odustani"
+
+#: ../data/rpinters.ui.h:3
+#, fuzzy
+msgid "OK"
+msgstr "_U redu"
+
+#: ../data/rpinters.ui.h:5
+msgid "_OK"
+msgstr "_U redu"
+
+#: ../src/authentication-dialog.ui.h:1
+msgid " "
+msgstr " "
+
+#: ../src/authentication-dialog.ui.h:3
+msgid "Authenticate"
+msgstr "Ovjera"
+
+#. Translators: This is a username on a print server.
+#: ../src/authentication-dialog.ui.h:4 ../src/new-printer-dialog.ui.h:13
+#: ../src/pp-jobs-dialog.ui.h:4
+msgid "Username"
+msgstr "Korisničko ime"
+
+#. Translators: This is a password needed for printing.
+#: ../src/authentication-dialog.ui.h:5 ../src/new-printer-dialog.ui.h:14
+#: ../src/pp-jobs-dialog.ui.h:6
+msgid "Password"
+msgstr "Lozinka"
+
+#: ../src/authentication-dialog.ui.h:6 ../src/new-printer-dialog.ui.h:11
+msgid "Authentication Required"
+msgstr "Potrebna je ovjera"
+
+#: ../src/cc-permission-infobar.ui.h:1
+msgid "Unlock…"
+msgstr "Otključaj…"
+
+#: ../src/cc-permission-infobar.ui.h:2
+msgid "Unlock to Change Settings"
+msgstr "Otključaj za primijenjivanje postavki"
+
+#: ../src/cc-permission-infobar.ui.h:3
+msgid "Some settings must be unlocked before they can be changed."
+msgstr ""
+"Određene postavke moraju biti otključane prije nego što se mogu promijeniti."
+
+#: ../src/new-printer-dialog.ui.h:4
+msgid "_Add"
+msgstr "_Dodaj"
+
+#. Translators: This buttons submits the credentials for the selected server.
+#: ../src/new-printer-dialog.ui.h:6
+msgid "_Unlock"
+msgstr "_Otključaj"
+
+#. Translators: No printers were detected
+#: ../src/new-printer-dialog.ui.h:8
+msgid "No Printers Found"
+msgstr "Nema pronađenih pisača"
+
+#. Translators: The entered text should contain network address of a printer or a text which will filter found devices (their names and locations)
+#: ../src/new-printer-dialog.ui.h:10
+msgid "Enter a network address or search for a printer"
+msgstr "Upišite mrežnu adresu ili pretražite pisač"
+
+#: ../src/new-printer-dialog.ui.h:12
+msgid "Enter username and password to view printers on Print Server."
+msgstr ""
+"Upišite svoje korisničko ime i lozinku kako bi vidjeli pisače dostupne na "
+"poslužitelju ispisa."
+
+#: ../src/pp-details-dialog.ui.h:1 ../src/pp-jobs-dialog.ui.h:11
+#: ../src/pp-options-dialog.ui.h:3
+#, fuzzy
+msgid "Close"
+msgstr "_Zatvori"
+
+#: ../src/pp-details-dialog.ui.h:2
+msgid "Name"
+msgstr "Naziv"
+
+#: ../src/pp-details-dialog.ui.h:3 ../src/printer-entry.ui.h:11
+msgid "Location"
+msgstr "Lokacija"
+
+#: ../src/pp-details-dialog.ui.h:4
+msgid "Address"
+msgstr "Adresa"
+
+#: ../src/pp-details-dialog.ui.h:6
+msgid "Searching for preferred drivers…"
+msgstr "Pretraživanje odgovarajućih upravljačkih programa…"
+
+#: ../src/pp-details-dialog.ui.h:7
+msgid "Search for Drivers"
+msgstr "Pretraživanje upravljačkih programa"
+
+#: ../src/pp-details-dialog.ui.h:8
+msgid "Select from Database…"
+msgstr "Odaberi iz baze podataka…"
+
+#: ../src/pp-details-dialog.ui.h:9
+msgid "Install PPD File…"
+msgstr "Instaliraj PPD datoteku…"
+
+#: ../src/ppd-selection-dialog.ui.h:1
+msgid "Select Printer Driver"
+msgstr "Odaberi upravljački program za pisač"
+
+#: ../src/ppd-selection-dialog.ui.h:3
+msgid "Select"
+msgstr "Odaberi"
+
+#: ../src/ppd-selection-dialog.ui.h:4
+msgid "Loading drivers database…"
+msgstr "Učitavanje baze podataka upravljačkih programa…"
+
+#. Translators: This is a windows domain used with SMB protocol.
+#: ../src/pp-jobs-dialog.ui.h:2
+msgid "Domain"
+msgstr "Domena"
+
+#. Translators: This button authenticates all print jobs and send them for printing.
+#: ../src/pp-jobs-dialog.ui.h:8
+msgid "A_uthenticate"
+msgstr "O_vjeri"
+
+#. Translators: this action removes (purges) all the listed jobs from the list.
+#: ../src/pp-jobs-dialog.ui.h:10
+msgid "Clear All"
+msgstr "Ukloni sve"
+
+#. Translators: This button pop up authentication dialog for print jobs which need credentials.
+#: ../src/pp-jobs-dialog.ui.h:13
+msgid "_Authenticate"
+msgstr "_Ovjera"
+
+#. Translators: this label describes the dialog empty state, with no jobs listed.
+#: ../src/pp-jobs-dialog.ui.h:15
+msgid "No Active Printer Jobs"
+msgstr "Nema aktivnih zadataka ispisa"
+
+#: ../src/printer-entry.ui.h:1
+msgid "Printing Options"
+msgstr "Mogućnosti ispisivanja"
+
+#: ../src/printer-entry.ui.h:2
+msgid "Printer Details"
+msgstr "Pojedinosti pisača"
+
+#. Set this printer as default
+#: ../src/printer-entry.ui.h:4
+msgid "Use Printer by Default"
+msgstr "Koristi kao zadani pisač"
+
+#. Translators: This button executes command which cleans print heads of the printer.
+#: ../src/printer-entry.ui.h:6
+msgid "Clean Print Heads"
+msgstr "Čišćenje glava pisača"
+
+#: ../src/printer-entry.ui.h:7
+msgid "Remove Printer"
+msgstr "Ukloni pisač"
+
+#: ../src/printer-entry.ui.h:9
+#, fuzzy
+msgid "Options"
+msgstr "_Mogućnosti"
+
+#: ../src/printer-entry.ui.h:10
+msgid "Model"
+msgstr "Model"
+
+#: ../src/printer-entry.ui.h:12
+msgid "Ink Level"
+msgstr "Razina tinte"
+
+#. Translators: This is the message which follows the printer error.
+#: ../src/printer-entry.ui.h:14
+msgid "Please restart when the problem is resolved."
+msgstr "Ponovno pokrenite kada je problem razriješen."
+
+#. Translators: This is the button which restarts the printer.
+#: ../src/printer-entry.ui.h:16
+msgid "Restart"
+msgstr "Ponovno pokreni"
+
+#. Translators: This is the button which allows undoing the removal of the printer.
+#: ../src/printers.ui.h:2
+msgid "Undo"
+msgstr "Vrati"
+
+#: ../src/printers.ui.h:3
+msgid "No printers"
+msgstr "Nema otkrivenih pisača"
+
+#. Translators: The CUPS server is not running (we can not connect to it).
+#: ../src/printers.ui.h:5
+#, fuzzy
+msgid ""
+"Sorry! The system printing service\n"
+"        doesn’t seem to be available."
+msgstr ""
+"Nažalost! Usluga ispisa\n"
+"sustava nije dostupna."
+
+#. Translators: This button adds new printer.
+#: ../src/printers.ui.h:8
+#, fuzzy
+msgid "Add Printer…"
+msgstr "Dodaj pisač…"
+

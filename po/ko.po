@@ -1,0 +1,854 @@
+# gnome-control-center Korean message translation
+# This file is distributed under the same license as the gnome-control-center package.
+#
+# Young-Ho Cha <ganadist@chollian.net>, 2002, 2006.
+# Seong-ho Cho <darkcircle.0426@gmail.com>, 2011, 2012.
+# Changwoo Ryu <cwryu@debian.org>, 2002-2020.
+#
+#
+# - 주의: 여러가지 분야의 어려운 용어가 많습니다. 충분히 시간을 두고 실제 의미가
+#   무엇인지, UI에 어떻게 나타나는지 이해하고 번역해 주세요. 기계적인 번역은
+#   품질 저하의 지름길입니다. 모를 만한 용어는 아래에 기록.
+#
+# - 이 프로그램의 이름인 "Control Center"는 "제어 센터"로 번역.
+# - 용어
+#   - Airplane Mode: 비행기 모드
+#   - input source: 입력 소스 ("source"라고만 써져 있어도 "입력 소스"로 번역)
+#   - night light: 야간 모드
+#   - parental control: 자녀 보호 기능
+#   - prefix (ipv6 관련): 프리픽스
+#   - tablet: 태블릿 (tablet PC의 경우), 디지타이저 (graphics tablet) 구분하도록 주의
+#   - VPN: "VPN(가상사설망)"
+#   - wide gamut: 광색역 (LCD 디스플레이 종류)
+#
+# - 검색 키워드는 원문과 번역문을 같이 세미콜론으로 구분해 기입한다. 예를 들어:
+#
+#   msgid "Wallpaper;Screen;Desktop;"
+#   msgstr "Wallpaper;배경 이미지;Screen;화면;Desktop;바탕 화면;"
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-control-center\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"PO-Revision-Date: 2020-08-29 19:08+0900\n"
+"Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
+"Language-Team: GNOME Korea <gnome-kr@googlegroups.com>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.5.3\n"
+
+#: ../src/rpinters.c:93
+#, fuzzy
+msgctxt "tab"
+msgid "Printers"
+msgstr "프린터"
+
+#. Translators: %s is the printer name
+#: ../src/cc-printers-panel.c:725
+#, c-format
+msgid "Printer “%s” has been deleted"
+msgstr "“%s” 프린터를 삭제했습니다"
+
+#: ../src/cc-printers-panel.c:780
+#, fuzzy
+msgid "Are you sure you want to remove this printer?"
+msgstr "정말로 원격에서 관리하는 %s의 계정을 철회하시겠습니까?"
+
+#. Translators: Addition of the new printer failed.
+#: ../src/cc-printers-panel.c:1046
+msgid "Failed to add new printer."
+msgstr "새 프린터 추가에 실패했습니다."
+
+#. Translators: The XML file containing user interface can not be loaded
+#: ../src/cc-printers-panel.c:1357
+#, c-format
+msgid "Could not load ui: %s"
+msgstr "UI를 읽어들일 수 없습니다: %s"
+
+#: ../src/cc-util.c:127
+msgid "Today"
+msgstr "오늘"
+
+#: ../src/cc-util.c:131
+msgid "Yesterday"
+msgstr "어제"
+
+#. Translators: This is a date format string in the style of "Feb 24".
+#: ../src/cc-util.c:138
+msgid "%b %e"
+msgstr "%b %e일"
+
+#. Translators: This is a date format string in the style of "Feb 24, 2013".
+#: ../src/cc-util.c:143
+msgid "%b %e, %Y"
+msgstr "%Y년 %b %e일"
+
+#: ../src/cc-util.c:165
+#, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%d시간"
+
+#: ../src/cc-util.c:166
+#, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%d분"
+
+#: ../src/cc-util.c:167
+#, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "%d초"
+
+#. 5 hours 2 minutes 12 seconds
+#: ../src/cc-util.c:174
+#, c-format
+msgctxt "hours minutes seconds"
+msgid "%s %s %s"
+msgstr "%s %s %s"
+
+#. 5 hours 2 minutes
+#: ../src/cc-util.c:179
+#, c-format
+msgctxt "hours minutes"
+msgid "%s %s"
+msgstr "%s %s"
+
+#. 5 hours
+#: ../src/cc-util.c:184
+#, c-format
+msgctxt "hours"
+msgid "%s"
+msgstr "%s"
+
+#. 2 minutes 12 seconds
+#: ../src/cc-util.c:192
+#, c-format
+msgctxt "minutes seconds"
+msgid "%s %s"
+msgstr "%s %s"
+
+#. 2 minutes
+#: ../src/cc-util.c:197
+#, c-format
+msgctxt "minutes"
+msgid "%s"
+msgstr "%s"
+
+#. 0 seconds
+#: ../src/cc-util.c:208
+msgid "0 seconds"
+msgstr "0초"
+
+#. Translators: This is the title of the dialog. %s is the printer name.
+#: ../src/pp-details-dialog.c:73 ../src/pp-details-dialog.c:371
+#, c-format
+msgid "%s Details"
+msgstr "%s 자세히 보기"
+
+#: ../src/pp-details-dialog.c:120
+msgid "No suitable driver found"
+msgstr "적당한 드라이버가 없습니다"
+
+#: ../src/pp-details-dialog.c:247
+msgid "Select PPD File"
+msgstr "PPD 파일 선택"
+
+#: ../src/pp-details-dialog.c:250 ../data/rpinters.ui.h:4
+#: ../src/new-printer-dialog.ui.h:3
+msgid "_Cancel"
+msgstr "취소(_C)"
+
+#: ../src/pp-details-dialog.c:251
+msgid "_Open"
+msgstr "열기(_O)"
+
+#: ../src/pp-details-dialog.c:256
+msgid ""
+"PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
+"PPD.GZ)"
+msgstr ""
+"포스트스크립트 프린터 기술 파일(*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *.PPD.GZ)"
+
+#. Translators: The found device is a JetDirect printer
+#: ../src/pp-host.c:478
+msgid "JetDirect Printer"
+msgstr "JetDirect 프린터"
+
+#. Translators: The found device is a Line Printer Daemon printer
+#: ../src/pp-host.c:713
+msgid "LPD Printer"
+msgstr "LPD 프린터"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:64 ../src/pp-ppd-option-widget.c:69
+msgid "One Sided"
+msgstr "단면"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:66 ../src/pp-ppd-option-widget.c:71
+msgid "Long Edge (Standard)"
+msgstr "긴 모서리 방향(표준)"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:68 ../src/pp-ppd-option-widget.c:73
+msgid "Short Edge (Flip)"
+msgstr "짧은 모서리 방향(뒤집기)"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:70
+msgid "Portrait"
+msgstr "세로"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:72
+msgid "Landscape"
+msgstr "가로"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:74
+msgid "Reverse landscape"
+msgstr "세로 방향 뒤집기"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:76
+msgid "Reverse portrait"
+msgstr "가로 방향 뒤집기"
+
+#. Translators: Job's state (job is waiting to be printed)
+#: ../src/pp-jobs-dialog.c:222
+msgctxt "print job"
+msgid "Pending"
+msgstr "대기"
+
+#. Translators: Job's state (job is held for printing)
+#: ../src/pp-jobs-dialog.c:228
+msgctxt "print job"
+msgid "Paused"
+msgstr "일시 중지 상태"
+
+#. Translators: Job's state (job needs authentication to proceed further)
+#: ../src/pp-jobs-dialog.c:233
+msgctxt "print job"
+msgid "Authentication required"
+msgstr "인증 필요"
+
+#. Translators: Job's state (job is currently printing)
+#: ../src/pp-jobs-dialog.c:238
+msgctxt "print job"
+msgid "Processing"
+msgstr "처리 중"
+
+#. Translators: Job's state (job has been stopped)
+#: ../src/pp-jobs-dialog.c:242
+msgctxt "print job"
+msgid "Stopped"
+msgstr "중지"
+
+#. Translators: Job's state (job has been canceled)
+#: ../src/pp-jobs-dialog.c:246
+msgctxt "print job"
+msgid "Canceled"
+msgstr "취소"
+
+#. Translators: Job's state (job has aborted due to error)
+#: ../src/pp-jobs-dialog.c:250
+msgctxt "print job"
+msgid "Aborted"
+msgstr "중지됨"
+
+#. Translators: Job's state (job has completed successfully)
+#: ../src/pp-jobs-dialog.c:254
+msgctxt "print job"
+msgid "Completed"
+msgstr "완료"
+
+#. Translators: This label shows how many jobs of this printer needs to be authenticated to be printed.
+#: ../src/pp-jobs-dialog.c:363
+#, c-format
+msgid "%u Job Requires Authentication"
+msgid_plural "%u Jobs Require Authentication"
+msgstr[0] "작업 %u개에 인증이 필요합니다"
+
+#. Translators: This is the printer name for which we are showing the active jobs
+#: ../src/pp-jobs-dialog.c:519
+#, c-format
+msgctxt "Printer jobs dialog title"
+msgid "%s — Active Jobs"
+msgstr "%s — 활성 작업"
+
+#. Translators: The printer needs authentication info to print.
+#: ../src/pp-jobs-dialog.c:523
+#, c-format
+msgid "Enter credentials to print from %s."
+msgstr "%s에서 인쇄하려면 인증 정보가 필요합니다."
+
+#. Translators: Name of job which makes printer to autoconfigure itself
+#: ../src/pp-new-printer.c:1210
+#, fuzzy
+msgid "Automatic configuration"
+msgstr "자동 로그인(_U)"
+
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
+#. Translators: This is the title presented at top of the dialog.
+#: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
+#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+msgid "Add Printer"
+msgstr "프린터 추가"
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (WID ("headerbar")), NULL);
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Unlock Print Server"));
+#: ../src/pp-new-printer-dialog.c:365
+msgid "Unlock Print Server"
+msgstr "프린터 서버 잠금 해제"
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:369
+#, c-format
+msgid "Unlock %s."
+msgstr "%s 잠금 해제."
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:373
+#, c-format
+msgid "Enter username and password to view printers on %s."
+msgstr "%s의 프린터를 보려면 사용자 이름과 암호를 입력하십시오."
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
+#: ../src/pp-new-printer-dialog.c:798
+#, fuzzy
+msgid "Add Printer - Searching for Printers"
+msgstr "프린터 검색 중"
+
+#. Translators: The found device is a printer connected via USB
+#: ../src/pp-new-printer-dialog.c:1616
+msgid "USB"
+msgstr "USB"
+
+#. Translators: The found device is a printer connected via serial port
+#: ../src/pp-new-printer-dialog.c:1621
+msgid "Serial Port"
+msgstr "직렬 포트"
+
+#. Translators: The found device is a printer connected via parallel port
+#: ../src/pp-new-printer-dialog.c:1628
+msgid "Parallel Port"
+msgstr "병렬 포트"
+
+#. Translators: The found device is a printer connected via Bluetooth
+#: ../src/pp-new-printer-dialog.c:1633
+msgid "Bluetooth"
+msgstr "블루투스"
+
+#. Translators: Location of found network printer (e.g. Kitchen, Reception)
+#: ../src/pp-new-printer-dialog.c:1670
+#, c-format
+msgid "Location: %s"
+msgstr "위치: %s"
+
+#. Translators: Network address of found printer
+#: ../src/pp-new-printer-dialog.c:1675
+#, c-format
+msgid "Address: %s"
+msgstr "주소: %s"
+
+#. Translators: This item is a server which needs authentication to show its printers
+#: ../src/pp-new-printer-dialog.c:1702
+msgid "Server requires authentication"
+msgstr "서버에 인증이 필요합니다"
+
+#: ../src/pp-options-dialog.c:87
+msgid "Two Sided"
+msgstr "양면"
+
+#: ../src/pp-options-dialog.c:88
+msgid "Paper Type"
+msgstr "용지 형식"
+
+#: ../src/pp-options-dialog.c:89
+msgid "Paper Source"
+msgstr "용지 서랍"
+
+#: ../src/pp-options-dialog.c:90
+msgid "Output Tray"
+msgstr "출력 표시줄"
+
+#: ../src/pp-options-dialog.c:91
+msgctxt "printing option"
+msgid "Resolution"
+msgstr "해상도"
+
+#: ../src/pp-options-dialog.c:92
+msgid "GhostScript pre-filtering"
+msgstr "고스트스크립트 우선 필터링"
+
+#. Translators: This option sets number of pages printed on one sheet
+#: ../src/pp-options-dialog.c:530
+msgid "Pages per side"
+msgstr "장당 페이지 수"
+
+#. Translators: This option sets whether to print on both sides of paper
+#: ../src/pp-options-dialog.c:542
+msgid "Two-sided"
+msgstr "양면"
+
+#. Translators: This option sets orientation of print (portrait, landscape...)
+#: ../src/pp-options-dialog.c:554
+msgid "Orientation"
+msgstr "방향"
+
+#. Translators: "General" tab contains general printer options
+#: ../src/pp-options-dialog.c:651
+msgctxt "Printer Option Group"
+msgid "General"
+msgstr "일반"
+
+#. Translators: "Page Setup" tab contains settings related to pages (page size, paper source, etc.)
+#: ../src/pp-options-dialog.c:654
+msgctxt "Printer Option Group"
+msgid "Page Setup"
+msgstr "페이지 설정"
+
+#. Translators: "Installable Options" tab contains settings of presence of installed options (amount of RAM, duplex unit, etc.)
+#: ../src/pp-options-dialog.c:657
+msgctxt "Printer Option Group"
+msgid "Installable Options"
+msgstr "설치 가능한 옵션"
+
+#. Translators: "Job" tab contains settings for jobs
+#: ../src/pp-options-dialog.c:660
+msgctxt "Printer Option Group"
+msgid "Job"
+msgstr "작업"
+
+#. Translators: "Image Quality" tab contains settings for quality of output print (e.g. resolution)
+#: ../src/pp-options-dialog.c:663
+msgctxt "Printer Option Group"
+msgid "Image Quality"
+msgstr "이미지 화질"
+
+#. Translators: "Color" tab contains color settings (e.g. color printing)
+#: ../src/pp-options-dialog.c:666
+msgctxt "Printer Option Group"
+msgid "Color"
+msgstr "색"
+
+#. Translators: "Finishing" tab contains finishing settings (e.g. booklet printing)
+#: ../src/pp-options-dialog.c:669
+msgctxt "Printer Option Group"
+msgid "Finishing"
+msgstr "마치는 중"
+
+#. Translators: "Advanced" tab contains all others settings
+#: ../src/pp-options-dialog.c:672
+msgctxt "Printer Option Group"
+msgid "Advanced"
+msgstr "고급"
+
+#. Translators: Name of job which makes printer to print test page
+#. Translators: This button triggers the printing of a test page.
+#: ../src/pp-options-dialog.c:863 ../src/pp-options-dialog.ui.h:2
+msgid "Test Page"
+msgstr "테스트 페이지"
+
+#. Translators: Name of job which makes printer to print test page
+#: ../src/pp-options-dialog.c:876
+msgid "Test page"
+msgstr "테스트 페이지"
+
+#. Translators: this is an option of "Paper Source"
+#: ../src/pp-ppd-option-widget.c:75 ../src/pp-ppd-option-widget.c:77
+#: ../src/pp-ppd-option-widget.c:85
+msgid "Auto Select"
+msgstr "자동 선택"
+
+#. Translators: this is an option of "Paper Source"
+#. Translators: this is an option of "Resolution"
+#: ../src/pp-ppd-option-widget.c:79 ../src/pp-ppd-option-widget.c:81
+#: ../src/pp-ppd-option-widget.c:83 ../src/pp-ppd-option-widget.c:87
+msgid "Printer Default"
+msgstr "프린터 기본값"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:89
+msgid "Embed GhostScript fonts only"
+msgstr "고스트스크립트 글꼴만 포함"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:91
+msgid "Convert to PS level 1"
+msgstr "PS 레벨 1로 변환"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:93
+msgid "Convert to PS level 2"
+msgstr "PS 레벨 2로 변환"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:95
+msgid "No pre-filtering"
+msgstr "우선 필터링 안함"
+
+#. Translators: Name of column showing printer manufacturers
+#: ../src/pp-ppd-selection-dialog.c:233
+msgid "Manufacturer"
+msgstr "제조사"
+
+#. Translators: Name of column showing printer drivers
+#: ../src/pp-ppd-selection-dialog.c:250 ../src/pp-details-dialog.ui.h:5
+msgid "Driver"
+msgstr "드라이버"
+
+#: ../src/pp-printer-entry.c:427 ../src/pp-printer-entry.c:429
+#, fuzzy, c-format
+msgid "Could not rename printer : %s"
+msgstr "UI를 읽어들일 수 없습니다: %s"
+
+#: ../src/pp-printer-entry.c:427
+msgid "another printer already has that name."
+msgstr ""
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:612 ../src/printer-entry.ui.h:8
+msgid "No Active Jobs"
+msgstr "활성 작업 없음"
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:617
+#, c-format
+msgid "%u Job"
+msgid_plural "%u Jobs"
+msgstr[0] "작업 %u개"
+
+#. Translators: Name of job which makes printer to clean its heads
+#: ../src/pp-printer-entry.c:735
+msgid "Clean print heads"
+msgstr "인쇄 헤드 청소"
+
+#. Translators: The printer is low on toner
+#: ../src/pp-printer-entry.c:786
+msgid "Low on toner"
+msgstr "토너 부족"
+
+#. Translators: The printer has no toner left
+#: ../src/pp-printer-entry.c:788
+msgid "Out of toner"
+msgstr "토너 없음"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:791
+msgid "Low on developer"
+msgstr "현상액 부족"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:794
+msgid "Out of developer"
+msgstr "현상액 없음"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:796
+msgid "Low on a marker supply"
+msgstr "마커 내용물 부족"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:798
+msgid "Out of a marker supply"
+msgstr "마커 내용물 없음"
+
+#. Translators: One or more covers on the printer are open
+#: ../src/pp-printer-entry.c:800
+msgid "Open cover"
+msgstr "덮개 열림"
+
+#. Translators: One or more doors on the printer are open
+#: ../src/pp-printer-entry.c:802
+msgid "Open door"
+msgstr "문 열림"
+
+#. Translators: At least one input tray is low on media
+#: ../src/pp-printer-entry.c:804
+msgid "Low on paper"
+msgstr "용지 부족"
+
+#. Translators: At least one input tray is empty
+#: ../src/pp-printer-entry.c:806
+msgid "Out of paper"
+msgstr "용지 없음"
+
+#. Translators: The printer is offline
+#: ../src/pp-printer-entry.c:808
+msgctxt "printer state"
+msgid "Offline"
+msgstr "연결 끊김"
+
+#. Translators: Someone has stopped the Printer
+#. Translators: Printer's state (no jobs can be processed)
+#: ../src/pp-printer-entry.c:810 ../src/pp-printer-entry.c:953
+msgctxt "printer state"
+msgid "Stopped"
+msgstr "중지"
+
+#. Translators: The printer marker supply waste receptacle is almost full
+#: ../src/pp-printer-entry.c:812
+msgid "Waste receptacle almost full"
+msgstr "찌꺼기 보관함이 거의 가득 찼습니다"
+
+#. Translators: The printer marker supply waste receptacle is full
+#: ../src/pp-printer-entry.c:814
+msgid "Waste receptacle full"
+msgstr "찌꺼기 보관함이 가득 찼습니다"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:816
+msgid "The optical photo conductor is near end of life"
+msgstr "감광 반도체의 수명이 거의 다 되었습니다"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:818
+msgid "The optical photo conductor is no longer functioning"
+msgstr "감광 반도체가 이제 동작하지 않습니다"
+
+#. Translators: Printer's state (can start new job without waiting)
+#: ../src/pp-printer-entry.c:939
+msgctxt "printer state"
+msgid "Ready"
+msgstr "준비"
+
+#. Translators: Printer's state (printer is ready but doesn't accept new jobs)
+#: ../src/pp-printer-entry.c:944
+msgctxt "printer state"
+msgid "Does not accept jobs"
+msgstr "인쇄 작업 받지 않음"
+
+#. Translators: Printer's state (jobs are processing)
+#: ../src/pp-printer-entry.c:949
+msgctxt "printer state"
+msgid "Processing"
+msgstr "처리중"
+
+#: ../data/rpinters.ui.h:1
+msgid "Printers"
+msgstr "프린터"
+
+#: ../data/rpinters.ui.h:2 ../src/authentication-dialog.ui.h:2
+#: ../src/ppd-selection-dialog.ui.h:2
+msgid "Cancel"
+msgstr "취소"
+
+#: ../data/rpinters.ui.h:3
+#, fuzzy
+msgid "OK"
+msgstr "확인(_O)"
+
+#: ../data/rpinters.ui.h:5
+msgid "_OK"
+msgstr "확인(_O)"
+
+#: ../src/authentication-dialog.ui.h:1
+msgid " "
+msgstr " "
+
+#: ../src/authentication-dialog.ui.h:3
+msgid "Authenticate"
+msgstr "인증"
+
+#. Translators: This is a username on a print server.
+#: ../src/authentication-dialog.ui.h:4 ../src/new-printer-dialog.ui.h:13
+#: ../src/pp-jobs-dialog.ui.h:4
+msgid "Username"
+msgstr "사용자 이름"
+
+#. Translators: This is a password needed for printing.
+#: ../src/authentication-dialog.ui.h:5 ../src/new-printer-dialog.ui.h:14
+#: ../src/pp-jobs-dialog.ui.h:6
+msgid "Password"
+msgstr "암호"
+
+#: ../src/authentication-dialog.ui.h:6 ../src/new-printer-dialog.ui.h:11
+msgid "Authentication Required"
+msgstr "인증 필요"
+
+#: ../src/cc-permission-infobar.ui.h:1
+msgid "Unlock…"
+msgstr "잠금 해제…"
+
+#: ../src/cc-permission-infobar.ui.h:2
+msgid "Unlock to Change Settings"
+msgstr "설정을 바꾸려면 잠금을 해제하십시오"
+
+#: ../src/cc-permission-infobar.ui.h:3
+msgid "Some settings must be unlocked before they can be changed."
+msgstr "일부 설정은 바꾸려면 먼저 잠금을 해제해야 합니다."
+
+#: ../src/new-printer-dialog.ui.h:4
+msgid "_Add"
+msgstr "추가(_A)"
+
+#. Translators: This buttons submits the credentials for the selected server.
+#: ../src/new-printer-dialog.ui.h:6
+msgid "_Unlock"
+msgstr "잠금 해제(_U)"
+
+#. Translators: No printers were detected
+#: ../src/new-printer-dialog.ui.h:8
+msgid "No Printers Found"
+msgstr "프린터가 없습니다"
+
+#. Translators: The entered text should contain network address of a printer or a text which will filter found devices (their names and locations)
+#: ../src/new-printer-dialog.ui.h:10
+msgid "Enter a network address or search for a printer"
+msgstr "프린터의 네트워크 주소를 입력하거나 프린터를 찾아보십시오"
+
+#: ../src/new-printer-dialog.ui.h:12
+msgid "Enter username and password to view printers on Print Server."
+msgstr "인쇄 서버의 프린터를 보려면 사용자 이름과 암호를 입력하십시오."
+
+#: ../src/pp-details-dialog.ui.h:1 ../src/pp-jobs-dialog.ui.h:11
+#: ../src/pp-options-dialog.ui.h:3
+#, fuzzy
+msgid "Close"
+msgstr "닫기(_C)"
+
+#: ../src/pp-details-dialog.ui.h:2
+msgid "Name"
+msgstr "이름"
+
+#: ../src/pp-details-dialog.ui.h:3 ../src/printer-entry.ui.h:11
+msgid "Location"
+msgstr "위치"
+
+#: ../src/pp-details-dialog.ui.h:4
+msgid "Address"
+msgstr "주소"
+
+#: ../src/pp-details-dialog.ui.h:6
+msgid "Searching for preferred drivers…"
+msgstr "준비된 드라이버 검색중…"
+
+#: ../src/pp-details-dialog.ui.h:7
+msgid "Search for Drivers"
+msgstr "드라이버 검색"
+
+#: ../src/pp-details-dialog.ui.h:8
+msgid "Select from Database…"
+msgstr "데이터베이스에서 선택…"
+
+#: ../src/pp-details-dialog.ui.h:9
+msgid "Install PPD File…"
+msgstr "PPD 파일 설치…"
+
+#: ../src/ppd-selection-dialog.ui.h:1
+msgid "Select Printer Driver"
+msgstr "프린터 드라이버 선택"
+
+#: ../src/ppd-selection-dialog.ui.h:3
+msgid "Select"
+msgstr "선택"
+
+#: ../src/ppd-selection-dialog.ui.h:4
+msgid "Loading drivers database…"
+msgstr "드라이버 데이터베이스 불러오는 중…"
+
+#. Translators: This is a windows domain used with SMB protocol.
+#: ../src/pp-jobs-dialog.ui.h:2
+msgid "Domain"
+msgstr "도메인"
+
+#. Translators: This button authenticates all print jobs and send them for printing.
+#: ../src/pp-jobs-dialog.ui.h:8
+msgid "A_uthenticate"
+msgstr "인증(_U)"
+
+#. Translators: this action removes (purges) all the listed jobs from the list.
+#: ../src/pp-jobs-dialog.ui.h:10
+msgid "Clear All"
+msgstr "모두 지우기"
+
+#. Translators: This button pop up authentication dialog for print jobs which need credentials.
+#: ../src/pp-jobs-dialog.ui.h:13
+msgid "_Authenticate"
+msgstr "인증(_A)"
+
+#. Translators: this label describes the dialog empty state, with no jobs listed.
+#: ../src/pp-jobs-dialog.ui.h:15
+msgid "No Active Printer Jobs"
+msgstr "프린터 활성 작업 없음"
+
+#: ../src/printer-entry.ui.h:1
+msgid "Printing Options"
+msgstr "인쇄 옵션"
+
+#: ../src/printer-entry.ui.h:2
+msgid "Printer Details"
+msgstr "프린터 자세히 보기"
+
+#. Set this printer as default
+#: ../src/printer-entry.ui.h:4
+msgid "Use Printer by Default"
+msgstr "기본 프린터로 사용"
+
+#. Translators: This button executes command which cleans print heads of the printer.
+#: ../src/printer-entry.ui.h:6
+msgid "Clean Print Heads"
+msgstr "인쇄 헤드 청소"
+
+#: ../src/printer-entry.ui.h:7
+msgid "Remove Printer"
+msgstr "프린터 제거"
+
+#: ../src/printer-entry.ui.h:9
+#, fuzzy
+msgid "Options"
+msgstr "옵션…"
+
+#: ../src/printer-entry.ui.h:10
+msgid "Model"
+msgstr "모델"
+
+#: ../src/printer-entry.ui.h:12
+msgid "Ink Level"
+msgstr "남은 잉크"
+
+#. Translators: This is the message which follows the printer error.
+#: ../src/printer-entry.ui.h:14
+msgid "Please restart when the problem is resolved."
+msgstr "문제가 해결되면 다시 시작하십시오."
+
+#. Translators: This is the button which restarts the printer.
+#: ../src/printer-entry.ui.h:16
+msgid "Restart"
+msgstr "다시 시작"
+
+#. Translators: This is the button which allows undoing the removal of the printer.
+#: ../src/printers.ui.h:2
+msgid "Undo"
+msgstr "실행 취소"
+
+#: ../src/printers.ui.h:3
+msgid "No printers"
+msgstr "프린터 없음"
+
+#. Translators: The CUPS server is not running (we can not connect to it).
+#: ../src/printers.ui.h:5
+#, fuzzy
+msgid ""
+"Sorry! The system printing service\n"
+"        doesn’t seem to be available."
+msgstr ""
+"죄송합니다. 시스템 인쇄 서비스가\n"
+"없는 것 같습니다."
+
+#. Translators: This button adds new printer.
+#: ../src/printers.ui.h:8
+#, fuzzy
+msgid "Add Printer…"
+msgstr "프린터 추가…"
+

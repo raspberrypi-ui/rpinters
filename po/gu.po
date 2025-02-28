@@ -1,0 +1,895 @@
+# translation of gnome-control-center.master.gu.po to Gujarati
+# Ankit Patel <ankit644@yahoo.com>, 2005, 2006.
+# Ankit Patel <ankit@redhat.com>, 2006, 2007, 2009.
+# Sweta Kothari <swkothar@redhat.com>, 2008, 2009, 2010, 2011, 2012, 2014.
+msgid ""
+msgstr ""
+"Project-Id-Version: gnome-control-center.master.gu\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-28 10:49+0000\n"
+"PO-Revision-Date: 2014-09-22 11:54+0530\n"
+"Last-Translator: \n"
+"Language-Team: American English <kde-i18n-doc@kde.org>\n"
+"Language: gu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.0\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+"\n"
+
+#: ../src/rpinters.c:93
+#, fuzzy
+msgctxt "tab"
+msgid "Printers"
+msgstr "પ્રિન્ટરો"
+
+#. Translators: %s is the printer name
+#: ../src/cc-printers-panel.c:725
+#, c-format
+msgid "Printer “%s” has been deleted"
+msgstr ""
+
+#: ../src/cc-printers-panel.c:780
+#, fuzzy
+msgid "Are you sure you want to remove this printer?"
+msgstr "શું તમે ખરેખર ખાતાને દૂર કરવા માંગો છો?"
+
+#. Translators: Addition of the new printer failed.
+#: ../src/cc-printers-panel.c:1046
+msgid "Failed to add new printer."
+msgstr "નવાં પ્રિન્ટરને ઉમેરવાનું નિષ્ફળ."
+
+#. Translators: The XML file containing user interface can not be loaded
+#: ../src/cc-printers-panel.c:1357
+#, c-format
+msgid "Could not load ui: %s"
+msgstr "ui ને લોડ કરી શક્યા નહિં: %s"
+
+#: ../src/cc-util.c:127
+msgid "Today"
+msgstr "આજે"
+
+#: ../src/cc-util.c:131
+msgid "Yesterday"
+msgstr "ગઈકાલે"
+
+#. Translators: This is a date format string in the style of "Feb 24".
+#: ../src/cc-util.c:138
+msgid "%b %e"
+msgstr "%b %e"
+
+#. Translators: This is a date format string in the style of "Feb 24, 2013".
+#: ../src/cc-util.c:143
+msgid "%b %e, %Y"
+msgstr "%b %e, %Y"
+
+#: ../src/cc-util.c:165
+#, fuzzy, c-format
+msgid "%d hour"
+msgid_plural "%d hours"
+msgstr[0] "%i કલાક"
+msgstr[1] "%i કલાકો"
+
+#: ../src/cc-util.c:166
+#, fuzzy, c-format
+msgid "%d minute"
+msgid_plural "%d minutes"
+msgstr[0] "%i મિનિટ"
+msgstr[1] "%i મિનિટ"
+
+#: ../src/cc-util.c:167
+#, fuzzy, c-format
+msgid "%d second"
+msgid_plural "%d seconds"
+msgstr[0] "30 સેકંડ"
+msgstr[1] "30 સેકંડ"
+
+#. 5 hours 2 minutes 12 seconds
+#: ../src/cc-util.c:174
+#, fuzzy, c-format
+msgctxt "hours minutes seconds"
+msgid "%s %s %s"
+msgstr "%i %s %i %s"
+
+#. 5 hours 2 minutes
+#: ../src/cc-util.c:179
+#, fuzzy, c-format
+msgctxt "hours minutes"
+msgid "%s %s"
+msgstr "%i %s %i %s"
+
+#. 5 hours
+#: ../src/cc-util.c:184
+#, c-format
+msgctxt "hours"
+msgid "%s"
+msgstr ""
+
+#. 2 minutes 12 seconds
+#: ../src/cc-util.c:192
+#, fuzzy, c-format
+msgctxt "minutes seconds"
+msgid "%s %s"
+msgstr "%i %s %i %s"
+
+#. 2 minutes
+#: ../src/cc-util.c:197
+#, c-format
+msgctxt "minutes"
+msgid "%s"
+msgstr ""
+
+#. 0 seconds
+#: ../src/cc-util.c:208
+#, fuzzy
+msgid "0 seconds"
+msgstr "30 સેકંડ"
+
+#. Translators: This is the title of the dialog. %s is the printer name.
+#: ../src/pp-details-dialog.c:73 ../src/pp-details-dialog.c:371
+#, fuzzy, c-format
+msgid "%s Details"
+msgstr "વિગતો"
+
+#: ../src/pp-details-dialog.c:120
+msgid "No suitable driver found"
+msgstr "સુસંગત ડ્રાઇવર મળ્યુ નથી"
+
+#: ../src/pp-details-dialog.c:247
+msgid "Select PPD File"
+msgstr "PPD ફાઇલ પસંદ કરો"
+
+#: ../src/pp-details-dialog.c:250 ../data/rpinters.ui.h:4
+#: ../src/new-printer-dialog.ui.h:3
+msgid "_Cancel"
+msgstr "રદ કરો (_C)"
+
+#: ../src/pp-details-dialog.c:251
+msgid "_Open"
+msgstr "ખોલો (_O)"
+
+#: ../src/pp-details-dialog.c:256
+msgid ""
+"PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
+"PPD.GZ)"
+msgstr ""
+"PostScript પ્રિન્ટર વર્ણન ફાઈલો (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *.PPD.GZ)"
+
+#. Translators: The found device is a JetDirect printer
+#: ../src/pp-host.c:478
+msgid "JetDirect Printer"
+msgstr "JetDirect પ્રિન્ટર"
+
+#. Translators: The found device is a Line Printer Daemon printer
+#: ../src/pp-host.c:713
+msgid "LPD Printer"
+msgstr "LPD પ્રિન્ટર"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:64 ../src/pp-ppd-option-widget.c:69
+msgid "One Sided"
+msgstr "એકતરફી"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:66 ../src/pp-ppd-option-widget.c:71
+msgid "Long Edge (Standard)"
+msgstr "લાંબી બાજુ (મૂળભૂત)"
+
+#. Translators: this is an option of "Two Sided"
+#: ../src/pp-ipp-option-widget.c:68 ../src/pp-ppd-option-widget.c:73
+msgid "Short Edge (Flip)"
+msgstr "ટૂંકી બાજુ (ફ્લિપ)"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:70
+msgid "Portrait"
+msgstr "પૉર્ટેટ"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:72
+msgid "Landscape"
+msgstr "લૅન્ડસ્કેપ"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:74
+msgid "Reverse landscape"
+msgstr "વિપરીત લૅન્ડસ્કેપ"
+
+#. Translators: this is an option of "Orientation"
+#: ../src/pp-ipp-option-widget.c:76
+msgid "Reverse portrait"
+msgstr "વિપરીત પૉર્ટ્રેટ"
+
+#. Translators: Job's state (job is waiting to be printed)
+#: ../src/pp-jobs-dialog.c:222
+msgctxt "print job"
+msgid "Pending"
+msgstr "સ્થગિત"
+
+#. Translators: Job's state (job is held for printing)
+#: ../src/pp-jobs-dialog.c:228
+#, fuzzy
+msgctxt "print job"
+msgid "Paused"
+msgstr "અટકેલ"
+
+#. Translators: Job's state (job needs authentication to proceed further)
+#: ../src/pp-jobs-dialog.c:233
+#, fuzzy
+msgctxt "print job"
+msgid "Authentication required"
+msgstr "સત્તાધિકરણ જરૂરી"
+
+#. Translators: Job's state (job is currently printing)
+#: ../src/pp-jobs-dialog.c:238
+msgctxt "print job"
+msgid "Processing"
+msgstr "પ્રોસેસીંગ"
+
+#. Translators: Job's state (job has been stopped)
+#: ../src/pp-jobs-dialog.c:242
+msgctxt "print job"
+msgid "Stopped"
+msgstr "બંધ થયેલ"
+
+#. Translators: Job's state (job has been canceled)
+#: ../src/pp-jobs-dialog.c:246
+msgctxt "print job"
+msgid "Canceled"
+msgstr "રદ થયેલ"
+
+#. Translators: Job's state (job has aborted due to error)
+#: ../src/pp-jobs-dialog.c:250
+msgctxt "print job"
+msgid "Aborted"
+msgstr "કાઢી નાંખેલ"
+
+#. Translators: Job's state (job has completed successfully)
+#: ../src/pp-jobs-dialog.c:254
+msgctxt "print job"
+msgid "Completed"
+msgstr "સમાપ્ત"
+
+#. Translators: This label shows how many jobs of this printer needs to be authenticated to be printed.
+#: ../src/pp-jobs-dialog.c:363
+#, fuzzy, c-format
+msgid "%u Job Requires Authentication"
+msgid_plural "%u Jobs Require Authentication"
+msgstr[0] "સર્વરને સત્તાધિકરણની જરૂરિયાત છે"
+msgstr[1] "સર્વરને સત્તાધિકરણની જરૂરિયાત છે"
+
+#. Translators: This is the printer name for which we are showing the active jobs
+#: ../src/pp-jobs-dialog.c:519
+#, fuzzy, c-format
+msgctxt "Printer jobs dialog title"
+msgid "%s — Active Jobs"
+msgstr "%s સક્રિય ક્રિયા"
+
+#. Translators: The printer needs authentication info to print.
+#: ../src/pp-jobs-dialog.c:523
+#, c-format
+msgid "Enter credentials to print from %s."
+msgstr ""
+
+#. Translators: Name of job which makes printer to autoconfigure itself
+#: ../src/pp-new-printer.c:1210
+msgid "Automatic configuration"
+msgstr "આપમેળે રૂપરેખાંકન"
+
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
+#. Translators: This is the title presented at top of the dialog.
+#: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
+#: ../src/pp-new-printer-dialog.c:803 ../src/new-printer-dialog.ui.h:2
+msgid "Add Printer"
+msgstr "પ્રિન્ટરને ઉમેરો"
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (WID ("headerbar")), NULL);
+#. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Unlock Print Server"));
+#: ../src/pp-new-printer-dialog.c:365
+#, fuzzy
+msgid "Unlock Print Server"
+msgstr "પ્રિન્ટર ડ્રાઇવરને પસંદ કરો"
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:369
+#, fuzzy, c-format
+msgid "Unlock %s."
+msgstr "તાળુ ખોલો"
+
+#. Translators: Samba server needs authentication of the user to show list of its printers.
+#: ../src/pp-new-printer-dialog.c:373
+#, fuzzy, c-format
+msgid "Enter username and password to view printers on %s."
+msgstr "%s પર ઉપલબ્ધ પ્રિન્ટરોને જોવા માટે તમારાં વપરાશકર્તાનામ અને પાસવર્ડને દાખલ કરો."
+
+#. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
+#: ../src/pp-new-printer-dialog.c:798
+#, fuzzy
+msgid "Add Printer - Searching for Printers"
+msgstr "નેટવર્કો માટે શોધી રહ્યા નથી"
+
+#. Translators: The found device is a printer connected via USB
+#: ../src/pp-new-printer-dialog.c:1616
+msgid "USB"
+msgstr "USB"
+
+#. Translators: The found device is a printer connected via serial port
+#: ../src/pp-new-printer-dialog.c:1621
+msgid "Serial Port"
+msgstr "સીરીયલ પોર્ટ"
+
+#. Translators: The found device is a printer connected via parallel port
+#: ../src/pp-new-printer-dialog.c:1628
+msgid "Parallel Port"
+msgstr "સમાંતર પોર્ટ"
+
+#. Translators: The found device is a printer connected via Bluetooth
+#: ../src/pp-new-printer-dialog.c:1633
+msgid "Bluetooth"
+msgstr "બ્લુટુથ"
+
+#. Translators: Location of found network printer (e.g. Kitchen, Reception)
+#: ../src/pp-new-printer-dialog.c:1670
+#, c-format
+msgid "Location: %s"
+msgstr "સ્થાન: %s"
+
+#. Translators: Network address of found printer
+#: ../src/pp-new-printer-dialog.c:1675
+#, c-format
+msgid "Address: %s"
+msgstr "સરનામું: %s"
+
+#. Translators: This item is a server which needs authentication to show its printers
+#: ../src/pp-new-printer-dialog.c:1702
+msgid "Server requires authentication"
+msgstr "સર્વરને સત્તાધિકરણની જરૂરિયાત છે"
+
+#: ../src/pp-options-dialog.c:87
+msgid "Two Sided"
+msgstr "દ્દિતરફી"
+
+#: ../src/pp-options-dialog.c:88
+msgid "Paper Type"
+msgstr "પેપર પ્રકાર"
+
+#: ../src/pp-options-dialog.c:89
+msgid "Paper Source"
+msgstr "પેપર સ્ત્રોત"
+
+#: ../src/pp-options-dialog.c:90
+msgid "Output Tray"
+msgstr "આઉટપુટ ટ્રે"
+
+#: ../src/pp-options-dialog.c:91
+#, fuzzy
+msgctxt "printing option"
+msgid "Resolution"
+msgstr "રીઝોલ્યુશન"
+
+#: ../src/pp-options-dialog.c:92
+msgid "GhostScript pre-filtering"
+msgstr "GhostScript ફરી ફિલ્ટર કરી રહ્યા છે"
+
+#. Translators: This option sets number of pages printed on one sheet
+#: ../src/pp-options-dialog.c:530
+msgid "Pages per side"
+msgstr "બાજુ પ્રતિ પાનાંઓ"
+
+#. Translators: This option sets whether to print on both sides of paper
+#: ../src/pp-options-dialog.c:542
+msgid "Two-sided"
+msgstr "દ્દિતરફી"
+
+#. Translators: This option sets orientation of print (portrait, landscape...)
+#: ../src/pp-options-dialog.c:554
+msgid "Orientation"
+msgstr "દિશા"
+
+#. Translators: "General" tab contains general printer options
+#: ../src/pp-options-dialog.c:651
+msgctxt "Printer Option Group"
+msgid "General"
+msgstr "સામાન્ય"
+
+#. Translators: "Page Setup" tab contains settings related to pages (page size, paper source, etc.)
+#: ../src/pp-options-dialog.c:654
+msgctxt "Printer Option Group"
+msgid "Page Setup"
+msgstr "પાનું સુયોજન"
+
+#. Translators: "Installable Options" tab contains settings of presence of installed options (amount of RAM, duplex unit, etc.)
+#: ../src/pp-options-dialog.c:657
+msgctxt "Printer Option Group"
+msgid "Installable Options"
+msgstr "સ્થાપન કરી શકાય તેવા વિકલ્પો"
+
+#. Translators: "Job" tab contains settings for jobs
+#: ../src/pp-options-dialog.c:660
+msgctxt "Printer Option Group"
+msgid "Job"
+msgstr "ક્રિયા"
+
+#. Translators: "Image Quality" tab contains settings for quality of output print (e.g. resolution)
+#: ../src/pp-options-dialog.c:663
+msgctxt "Printer Option Group"
+msgid "Image Quality"
+msgstr "ઇમેજ ગુણવત્તા"
+
+#. Translators: "Color" tab contains color settings (e.g. color printing)
+#: ../src/pp-options-dialog.c:666
+msgctxt "Printer Option Group"
+msgid "Color"
+msgstr "રંગ"
+
+#. Translators: "Finishing" tab contains finishing settings (e.g. booklet printing)
+#: ../src/pp-options-dialog.c:669
+msgctxt "Printer Option Group"
+msgid "Finishing"
+msgstr "સમાપ્ત કરી રહ્યા છે"
+
+#. Translators: "Advanced" tab contains all others settings
+#: ../src/pp-options-dialog.c:672
+msgctxt "Printer Option Group"
+msgid "Advanced"
+msgstr "ઉન્નત"
+
+#. Translators: Name of job which makes printer to print test page
+#. Translators: This button triggers the printing of a test page.
+#: ../src/pp-options-dialog.c:863 ../src/pp-options-dialog.ui.h:2
+#, fuzzy
+msgid "Test Page"
+msgstr "ચકાસણી પાનું"
+
+#. Translators: Name of job which makes printer to print test page
+#: ../src/pp-options-dialog.c:876
+msgid "Test page"
+msgstr "ચકાસણી પાનું"
+
+#. Translators: this is an option of "Paper Source"
+#: ../src/pp-ppd-option-widget.c:75 ../src/pp-ppd-option-widget.c:77
+#: ../src/pp-ppd-option-widget.c:85
+msgid "Auto Select"
+msgstr "સ્વયં પસંદ કરો"
+
+#. Translators: this is an option of "Paper Source"
+#. Translators: this is an option of "Resolution"
+#: ../src/pp-ppd-option-widget.c:79 ../src/pp-ppd-option-widget.c:81
+#: ../src/pp-ppd-option-widget.c:83 ../src/pp-ppd-option-widget.c:87
+msgid "Printer Default"
+msgstr "મૂળભૂત પ્રિન્ટર "
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:89
+msgid "Embed GhostScript fonts only"
+msgstr "ફક્ત ઍમ્બેડ GhostScript ફોન્ટ"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:91
+msgid "Convert to PS level 1"
+msgstr "PS સ્તર 1 માં રૂપાંતરિત કરો"
+
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:93
+msgid "Convert to PS level 2"
+msgstr "PS સ્તર 2 માં રૂપાંતરિત કરો"
+
+# libgnomeprintui/gpaui/add-printer-dialog.c:83
+# libgnomeprintui/gpaui/config-dialog.c:83
+#. Translators: this is an option of "GhostScript"
+#: ../src/pp-ppd-option-widget.c:95
+msgid "No pre-filtering"
+msgstr "પહેલેથી ફિલ્ટર કરવુ નહિં"
+
+#. Translators: Name of column showing printer manufacturers
+#: ../src/pp-ppd-selection-dialog.c:233
+msgid "Manufacturer"
+msgstr "ઉત્પાદક"
+
+#. Translators: Name of column showing printer drivers
+#: ../src/pp-ppd-selection-dialog.c:250 ../src/pp-details-dialog.ui.h:5
+msgid "Driver"
+msgstr "ડ્રાઇવર"
+
+#: ../src/pp-printer-entry.c:427 ../src/pp-printer-entry.c:429
+#, fuzzy, c-format
+msgid "Could not rename printer : %s"
+msgstr "ui ને લોડ કરી શક્યા નહિં: %s"
+
+#: ../src/pp-printer-entry.c:427
+msgid "another printer already has that name."
+msgstr ""
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:612 ../src/printer-entry.ui.h:8
+#, fuzzy
+msgid "No Active Jobs"
+msgstr "સક્રિય ક્રિયા"
+
+#. Translators: This is the label of the button that opens the Jobs Dialog.
+#: ../src/pp-printer-entry.c:617
+#, c-format
+msgid "%u Job"
+msgid_plural "%u Jobs"
+msgstr[0] ""
+msgstr[1] ""
+
+#. Translators: Name of job which makes printer to clean its heads
+#: ../src/pp-printer-entry.c:735
+#, fuzzy
+msgid "Clean print heads"
+msgstr "પ્રિન્ટર સુયોજનોને બદલો"
+
+#. Translators: The printer is low on toner
+#: ../src/pp-printer-entry.c:786
+msgid "Low on toner"
+msgstr "ટૉનર ઓછુ છે"
+
+#. Translators: The printer has no toner left
+#: ../src/pp-printer-entry.c:788
+msgid "Out of toner"
+msgstr "ટોનરની બહાર"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:791
+msgid "Low on developer"
+msgstr "ડેવલપર ઓછું છે"
+
+#. Translators: "Developer" is a chemical for photo development,
+#. * http://en.wikipedia.org/wiki/Photographic_developer
+#: ../src/pp-printer-entry.c:794
+msgid "Out of developer"
+msgstr "ડેવલપરની બહાર"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:796
+msgid "Low on a marker supply"
+msgstr "માર્કર પૂરવઠો ઓછો છે"
+
+#. Translators: "marker" is one color bin of the printer
+#: ../src/pp-printer-entry.c:798
+msgid "Out of a marker supply"
+msgstr "માર્કર પૂરવઠાની બહાર"
+
+#. Translators: One or more covers on the printer are open
+#: ../src/pp-printer-entry.c:800
+msgid "Open cover"
+msgstr "કવર ખોલો"
+
+#. Translators: One or more doors on the printer are open
+#: ../src/pp-printer-entry.c:802
+msgid "Open door"
+msgstr "દરવાજો ખોલો"
+
+#. Translators: At least one input tray is low on media
+#: ../src/pp-printer-entry.c:804
+msgid "Low on paper"
+msgstr "પેપર ઓછા"
+
+#. Translators: At least one input tray is empty
+#: ../src/pp-printer-entry.c:806
+msgid "Out of paper"
+msgstr "પેપરની બહાર"
+
+#. Translators: The printer is offline
+#: ../src/pp-printer-entry.c:808
+msgctxt "printer state"
+msgid "Offline"
+msgstr "ઓફલાઇન"
+
+#. Translators: Someone has stopped the Printer
+#. Translators: Printer's state (no jobs can be processed)
+#: ../src/pp-printer-entry.c:810 ../src/pp-printer-entry.c:953
+msgctxt "printer state"
+msgid "Stopped"
+msgstr "બંધ થયેલ"
+
+#. Translators: The printer marker supply waste receptacle is almost full
+#: ../src/pp-printer-entry.c:812
+msgid "Waste receptacle almost full"
+msgstr "લગભગ સંપૂર્ણ પાત્ર કચરો"
+
+#. Translators: The printer marker supply waste receptacle is full
+#: ../src/pp-printer-entry.c:814
+msgid "Waste receptacle full"
+msgstr "સંપૂર્ણ પાત્ર કચરો"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:816
+msgid "The optical photo conductor is near end of life"
+msgstr "ઓપ્ટીકલ ફોટો કન્ડક્ટર જીવનનાં અંત નજીક છે"
+
+#. Translators: Optical photo conductors are used in laser printers
+#: ../src/pp-printer-entry.c:818
+msgid "The optical photo conductor is no longer functioning"
+msgstr "ઓપ્ટીકલ ફોટો કન્ડક્ટર લાંબા સમય સુધી કાર્ય કરતુ નથી"
+
+#. Translators: Printer's state (can start new job without waiting)
+#: ../src/pp-printer-entry.c:939
+msgctxt "printer state"
+msgid "Ready"
+msgstr "તૈયાર"
+
+#. Translators: Printer's state (printer is ready but doesn't accept new jobs)
+#: ../src/pp-printer-entry.c:944
+msgctxt "printer state"
+msgid "Does not accept jobs"
+msgstr "કાર્યોને સ્વીકારો નહિં"
+
+#. Translators: Printer's state (jobs are processing)
+#: ../src/pp-printer-entry.c:949
+msgctxt "printer state"
+msgid "Processing"
+msgstr "પ્રોસેસીંગ"
+
+#: ../data/rpinters.ui.h:1
+msgid "Printers"
+msgstr "પ્રિન્ટરો"
+
+#: ../data/rpinters.ui.h:2 ../src/authentication-dialog.ui.h:2
+#: ../src/ppd-selection-dialog.ui.h:2
+msgid "Cancel"
+msgstr "રદ કરો"
+
+#: ../data/rpinters.ui.h:3
+#, fuzzy
+msgid "OK"
+msgstr "બરાબર (_O)"
+
+#: ../data/rpinters.ui.h:5
+msgid "_OK"
+msgstr "બરાબર (_O)"
+
+#: ../src/authentication-dialog.ui.h:1
+msgid " "
+msgstr " "
+
+#: ../src/authentication-dialog.ui.h:3
+msgid "Authenticate"
+msgstr "સત્તાધિકરણ"
+
+#. Translators: This is a username on a print server.
+#: ../src/authentication-dialog.ui.h:4 ../src/new-printer-dialog.ui.h:13
+#: ../src/pp-jobs-dialog.ui.h:4
+msgid "Username"
+msgstr "વપરાશકર્તા નામ"
+
+#. Translators: This is a password needed for printing.
+#: ../src/authentication-dialog.ui.h:5 ../src/new-printer-dialog.ui.h:14
+#: ../src/pp-jobs-dialog.ui.h:6
+msgid "Password"
+msgstr "પાસવર્ડ"
+
+#: ../src/authentication-dialog.ui.h:6 ../src/new-printer-dialog.ui.h:11
+msgid "Authentication Required"
+msgstr "સત્તાધિકરણ જરૂરી"
+
+#: ../src/cc-permission-infobar.ui.h:1
+#, fuzzy
+msgid "Unlock…"
+msgstr "તાળુ ખોલો"
+
+#: ../src/cc-permission-infobar.ui.h:2
+#, fuzzy
+msgid "Unlock to Change Settings"
+msgstr "Bluetooth સુયોજનો"
+
+#: ../src/cc-permission-infobar.ui.h:3
+msgid "Some settings must be unlocked before they can be changed."
+msgstr ""
+
+#: ../src/new-printer-dialog.ui.h:4
+msgid "_Add"
+msgstr "ઉમેરો (_A)"
+
+#. Translators: This buttons submits the credentials for the selected server.
+#: ../src/new-printer-dialog.ui.h:6
+#, fuzzy
+msgid "_Unlock"
+msgstr "તાળુ ખોલો"
+
+#. Translators: No printers were detected
+#: ../src/new-printer-dialog.ui.h:8
+#, fuzzy
+msgid "No Printers Found"
+msgstr "ચિત્ર મળ્યા નથી"
+
+#. Translators: The entered text should contain network address of a printer or a text which will filter found devices (their names and locations)
+#: ../src/new-printer-dialog.ui.h:10
+msgid "Enter a network address or search for a printer"
+msgstr ""
+
+#: ../src/new-printer-dialog.ui.h:12
+#, fuzzy
+msgid "Enter username and password to view printers on Print Server."
+msgstr "%s પર ઉપલબ્ધ પ્રિન્ટરોને જોવા માટે તમારાં વપરાશકર્તાનામ અને પાસવર્ડને દાખલ કરો."
+
+#: ../src/pp-details-dialog.ui.h:1 ../src/pp-jobs-dialog.ui.h:11
+#: ../src/pp-options-dialog.ui.h:3
+msgid "Close"
+msgstr "બંધ કરો"
+
+#: ../src/pp-details-dialog.ui.h:2
+msgid "Name"
+msgstr "નામ"
+
+#: ../src/pp-details-dialog.ui.h:3 ../src/printer-entry.ui.h:11
+msgid "Location"
+msgstr "સ્થાન"
+
+#: ../src/pp-details-dialog.ui.h:4
+msgid "Address"
+msgstr "સરનામું"
+
+#: ../src/pp-details-dialog.ui.h:6
+msgid "Searching for preferred drivers…"
+msgstr "પસંદ થયેલ ડ્રાઇવરોને શોધી રહ્યા છે..."
+
+#: ../src/pp-details-dialog.ui.h:7
+#, fuzzy
+msgid "Search for Drivers"
+msgstr "શહેર માટે શોધો"
+
+#: ../src/pp-details-dialog.ui.h:8
+#, fuzzy
+msgid "Select from Database…"
+msgstr "ડેટાબેઝમાંથી પસંદ કરો..."
+
+#: ../src/pp-details-dialog.ui.h:9
+#, fuzzy
+msgid "Install PPD File…"
+msgstr "PPD ફાઈલ પૂરી પાડો..."
+
+#: ../src/ppd-selection-dialog.ui.h:1
+msgid "Select Printer Driver"
+msgstr "પ્રિન્ટર ડ્રાઇવરને પસંદ કરો"
+
+#: ../src/ppd-selection-dialog.ui.h:3
+msgid "Select"
+msgstr "પસંદ કરો"
+
+#: ../src/ppd-selection-dialog.ui.h:4
+#, fuzzy
+msgid "Loading drivers database…"
+msgstr "ડ્રાઇવર ડેટાબેઝને લાવી રહ્યા છે..."
+
+#. Translators: This is a windows domain used with SMB protocol.
+#: ../src/pp-jobs-dialog.ui.h:2
+#, fuzzy
+msgid "Domain"
+msgstr "ડોમેઇન (_D)"
+
+#. Translators: This button authenticates all print jobs and send them for printing.
+#: ../src/pp-jobs-dialog.ui.h:8
+msgid "A_uthenticate"
+msgstr "સત્તાધિકરણ (_u)"
+
+#. Translators: this action removes (purges) all the listed jobs from the list.
+#: ../src/pp-jobs-dialog.ui.h:10
+msgid "Clear All"
+msgstr ""
+
+#. Translators: This button pop up authentication dialog for print jobs which need credentials.
+#: ../src/pp-jobs-dialog.ui.h:13
+#, fuzzy
+msgid "_Authenticate"
+msgstr "સત્તાધિકરણ"
+
+#. Translators: this label describes the dialog empty state, with no jobs listed.
+#: ../src/pp-jobs-dialog.ui.h:15
+#, fuzzy
+msgid "No Active Printer Jobs"
+msgstr "%s સક્રિય ક્રિયા"
+
+#: ../src/printer-entry.ui.h:1
+#, fuzzy
+msgid "Printing Options"
+msgstr "પ્રવેશ વિકલ્પો"
+
+#: ../src/printer-entry.ui.h:2
+#, fuzzy
+msgid "Printer Details"
+msgstr "મૂળભૂત પ્રિન્ટર "
+
+#. Set this printer as default
+#: ../src/printer-entry.ui.h:4
+#, fuzzy
+msgid "Use Printer by Default"
+msgstr "મૂળભૂત પ્રિન્ટર "
+
+#. Translators: This button executes command which cleans print heads of the printer.
+#: ../src/printer-entry.ui.h:6
+#, fuzzy
+msgid "Clean Print Heads"
+msgstr "છાપન ક્રિયા રદ કરો"
+
+#: ../src/printer-entry.ui.h:7
+msgid "Remove Printer"
+msgstr "પ્રિન્ટર દૂર કરો"
+
+#: ../src/printer-entry.ui.h:9
+msgid "Options"
+msgstr "વિકલ્પો"
+
+# libgnomeprintui/gpaui/add-printer-dialog.c:83
+# libgnomeprintui/gpaui/config-dialog.c:83
+#: ../src/printer-entry.ui.h:10
+msgid "Model"
+msgstr "મોડેલ"
+
+#: ../src/printer-entry.ui.h:12
+msgid "Ink Level"
+msgstr "ઇંક સ્તર"
+
+#. Translators: This is the message which follows the printer error.
+#: ../src/printer-entry.ui.h:14
+msgid "Please restart when the problem is resolved."
+msgstr ""
+
+#. Translators: This is the button which restarts the printer.
+#: ../src/printer-entry.ui.h:16
+#, fuzzy
+msgid "Restart"
+msgstr "હવે પુન:શરૂ કરો"
+
+#. Translators: This is the button which allows undoing the removal of the printer.
+#: ../src/printers.ui.h:2
+msgid "Undo"
+msgstr ""
+
+#: ../src/printers.ui.h:3
+#, fuzzy
+msgid "No printers"
+msgstr "પ્રિન્ટરો"
+
+#. Translators: The CUPS server is not running (we can not connect to it).
+#: ../src/printers.ui.h:5
+#, fuzzy
+msgid ""
+"Sorry! The system printing service\n"
+"        doesn’t seem to be available."
+msgstr "દિલગીર છુ! સિસ્ટમ પ્રિન્ટીંગ સેવા ઉપલબ્ધ નથી એવુ લાગે છે."
+
+#. Translators: This button adds new printer.
+#: ../src/printers.ui.h:8
+#, fuzzy
+msgid "Add Printer…"
+msgstr "પ્રિન્ટરને ઉમેરો"
+

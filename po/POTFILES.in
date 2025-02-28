@@ -4,7 +4,7 @@ src/cc-permission-infobar.c
 src/cc-printers-panel.c
 src/cc-util.c
 src/list-box-helper.c
-src/piprint.c
+src/rpinters.c
 src/pp-cups.c
 src/pp-details-dialog.c
 src/pp-host.c
