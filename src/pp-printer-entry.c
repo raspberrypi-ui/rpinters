@@ -421,7 +421,12 @@ on_printer_rename_cb (GObject      *source_object,
 
   if (!pp_printer_rename_finish (PP_PRINTER (source_object), result, NULL))
   {
-    char *text = g_strdup_printf ("Could not rename printer : %s", (char *) g_task_get_task_data (G_TASK (result)));
+    char *text;
+    const char *reason = (const char *) g_task_get_task_data (G_TASK (result));
+    if (!g_strcmp0 (reason, "successful-ok"))
+      text = g_strdup_printf (_("Could not rename printer : %s"), _("another printer already has that name."));
+    else
+      text = g_strdup_printf (_("Could not rename printer : %s"), reason);
     message (text, get_panel (self));
     g_free (text);
     return;
