@@ -78,7 +78,6 @@ void init_plugin (void)
     setlocale (LC_ALL, "");
     bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
     bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-    textdomain (GETTEXT_PACKAGE);
 
     cpp = g_object_new (CC_TYPE_PRINTERS_PANEL, NULL);
 }
