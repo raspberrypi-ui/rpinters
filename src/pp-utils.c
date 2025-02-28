@@ -1072,8 +1072,7 @@ printer_is_local (cups_ptype_t  printer_type,
   int      port;
 
   if (printer_type &
-      (CUPS_PRINTER_DISCOVERED |
-       CUPS_PRINTER_REMOTE |
+      (CUPS_PRINTER_REMOTE |
        CUPS_PRINTER_IMPLICIT))
     result = FALSE;
 
@@ -1087,7 +1086,7 @@ printer_is_local (cups_ptype_t  printer_type,
 		   &port,
 		   resource, sizeof (resource));
 
-  if (g_str_equal (scheme, "ipp") ||
+  if (g_str_equal (scheme, "dnssd") ||
       g_str_equal (scheme, "smb") ||
       g_str_equal (scheme, "socket") ||
       g_str_equal (scheme, "lpd"))
