@@ -762,6 +762,7 @@ static void confirm_no (GtkButton *, CcPrintersPanel *self)
 
 static void confirm_message (const char *msg, CcPrintersPanel *self)
 {
+    textdomain (GETTEXT_PACKAGE);
     gtk_builder_add_from_file (self->builder, PACKAGE_DATA_DIR "/ui/rpinters.ui", NULL);
 
     gtk_label_set_text (GTK_LABEL (gtk_builder_get_object (self->builder, "modal_msg")), msg);
@@ -788,6 +789,7 @@ static void ok_clicked (GtkButton *button, CcPrintersPanel *self)
 
 void message (const char *msg, CcPrintersPanel *self)
 {
+    textdomain (GETTEXT_PACKAGE);
     gtk_builder_add_from_file (self->builder, PACKAGE_DATA_DIR "/ui/rpinters.ui", NULL);
 
     gtk_label_set_text (GTK_LABEL (gtk_builder_get_object (self->builder, "modal_msg")), msg);

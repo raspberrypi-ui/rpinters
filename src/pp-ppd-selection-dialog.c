@@ -335,6 +335,7 @@ pp_ppd_selection_dialog_new (GtkWindow            *parent,
 
   self = g_new0 (PpPPDSelectionDialog, 1);
 
+  textdomain (GETTEXT_PACKAGE);
   self->builder = gtk_builder_new ();
 
   builder_result = gtk_builder_add_objects_from_resource (self->builder,
