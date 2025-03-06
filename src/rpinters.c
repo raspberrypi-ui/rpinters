@@ -50,7 +50,6 @@ static GtkWidget *main_dlg;
 /*----------------------------------------------------------------------------*/
 
 #ifndef PLUGIN_NAME
-static gboolean cancel_main (GtkButton *button, gpointer data);
 static gboolean ok_main (GtkButton *button, gpointer data);
 static gboolean close_prog (GtkWidget *widget, GdkEvent *event, gpointer data);
 #endif
@@ -124,12 +123,6 @@ static gboolean ok_main (GtkButton *button, gpointer data)
     return FALSE;
 }
 
-static gboolean cancel_main (GtkButton *button, gpointer data)
-{
-    gtk_main_quit ();
-    return FALSE;
-}
-
 static gboolean close_prog (GtkWidget *widget, GdkEvent *event, gpointer data)
 {
     gtk_main_quit ();
@@ -161,9 +154,6 @@ int main (int argc, char *argv[])
 
     wid = (GtkWidget *) gtk_builder_get_object (builder, "button_ok");
     g_signal_connect (wid, "clicked", G_CALLBACK (ok_main), NULL);
-
-    wid = (GtkWidget *) gtk_builder_get_object (builder, "button_cancel");
-    g_signal_connect (wid, "clicked", G_CALLBACK (cancel_main), NULL);
 
     wid = (GtkWidget *) gtk_builder_get_object (builder, "box");
     gtk_box_pack_start (GTK_BOX (wid), GTK_WIDGET (cpp), TRUE, TRUE, 5);
