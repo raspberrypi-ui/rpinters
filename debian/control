@@ -8,6 +8,8 @@ Standards-Version: 4.5.1
 Homepage: http://raspberrypi.com/
 
 Package: rpinters
+Replaces: system-config-printer
+Breaks: system-config-printer
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, libgtk-3-0 (>= 3.24), system-config-printer-common
 Description: Printer configuration tool for Raspberry Pi Desktop
