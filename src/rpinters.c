@@ -92,6 +92,11 @@ const char *tab_name (int tab)
     return C_("tab", "Printers");
 }
 
+const char *icon_name (int tab)
+{
+    return "printer";
+}
+
 const char *tab_id (int tab)
 {
     return NULL;
