@@ -11,6 +11,6 @@ Package: rpinters
 Replaces: system-config-printer
 Breaks: system-config-printer
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libgtk-3-0 (>= 3.24), system-config-printer-common
+Depends: ${shlibs:Depends}, ${misc:Depends}, system-config-printer-common
 Description: Printer configuration tool for Raspberry Pi Desktop
  Port of gnome-control-center Printers panel
