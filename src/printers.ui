@@ -146,7 +146,7 @@
                     <property name="can_focus">False</property>
                     <property name="valign">start</property>
                     <property name="pixel_size">80</property>
-                    <property name="icon_name">printer-symbolic</property>
+                    <property name="icon_name">printer</property>
                     <style>
                       <class name="dim-label"/>
                     </style>
