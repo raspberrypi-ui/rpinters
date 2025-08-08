@@ -178,7 +178,7 @@
                             <property name="can_focus">False</property>
                             <property name="valign">GTK_ALIGN_START</property>
                             <property name="pixel_size">80</property>
-                            <property name="icon_name">printer-symbolic</property>
+                            <property name="icon_name">printer</property>
                             <property name="opacity">0.6</property>
                             <style>
                               <class name="dim-label"/>
