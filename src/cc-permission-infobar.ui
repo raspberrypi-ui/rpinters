@@ -53,6 +53,7 @@
                     <property name="visible">True</property>
                     <property name="halign">start</property>
                     <property name="label" translatable="yes">Some settings must be unlocked before they can be changed.</property>
+                    <property name="wrap">True</property>
                   </object>
                 </child>
               </object>
