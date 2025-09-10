@@ -1020,6 +1020,11 @@ pp_printer_entry_update (PpPrinterEntry *self,
 
   gtk_widget_set_sensitive (GTK_WIDGET (self->printer_default_checkbutton), self->is_authorized);
   gtk_widget_set_sensitive (GTK_WIDGET (self->remove_printer_menuitem), self->is_authorized);
+  if (!self->is_authorized)
+  {
+    gtk_widget_set_tooltip_text (GTK_WIDGET (self->printer_default_checkbutton), _("You are not permitted to make changes to printer settings"));
+    gtk_widget_set_tooltip_text (GTK_WIDGET (self->remove_printer_menuitem), _("You are not permitted to make changes to printer settings"));
+  }
 }
 
 static void

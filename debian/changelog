@@ -1,3 +1,9 @@
+rpinters (1.4) trixie; urgency=medium
+
+  * Add tooltips to notify of lockout
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 10 Sep 2025 10:50:44 +0100
+
 rpinters (1.3) trixie; urgency=medium
 
   * Wrap infobar label to reduce width

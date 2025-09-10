@@ -357,6 +357,8 @@ ipp_option_add (IPPAttribute *attr_supported,
     {
       gtk_widget_show_all (widget);
       gtk_widget_set_sensitive (widget, sensitive);
+      if (!sensitive) gtk_widget_set_tooltip_text (widget, _("You are not permitted to make changes to printer settings"));
+
       position = grid_get_height (grid);
 
       label = gtk_label_new (option_display_name);
@@ -392,6 +394,8 @@ ppd_option_add (ppd_option_t  option,
     {
       gtk_widget_show_all (widget);
       gtk_widget_set_sensitive (widget, sensitive);
+      if (!sensitive) gtk_widget_set_tooltip_text (widget, _("You are not permitted to make changes to printer settings"));
+
       position = grid_get_height (grid);
 
       label = gtk_label_new (ppd_option_name_translate (&option));

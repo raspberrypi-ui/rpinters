@@ -288,6 +288,12 @@ update_sensitivity (PpDetailsDialog *self,
   gtk_widget_set_sensitive (GTK_WIDGET (self->printer_name_entry), sensitive);
   gtk_widget_set_sensitive (GTK_WIDGET (self->printer_location_entry), sensitive);
   gtk_widget_set_sensitive (GTK_WIDGET (self->driver_buttons), sensitive);
+  if (!sensitive)
+  {
+    gtk_widget_set_tooltip_text (GTK_WIDGET (self->printer_name_entry), _("You are not permitted to make changes to printer settings"));
+    gtk_widget_set_tooltip_text (GTK_WIDGET (self->printer_location_entry), _("You are not permitted to make changes to printer settings"));
+    gtk_widget_set_tooltip_text (GTK_WIDGET (self->driver_buttons), _("You are not permitted to make changes to printer settings"));
+  }
 }
 
 static void

@@ -1116,6 +1116,7 @@ update_sensitivity (gpointer user_data)
 
   widget = (GtkWidget*) gtk_builder_get_object (self->builder, "printer-add-button");
   gtk_widget_set_sensitive (widget, local_server && self->is_authorized && !no_cups && !self->new_printer_name);
+  if (!self->is_authorized) gtk_widget_set_tooltip_text (widget, _("You are not permitted to make changes to printer settings"));
 
   //widget = (GtkWidget*) gtk_builder_get_object (self->builder, "printer-add-button2");
   //gtk_widget_set_sensitive (widget, local_server && self->is_authorized && !no_cups && !self->new_printer_name);
