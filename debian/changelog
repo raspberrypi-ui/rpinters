@@ -1,3 +1,9 @@
+rpinters (1.5) trixie; urgency=medium
+
+  * Purge build directory from source archive
+
+ -- Simon Long <simon@raspberrypi.com>  Tue, 14 Oct 2025 11:44:44 +0100
+
 rpinters (1.4) trixie; urgency=medium
 
   * Add tooltips to notify of lockout
