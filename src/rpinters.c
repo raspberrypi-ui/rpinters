@@ -72,7 +72,7 @@ static gboolean close_prog (GtkWidget *widget, GdkEvent *event, gpointer data);
 
 #ifdef PLUGIN_NAME
 
-void init_plugin (void)
+void init_plugin (GtkWidget *)
 {
     setlocale (LC_ALL, "");
     bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
