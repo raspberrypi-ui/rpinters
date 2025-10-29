@@ -1,3 +1,9 @@
+rpinters (1.6) trixie; urgency=medium
+
+  * Add window handle to init function
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 29 Oct 2025 07:04:42 +0000
+
 rpinters (1.5) trixie; urgency=medium
 
   * Purge build directory from source archive
