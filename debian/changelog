@@ -1,3 +1,9 @@
+rpinters (1.8) trixie; urgency=medium
+
+  * Disable cups-browsed in the background to prevent lockup
+
+ -- Simon Long <simon@raspberrypi.com>  Thu, 30 Apr 2026 17:14:55 +0100
+
 rpinters (1.7) trixie; urgency=medium
 
   * Start and stop cups-browsed service when needed

@@ -111,7 +111,7 @@ GtkWidget *get_tab (int tab)
 
 gboolean reboot_needed (void)
 {
-    system ("systemctl stop cups-browsed");
+    system ("systemctl stop cups-browsed &");
 
     return FALSE;
 }
