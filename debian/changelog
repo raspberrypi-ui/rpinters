@@ -1,3 +1,9 @@
+rpinters (1.9) trixie; urgency=medium
+
+  * Add Polish translation
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 18 May 2026 13:11:31 +0100
+
 rpinters (1.8) trixie; urgency=medium
 
   * Disable cups-browsed in the background to prevent lockup
