@@ -1,870 +1,843 @@
-# translation of gnome-control-center.po to Georgian
-# Georgian translation for Gnome Control Centre.
+# Georgian translation for rpinters.
+# Copyright (C) 2026 rpinters's authors.
+# This file is distributed under the same license as the rpinters package.
+# Ekaterine Papava <papava.e@gtu.ge>, 2026.
 #
-# Alexander Didebulidze <didebuli@in.tum.de>, 2005, 2006.
-# Vladimer Sichinava <alinux@siena.linux.it>, 2006.
-# Zviad Sulaberidze <zviad@osgf.ge>, 2006.
-# Vladimer Sichinava ვლადიმერ სიჭინავა <vsichi@gnome.org>, 2007.
-# Vladimer Sichinava <vsichi@gnome.org>, 2008.
-# Vladimer Sichinava  ვლადიმერ სიჭინავა <vsichi@gnome.org>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: gnome-control-center\n"
+"Project-Id-Version: rpcc_rpinters\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-28 15:40+0000\n"
-"PO-Revision-Date: 2008-09-26 23:35+0200\n"
-"Last-Translator: Vladimer Sichinava  ვლადიმერ სიჭინავა <vsichi@gnome.org>\n"
-"Language-Team: Georgian <http://mail.gnome.org/mailman/listinfo/gnome-ge-"
-"list>\n"
+"POT-Creation-Date: 2026-04-30 18:15+0200\n"
+"PO-Revision-Date: 2026-08-29 12:08+0200\n"
+"Last-Translator: Ekaterine Papava <papava.e@gtu.ge>\n"
+"Language-Team: \n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
-"Content-Type:  text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
 
-#: ../src/rpinters.c:93
-#, fuzzy
+#: src/rpinters.c:94
 msgctxt "tab"
 msgid "Printers"
-msgstr "კურსორი"
+msgstr "პრინტერები"
 
 #. Translators: %s is the printer name
-#: ../src/cc-printers-panel.c:725
+#: src/cc-printers-panel.c:725
 #, c-format
 msgid "Printer “%s” has been deleted"
-msgstr ""
+msgstr "პრინტერი \"%s\" წაიშალა"
 
-#: ../src/cc-printers-panel.c:780
-#, fuzzy
+#: src/cc-printers-panel.c:781
 msgid "Are you sure you want to remove this printer?"
-msgstr "გნებავთ მოცემული გარჩევადობის დატოვება?"
+msgstr "მართლა გნებავთ ამ პრინტერის წაშლა?"
 
 #. Translators: Addition of the new printer failed.
-#: ../src/cc-printers-panel.c:1046
+#: src/cc-printers-panel.c:1048
 msgid "Failed to add new printer."
-msgstr ""
+msgstr "ახალი პრინტერის დამატების შეცდომა."
+
+#: src/cc-printers-panel.c:1119 src/pp-details-dialog.c:293
+#: src/pp-details-dialog.c:294 src/pp-details-dialog.c:295
+#: src/pp-options-dialog.c:360 src/pp-options-dialog.c:397
+#: src/pp-printer-entry.c:1025 src/pp-printer-entry.c:1026
+msgid "You are not permitted to make changes to printer settings"
+msgstr "თქვენ არ გაქვთ ამ პრინტერის პარამეტრების შეცვლის უფლება"
 
 #. Translators: The XML file containing user interface can not be loaded
-#: ../src/cc-printers-panel.c:1357
-#, fuzzy, c-format
+#: src/cc-printers-panel.c:1360
+#, c-format
 msgid "Could not load ui: %s"
-msgstr "შეუძლებელია ძირითადი ინტერფეისის გამოყენება"
+msgstr "UI-ის ჩატვირთვის შეცდომა: %s"
 
-#: ../src/cc-util.c:127
+#: src/cc-util.c:127
 msgid "Today"
-msgstr ""
+msgstr "დღეს"
 
-#: ../src/cc-util.c:131
-#, fuzzy
+#: src/cc-util.c:131
 msgid "Yesterday"
-msgstr "გუშინ %l:%M %p"
+msgstr "გუშინ"
 
 #. Translators: This is a date format string in the style of "Feb 24".
-#: ../src/cc-util.c:138
-#, fuzzy
+#: src/cc-util.c:138
+#, c-format
 msgid "%b %e"
-msgstr "%b %d %Y"
+msgstr "%b %e"
 
 #. Translators: This is a date format string in the style of "Feb 24, 2013".
-#: ../src/cc-util.c:143
-#, fuzzy
+#: src/cc-util.c:143
 msgid "%b %e, %Y"
-msgstr "%b %d %Y"
+msgstr "%b %e, %Y"
 
-#: ../src/cc-util.c:165
+#: src/cc-util.c:165
 #, c-format
 msgid "%d hour"
 msgid_plural "%d hours"
-msgstr[0] ""
+msgstr[0] "%d საათი"
+msgstr[1] "%d საათი"
 
-#: ../src/cc-util.c:166
-#, fuzzy, c-format
+#: src/cc-util.c:166
+#, c-format
 msgid "%d minute"
 msgid_plural "%d minutes"
-msgstr[0] "წუთი"
+msgstr[0] "%d წუთი"
+msgstr[1] "%d წუთი"
 
-#: ../src/cc-util.c:167
-#, fuzzy, c-format
+#: src/cc-util.c:167
+#, c-format
 msgid "%d second"
 msgid_plural "%d seconds"
-msgstr[0] "%d მილიწამი"
+msgstr[0] "%d წამი"
+msgstr[1] "%d წამი"
 
 #. 5 hours 2 minutes 12 seconds
-#: ../src/cc-util.c:174
+#: src/cc-util.c:174
 #, c-format
 msgctxt "hours minutes seconds"
 msgid "%s %s %s"
-msgstr ""
+msgstr "%s %s %s"
 
 #. 5 hours 2 minutes
-#: ../src/cc-util.c:179
+#: src/cc-util.c:179
 #, c-format
 msgctxt "hours minutes"
 msgid "%s %s"
-msgstr ""
+msgstr "%s%s"
 
 #. 5 hours
-#: ../src/cc-util.c:184
+#: src/cc-util.c:184
 #, c-format
 msgctxt "hours"
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #. 2 minutes 12 seconds
-#: ../src/cc-util.c:192
+#: src/cc-util.c:192
 #, c-format
 msgctxt "minutes seconds"
 msgid "%s %s"
-msgstr ""
+msgstr "%s%s"
 
 #. 2 minutes
-#: ../src/cc-util.c:197
+#: src/cc-util.c:197
 #, c-format
 msgctxt "minutes"
 msgid "%s"
-msgstr ""
+msgstr "%s"
 
 #. 0 seconds
-#: ../src/cc-util.c:208
-#, fuzzy
+#: src/cc-util.c:208
 msgid "0 seconds"
-msgstr "წამი"
+msgstr "0 წამი"
 
 #. Translators: This is the title of the dialog. %s is the printer name.
-#: ../src/pp-details-dialog.c:73 ../src/pp-details-dialog.c:371
-#, fuzzy, c-format
+#: src/pp-details-dialog.c:73 src/pp-details-dialog.c:377
+#, c-format
 msgid "%s Details"
-msgstr "_ცნობები"
+msgstr "%s-ის დეტალები"
 
-#: ../src/pp-details-dialog.c:120
+#: src/pp-details-dialog.c:120
 msgid "No suitable driver found"
-msgstr ""
+msgstr "შესაბამისი დრაივერი აღმოჩენილი არაა"
 
-#: ../src/pp-details-dialog.c:247
-#, fuzzy
+#: src/pp-details-dialog.c:247
 msgid "Select PPD File"
-msgstr "ხმოვანი ფაილის არჩევა"
+msgstr "აირჩიეთ PPD ფაილი"
 
-#: ../src/pp-details-dialog.c:250 ../data/rpinters.ui.h:4
-#: ../src/new-printer-dialog.ui.h:3
+#: src/pp-details-dialog.c:250 data/rpinters.ui:102
+#: src/new-printer-dialog.ui:43
 msgid "_Cancel"
-msgstr ""
+msgstr "გაუ_ქმება"
 
-#: ../src/pp-details-dialog.c:251
+#: src/pp-details-dialog.c:251
 msgid "_Open"
 msgstr "_გახსნა"
 
-#: ../src/pp-details-dialog.c:256
+#: src/pp-details-dialog.c:256
 msgid ""
-"PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, *."
-"PPD.GZ)"
+"PostScript Printer Description files (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, "
+"*.PPD.GZ)"
 msgstr ""
+"PostScript პრინტერის აღწერის ფაილები (*.ppd, *.PPD, *.ppd.gz, *.PPD.gz, "
+"*.PPD.GZ)"
 
 #. Translators: The found device is a JetDirect printer
-#: ../src/pp-host.c:478
-#, fuzzy
+#: src/pp-host.c:478
 msgid "JetDirect Printer"
-msgstr "ნაგულისხმევი კურსორი"
+msgstr "JetDirect ტიპის პრინტერი"
 
 #. Translators: The found device is a Line Printer Daemon printer
-#: ../src/pp-host.c:713
-#, fuzzy
+#: src/pp-host.c:713
 msgid "LPD Printer"
-msgstr "კურსორი"
+msgstr "LPD პრინტერი"
 
 #. Translators: this is an option of "Two Sided"
-#: ../src/pp-ipp-option-widget.c:64 ../src/pp-ppd-option-widget.c:69
+#: src/pp-ipp-option-widget.c:64 src/pp-ppd-option-widget.c:69
 msgid "One Sided"
-msgstr ""
+msgstr "ერთმხრიანი"
 
 #. Translators: this is an option of "Two Sided"
-#: ../src/pp-ipp-option-widget.c:66 ../src/pp-ppd-option-widget.c:71
+#: src/pp-ipp-option-widget.c:66 src/pp-ppd-option-widget.c:71
 msgid "Long Edge (Standard)"
-msgstr ""
+msgstr "გრძელი წიბო (სტანდარტული)"
 
 #. Translators: this is an option of "Two Sided"
-#: ../src/pp-ipp-option-widget.c:68 ../src/pp-ppd-option-widget.c:73
+#: src/pp-ipp-option-widget.c:68 src/pp-ppd-option-widget.c:73
 msgid "Short Edge (Flip)"
-msgstr ""
+msgstr "მოკლე წიბო (გადაბრუნება)"
 
 #. Translators: this is an option of "Orientation"
-#: ../src/pp-ipp-option-widget.c:70
-#, fuzzy
+#: src/pp-ipp-option-widget.c:70
 msgid "Portrait"
-msgstr "პორტი:"
+msgstr "პორტრეტი"
 
 #. Translators: this is an option of "Orientation"
-#: ../src/pp-ipp-option-widget.c:72
+#: src/pp-ipp-option-widget.c:72
 msgid "Landscape"
-msgstr ""
+msgstr "ლანდშაფტი"
 
 #. Translators: this is an option of "Orientation"
-#: ../src/pp-ipp-option-widget.c:74
+#: src/pp-ipp-option-widget.c:74
 msgid "Reverse landscape"
-msgstr ""
+msgstr "ლანდშაფტის შებრუნება"
 
 #. Translators: this is an option of "Orientation"
-#: ../src/pp-ipp-option-widget.c:76
+#: src/pp-ipp-option-widget.c:76
 msgid "Reverse portrait"
-msgstr ""
+msgstr "პორტრეტის შებრუნება"
 
 #. Translators: Job's state (job is waiting to be printed)
-#: ../src/pp-jobs-dialog.c:222
+#: src/pp-jobs-dialog.c:222
 msgctxt "print job"
 msgid "Pending"
-msgstr ""
+msgstr "დარჩენილი"
 
 #. Translators: Job's state (job is held for printing)
-#: ../src/pp-jobs-dialog.c:228
-#, fuzzy
+#: src/pp-jobs-dialog.c:228
 msgctxt "print job"
 msgid "Paused"
-msgstr "პაუზა"
+msgstr "შეჩერებულია"
 
 #. Translators: Job's state (job needs authentication to proceed further)
-#: ../src/pp-jobs-dialog.c:233
-#, fuzzy
+#: src/pp-jobs-dialog.c:233
 msgctxt "print job"
 msgid "Authentication required"
-msgstr "ავტორიზიზირებულია!"
+msgstr "საჭროა ავთენტიკაცია"
 
 #. Translators: Job's state (job is currently printing)
-#: ../src/pp-jobs-dialog.c:238
-#, fuzzy
+#: src/pp-jobs-dialog.c:238
 msgctxt "print job"
 msgid "Processing"
-msgstr "_პროფესია:"
+msgstr "დამუშავება"
 
 #. Translators: Job's state (job has been stopped)
-#: ../src/pp-jobs-dialog.c:242
+#: src/pp-jobs-dialog.c:242
 msgctxt "print job"
 msgid "Stopped"
-msgstr ""
+msgstr "გაჩერებულია"
 
 #. Translators: Job's state (job has been canceled)
-#: ../src/pp-jobs-dialog.c:246
+#: src/pp-jobs-dialog.c:246
 msgctxt "print job"
 msgid "Canceled"
-msgstr ""
+msgstr "გაუქმებულია"
 
 #. Translators: Job's state (job has aborted due to error)
-#: ../src/pp-jobs-dialog.c:250
+#: src/pp-jobs-dialog.c:250
 msgctxt "print job"
 msgid "Aborted"
-msgstr ""
+msgstr "შეწყვეტილია"
 
 #. Translators: Job's state (job has completed successfully)
-#: ../src/pp-jobs-dialog.c:254
+#: src/pp-jobs-dialog.c:254
 msgctxt "print job"
 msgid "Completed"
-msgstr ""
+msgstr "დასრულებულია"
 
 #. Translators: This label shows how many jobs of this printer needs to be authenticated to be printed.
-#: ../src/pp-jobs-dialog.c:363
+#: src/pp-jobs-dialog.c:363
 #, c-format
 msgid "%u Job Requires Authentication"
 msgid_plural "%u Jobs Require Authentication"
-msgstr[0] ""
+msgstr[0] "%u დავალებას ავთენტიკაცია ესაჭიროება"
+msgstr[1] "%u დავალებას ავთენტიკაცია ესაჭიროება"
 
 #. Translators: This is the printer name for which we are showing the active jobs
-#: ../src/pp-jobs-dialog.c:519
+#: src/pp-jobs-dialog.c:519
 #, c-format
 msgctxt "Printer jobs dialog title"
 msgid "%s — Active Jobs"
-msgstr ""
+msgstr "%s — აქტიური დავალებები"
 
 #. Translators: The printer needs authentication info to print.
-#: ../src/pp-jobs-dialog.c:523
+#: src/pp-jobs-dialog.c:523
 #, c-format
 msgid "Enter credentials to print from %s."
-msgstr ""
+msgstr "%s-დან დასაბეჭდად შეიყვანეთ ავტორიზაციის დეტალები."
 
 #. Translators: Name of job which makes printer to autoconfigure itself
-#: ../src/pp-new-printer.c:1210
-#, fuzzy
+#: src/pp-new-printer.c:1210
 msgid "Automatic configuration"
-msgstr "<b>პროქრის _ავტომატური კონფიგურირება</b>"
+msgstr "ავტომატური მორგება"
 
 #. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Add Printer"));
 #. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), _("Searching for Printers"));
 #. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (header), NULL);
 #. Translators: This is the title presented at top of the dialog.
-#: ../src/pp-new-printer-dialog.c:349 ../src/pp-new-printer-dialog.c:408
-#: ../src/pp-new-printer-dialog.c:798 ../src/pp-new-printer-dialog.c:805
-#: ../src/new-printer-dialog.ui.h:2
-#, fuzzy
+#: src/pp-new-printer-dialog.c:349 src/pp-new-printer-dialog.c:408
+#: src/pp-new-printer-dialog.c:799 src/pp-new-printer-dialog.c:806
+#: src/new-printer-dialog.ui:29
 msgid "Add Printer"
-msgstr "კურსორი"
+msgstr "პრინტერის დამატება"
 
 #. gtk_header_bar_set_subtitle (GTK_HEADER_BAR (WID ("headerbar")), NULL);
 #. gtk_header_bar_set_title (GTK_HEADER_BAR (WID ("headerbar")), _("Unlock Print Server"));
-#: ../src/pp-new-printer-dialog.c:365
+#: src/pp-new-printer-dialog.c:365
 msgid "Unlock Print Server"
-msgstr ""
+msgstr "ბეჭდვის სერვერის განბლოკვა"
 
 #. Translators: Samba server needs authentication of the user to show list of its printers.
-#: ../src/pp-new-printer-dialog.c:369
+#: src/pp-new-printer-dialog.c:369
 #, c-format
 msgid "Unlock %s."
-msgstr ""
+msgstr "%s-ის განბლოკვა."
 
 #. Translators: Samba server needs authentication of the user to show list of its printers.
-#: ../src/pp-new-printer-dialog.c:373
+#: src/pp-new-printer-dialog.c:373
 #, c-format
 msgid "Enter username and password to view printers on %s."
 msgstr ""
+"%s-ზე პრინტერების სანახავად შეიყვანეთ მომხმარებლის სახელი და პაროლი."
 
-#: ../src/pp-new-printer-dialog.c:798
+#: src/pp-new-printer-dialog.c:799
 msgid "Searching for Printers"
-msgstr ""
+msgstr "პრინტერების ძებნა"
 
 #. Translators: The found device is a printer connected via USB
-#: ../src/pp-new-printer-dialog.c:1618
+#: src/pp-new-printer-dialog.c:1619
 msgid "USB"
-msgstr ""
+msgstr "USB"
 
 #. Translators: The found device is a printer connected via serial port
-#: ../src/pp-new-printer-dialog.c:1623
+#: src/pp-new-printer-dialog.c:1624
 msgid "Serial Port"
-msgstr ""
+msgstr "სერიული პორტი"
 
 #. Translators: The found device is a printer connected via parallel port
-#: ../src/pp-new-printer-dialog.c:1630
+#: src/pp-new-printer-dialog.c:1631
 msgid "Parallel Port"
-msgstr ""
+msgstr "პარალელური პორტი"
 
 #. Translators: The found device is a printer connected via Bluetooth
-#: ../src/pp-new-printer-dialog.c:1635
+#: src/pp-new-printer-dialog.c:1636
 msgid "Bluetooth"
-msgstr ""
+msgstr "ბლუთუზი"
 
 #. Translators: Location of found network printer (e.g. Kitchen, Reception)
-#: ../src/pp-new-printer-dialog.c:1672
+#: src/pp-new-printer-dialog.c:1673
 #, c-format
 msgid "Location: %s"
-msgstr ""
+msgstr "მდებარეობა: %s"
 
 #. Translators: Network address of found printer
-#: ../src/pp-new-printer-dialog.c:1677
-#, fuzzy, c-format
+#: src/pp-new-printer-dialog.c:1678
+#, c-format
 msgid "Address: %s"
-msgstr "მის_ამართი:"
+msgstr "მისამართი: %s"
 
 #. Translators: This item is a server which needs authentication to show its printers
-#: ../src/pp-new-printer-dialog.c:1704
+#: src/pp-new-printer-dialog.c:1705
 msgid "Server requires authentication"
-msgstr ""
+msgstr "სერვერი ითხოვს ავთენტიკაციას"
 
-#: ../src/pp-options-dialog.c:87
+#: src/pp-options-dialog.c:87
 msgid "Two Sided"
-msgstr ""
+msgstr "ორმხრივი"
 
-#: ../src/pp-options-dialog.c:88
-#, fuzzy
+#: src/pp-options-dialog.c:88
 msgid "Paper Type"
-msgstr "გაფრთხილების ტიპი"
+msgstr "ფურცლის ტიპი"
 
-#: ../src/pp-options-dialog.c:89
+#: src/pp-options-dialog.c:89
 msgid "Paper Source"
-msgstr ""
+msgstr "ქაღალდის წყარო"
 
-#: ../src/pp-options-dialog.c:90
+#: src/pp-options-dialog.c:90
 msgid "Output Tray"
-msgstr ""
+msgstr "გამოტანის თარო"
 
-#: ../src/pp-options-dialog.c:91
-#, fuzzy
+#: src/pp-options-dialog.c:91
 msgctxt "printing option"
 msgid "Resolution"
-msgstr "გარ_ჩევადობა:"
+msgstr "გარჩევადობა"
 
-#: ../src/pp-options-dialog.c:92
+#: src/pp-options-dialog.c:92
 msgid "GhostScript pre-filtering"
-msgstr ""
+msgstr "GhostScript-ის პრეფილტრი"
 
 #. Translators: This option sets number of pages printed on one sheet
-#: ../src/pp-options-dialog.c:530
+#: src/pp-options-dialog.c:534
 msgid "Pages per side"
-msgstr ""
+msgstr "გვერდი თითოეულ მხარეს"
 
 #. Translators: This option sets whether to print on both sides of paper
-#: ../src/pp-options-dialog.c:542
+#: src/pp-options-dialog.c:546
 msgid "Two-sided"
-msgstr ""
+msgstr "ორმხრივი"
 
 #. Translators: This option sets orientation of print (portrait, landscape...)
-#: ../src/pp-options-dialog.c:554
-#, fuzzy
+#: src/pp-options-dialog.c:558
 msgid "Orientation"
-msgstr "<b>თაგუნას ორიენტაცია</b>"
+msgstr "ორიენტაცია"
 
 #. Translators: "General" tab contains general printer options
-#: ../src/pp-options-dialog.c:651
-#, fuzzy
+#: src/pp-options-dialog.c:655
 msgctxt "Printer Option Group"
 msgid "General"
-msgstr "საერთო"
+msgstr "ზოგადი"
 
 #. Translators: "Page Setup" tab contains settings related to pages (page size, paper source, etc.)
-#: ../src/pp-options-dialog.c:654
+#: src/pp-options-dialog.c:658
 msgctxt "Printer Option Group"
 msgid "Page Setup"
-msgstr ""
+msgstr "გვერდის მორგება"
 
 #. Translators: "Installable Options" tab contains settings of presence of installed options (amount of RAM, duplex unit, etc.)
-#: ../src/pp-options-dialog.c:657
+#: src/pp-options-dialog.c:661
 msgctxt "Printer Option Group"
 msgid "Installable Options"
-msgstr ""
+msgstr "დაყენების ვარიანტები"
 
 #. Translators: "Job" tab contains settings for jobs
-#: ../src/pp-options-dialog.c:660
+#: src/pp-options-dialog.c:664
 msgctxt "Printer Option Group"
 msgid "Job"
-msgstr ""
+msgstr "დავალება"
 
 #. Translators: "Image Quality" tab contains settings for quality of output print (e.g. resolution)
-#: ../src/pp-options-dialog.c:663
+#: src/pp-options-dialog.c:667
 msgctxt "Printer Option Group"
 msgid "Image Quality"
-msgstr ""
+msgstr "გამოსახულების ხარისხი"
 
 #. Translators: "Color" tab contains color settings (e.g. color printing)
-#: ../src/pp-options-dialog.c:666
-#, fuzzy
+#: src/pp-options-dialog.c:670
 msgctxt "Printer Option Group"
 msgid "Color"
 msgstr "ფერი"
 
 #. Translators: "Finishing" tab contains finishing settings (e.g. booklet printing)
-#: ../src/pp-options-dialog.c:669
+#: src/pp-options-dialog.c:673
 msgctxt "Printer Option Group"
 msgid "Finishing"
-msgstr ""
+msgstr "სრულდება"
 
 #. Translators: "Advanced" tab contains all others settings
-#: ../src/pp-options-dialog.c:672
+#: src/pp-options-dialog.c:676
 msgctxt "Printer Option Group"
 msgid "Advanced"
-msgstr ""
+msgstr "დამატებით"
 
 #. Translators: Name of job which makes printer to print test page
 #. Translators: This button triggers the printing of a test page.
-#: ../src/pp-options-dialog.c:863 ../src/pp-options-dialog.ui.h:2
-#, fuzzy
+#: src/pp-options-dialog.c:867 src/pp-options-dialog.ui:25
 msgid "Test Page"
-msgstr "შემოწმება"
+msgstr "სატესტო გვერდი"
 
 #. Translators: Name of job which makes printer to print test page
-#: ../src/pp-options-dialog.c:876
-#, fuzzy
+#: src/pp-options-dialog.c:880
 msgid "Test page"
-msgstr "page"
+msgstr "სატესტო გვერდი"
 
 #. Translators: this is an option of "Paper Source"
-#: ../src/pp-ppd-option-widget.c:75 ../src/pp-ppd-option-widget.c:77
-#: ../src/pp-ppd-option-widget.c:85
-#, fuzzy
+#: src/pp-ppd-option-widget.c:75 src/pp-ppd-option-widget.c:77
+#: src/pp-ppd-option-widget.c:85
 msgid "Auto Select"
-msgstr "ავტოამოცნობა"
+msgstr "ავტომატური არჩევა"
 
 #. Translators: this is an option of "Paper Source"
 #. Translators: this is an option of "Resolution"
-#: ../src/pp-ppd-option-widget.c:79 ../src/pp-ppd-option-widget.c:81
-#: ../src/pp-ppd-option-widget.c:83 ../src/pp-ppd-option-widget.c:87
-#, fuzzy
+#: src/pp-ppd-option-widget.c:79 src/pp-ppd-option-widget.c:81
+#: src/pp-ppd-option-widget.c:83 src/pp-ppd-option-widget.c:87
 msgid "Printer Default"
-msgstr "ნაგულისხმევი"
+msgstr "პრინტერის ნაგულისხმევი"
 
 #. Translators: this is an option of "GhostScript"
-#: ../src/pp-ppd-option-widget.c:89
+#: src/pp-ppd-option-widget.c:89
 msgid "Embed GhostScript fonts only"
-msgstr ""
+msgstr "მხოლოდ GhostScript-ის ფონტების ჩაშენება"
 
 #. Translators: this is an option of "GhostScript"
-#: ../src/pp-ppd-option-widget.c:91
+#: src/pp-ppd-option-widget.c:91
 msgid "Convert to PS level 1"
-msgstr ""
+msgstr "პირველი დონის PS-ზე გადაყვანა"
 
 #. Translators: this is an option of "GhostScript"
-#: ../src/pp-ppd-option-widget.c:93
+#: src/pp-ppd-option-widget.c:93
 msgid "Convert to PS level 2"
-msgstr ""
+msgstr "მეორე დონის PS-ზე გადაყვანა"
 
 #. Translators: this is an option of "GhostScript"
-#: ../src/pp-ppd-option-widget.c:95
+#: src/pp-ppd-option-widget.c:95
 msgid "No pre-filtering"
-msgstr ""
+msgstr "პრეფილტრის გარეშე"
 
 #. Translators: Name of column showing printer manufacturers
-#: ../src/pp-ppd-selection-dialog.c:233
+#: src/pp-ppd-selection-dialog.c:233
 msgid "Manufacturer"
-msgstr ""
+msgstr "მწარმოებელი"
 
 #. Translators: Name of column showing printer drivers
-#: ../src/pp-ppd-selection-dialog.c:250 ../src/pp-details-dialog.ui.h:5
+#: src/pp-ppd-selection-dialog.c:250 src/pp-details-dialog.ui:122
 msgid "Driver"
-msgstr ""
+msgstr "დრაივერი"
 
-#: ../src/pp-printer-entry.c:427 ../src/pp-printer-entry.c:429
-#, fuzzy, c-format
+#: src/pp-printer-entry.c:427 src/pp-printer-entry.c:429
+#, c-format
 msgid "Could not rename printer : %s"
-msgstr "შეუძლებელია ძირითადი ინტერფეისის გამოყენება"
+msgstr "პრინტერის სახელის გადარქმევა შეუძლებელია : %s"
 
-#: ../src/pp-printer-entry.c:427
+#: src/pp-printer-entry.c:427
 msgid "another printer already has that name."
-msgstr ""
+msgstr "ეს სახელი უკვე ჰქვია სხვა პრინტერს."
 
 #. Translators: This is the label of the button that opens the Jobs Dialog.
-#: ../src/pp-printer-entry.c:612 ../src/printer-entry.ui.h:8
+#: src/pp-printer-entry.c:612 src/printer-entry.ui:123
 msgid "No Active Jobs"
-msgstr ""
+msgstr "აქტიური დავალებების გარეშე"
 
 #. Translators: This is the label of the button that opens the Jobs Dialog.
-#: ../src/pp-printer-entry.c:617
+#: src/pp-printer-entry.c:617
 #, c-format
 msgid "%u Job"
 msgid_plural "%u Jobs"
-msgstr[0] ""
+msgstr[0] "%u დავალება"
+msgstr[1] "%u დავალება"
 
 #. Translators: Name of job which makes printer to clean its heads
-#: ../src/pp-printer-entry.c:735
+#: src/pp-printer-entry.c:735
 msgid "Clean print heads"
-msgstr ""
+msgstr "თავაკების გაწმენდა"
 
 #. Translators: The printer is low on toner
-#: ../src/pp-printer-entry.c:786
+#: src/pp-printer-entry.c:786
 msgid "Low on toner"
-msgstr ""
+msgstr "პრინტერში ტონერი ცოტაღაა"
 
 #. Translators: The printer has no toner left
-#: ../src/pp-printer-entry.c:788
+#: src/pp-printer-entry.c:788
 msgid "Out of toner"
-msgstr ""
+msgstr "ტონერი გათავდა"
 
 #. Translators: "Developer" is a chemical for photo development,
 #. * http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/pp-printer-entry.c:791
+#: src/pp-printer-entry.c:791
 msgid "Low on developer"
-msgstr ""
+msgstr "გამამჟღავნებელი ცოტაღაა"
 
 #. Translators: "Developer" is a chemical for photo development,
 #. * http://en.wikipedia.org/wiki/Photographic_developer
-#: ../src/pp-printer-entry.c:794
+#: src/pp-printer-entry.c:794
 msgid "Out of developer"
-msgstr ""
+msgstr "გამამჟღავნებელი აღარ დარჩა"
 
 #. Translators: "marker" is one color bin of the printer
-#: ../src/pp-printer-entry.c:796
+#: src/pp-printer-entry.c:796
 msgid "Low on a marker supply"
-msgstr ""
+msgstr "მარკერი ცოტაღა დარჩა"
 
 #. Translators: "marker" is one color bin of the printer
-#: ../src/pp-printer-entry.c:798
+#: src/pp-printer-entry.c:798
 msgid "Out of a marker supply"
-msgstr ""
+msgstr "მარკერი გათავდა"
 
 #. Translators: One or more covers on the printer are open
-#: ../src/pp-printer-entry.c:800
-#, fuzzy
+#: src/pp-printer-entry.c:800
 msgid "Open cover"
-msgstr "ფაილის გახსნა"
+msgstr "თავსახური ღიაა"
 
 #. Translators: One or more doors on the printer are open
-#: ../src/pp-printer-entry.c:802
+#: src/pp-printer-entry.c:802
 msgid "Open door"
-msgstr ""
+msgstr "კარის გაღება"
 
 #. Translators: At least one input tray is low on media
-#: ../src/pp-printer-entry.c:804
+#: src/pp-printer-entry.c:804
 msgid "Low on paper"
-msgstr ""
+msgstr "ფურცლები ცოტაა"
 
 #. Translators: At least one input tray is empty
-#: ../src/pp-printer-entry.c:806
+#: src/pp-printer-entry.c:806
 msgid "Out of paper"
-msgstr ""
+msgstr "ქაღალდი გათავდა"
 
 #. Translators: The printer is offline
-#: ../src/pp-printer-entry.c:808
+#: src/pp-printer-entry.c:808
 msgctxt "printer state"
 msgid "Offline"
-msgstr ""
+msgstr "ინტერნეტგარეშე"
 
 #. Translators: Someone has stopped the Printer
 #. Translators: Printer's state (no jobs can be processed)
-#: ../src/pp-printer-entry.c:810 ../src/pp-printer-entry.c:953
+#: src/pp-printer-entry.c:810 src/pp-printer-entry.c:953
 msgctxt "printer state"
 msgid "Stopped"
-msgstr ""
+msgstr "გაჩერებულია"
 
 #. Translators: The printer marker supply waste receptacle is almost full
-#: ../src/pp-printer-entry.c:812
+#: src/pp-printer-entry.c:812
 msgid "Waste receptacle almost full"
-msgstr ""
+msgstr "რეზერვუარი თითქმის სავსეა"
 
 #. Translators: The printer marker supply waste receptacle is full
-#: ../src/pp-printer-entry.c:814
+#: src/pp-printer-entry.c:814
 msgid "Waste receptacle full"
-msgstr ""
+msgstr "რეზერვუარი სავსეა"
 
 #. Translators: Optical photo conductors are used in laser printers
-#: ../src/pp-printer-entry.c:816
+#: src/pp-printer-entry.c:816
 msgid "The optical photo conductor is near end of life"
-msgstr ""
+msgstr "ოპტიკური ფოტოგამტარის მუშაობის ვადა ამოიწურა"
 
 #. Translators: Optical photo conductors are used in laser printers
-#: ../src/pp-printer-entry.c:818
+#: src/pp-printer-entry.c:818
 msgid "The optical photo conductor is no longer functioning"
-msgstr ""
+msgstr "ოპტიკური ფოტოგამტარი აღარ მუშაობს"
 
 #. Translators: Printer's state (can start new job without waiting)
-#: ../src/pp-printer-entry.c:939
+#: src/pp-printer-entry.c:939
 msgctxt "printer state"
 msgid "Ready"
-msgstr ""
+msgstr "მზადაა"
 
 #. Translators: Printer's state (printer is ready but doesn't accept new jobs)
-#: ../src/pp-printer-entry.c:944
+#: src/pp-printer-entry.c:944
 msgctxt "printer state"
 msgid "Does not accept jobs"
-msgstr ""
+msgstr "დავალებებს არ იღებს"
 
 #. Translators: Printer's state (jobs are processing)
-#: ../src/pp-printer-entry.c:949
-#, fuzzy
+#: src/pp-printer-entry.c:949
 msgctxt "printer state"
 msgid "Processing"
-msgstr "_პროფესია:"
+msgstr "დამუშავება"
 
-#: ../data/rpinters.ui.h:1
-#, fuzzy
+#: data/rpinters.ui:8 data/rpinters.ui:143 data/rpinters.desktop.in:3
 msgid "Printers"
-msgstr "კურსორი"
+msgstr "პრინტერები"
 
-#: ../data/rpinters.ui.h:2 ../src/authentication-dialog.ui.h:2
-#: ../src/ppd-selection-dialog.ui.h:2
-msgid "Cancel"
-msgstr ""
+#: data/rpinters.ui:26
+msgid "_Close"
+msgstr "და_ხურვა"
 
-#: ../data/rpinters.ui.h:3
-msgid "OK"
-msgstr ""
-
-#: ../data/rpinters.ui.h:5
+#: data/rpinters.ui:117
 msgid "_OK"
-msgstr ""
+msgstr "_დიახ"
 
-#: ../src/authentication-dialog.ui.h:1
+#: src/authentication-dialog.ui:11
 msgid " "
-msgstr "."
+msgstr " "
 
-#: ../src/authentication-dialog.ui.h:3
-#, fuzzy
+#: src/authentication-dialog.ui:29 src/ppd-selection-dialog.ui:27
+msgid "Cancel"
+msgstr "გაუქმება"
+
+#: src/authentication-dialog.ui:42
 msgid "Authenticate"
-msgstr "_ავტორიზაცია"
+msgstr "ავთენტიკაცია"
 
 #. Translators: This is a username on a print server.
-#: ../src/authentication-dialog.ui.h:4 ../src/new-printer-dialog.ui.h:13
-#: ../src/pp-jobs-dialog.ui.h:4
-#, fuzzy
+#: src/authentication-dialog.ui:80 src/new-printer-dialog.ui:346
+#: src/pp-jobs-dialog.ui:57
 msgid "Username"
-msgstr "_სახელი:"
+msgstr "მომხმარებლის სახელი"
 
 #. Translators: This is a password needed for printing.
-#: ../src/authentication-dialog.ui.h:5 ../src/new-printer-dialog.ui.h:14
-#: ../src/pp-jobs-dialog.ui.h:6
-#, fuzzy
+#: src/authentication-dialog.ui:96 src/new-printer-dialog.ui:367
+#: src/pp-jobs-dialog.ui:70
 msgid "Password"
-msgstr "_პაროლი:"
+msgstr "პაროლი"
 
-#: ../src/authentication-dialog.ui.h:6 ../src/new-printer-dialog.ui.h:11
-#, fuzzy
+#: src/authentication-dialog.ui:139 src/new-printer-dialog.ui:321
 msgid "Authentication Required"
-msgstr "ავტორიზიზირებულია!"
+msgstr "საჭიროა ავთენტიკაცია"
 
-#: ../src/cc-permission-infobar.ui.h:1
+#: src/cc-permission-infobar.ui:20
 msgid "Unlock…"
-msgstr ""
+msgstr "განბლოკვა…"
 
-#: ../src/cc-permission-infobar.ui.h:2
+#: src/cc-permission-infobar.ui:45
 msgid "Unlock to Change Settings"
-msgstr ""
+msgstr "პარამეტრების შესაცვლელად განბლოკეთ"
 
-#: ../src/cc-permission-infobar.ui.h:3
+#: src/cc-permission-infobar.ui:55
 msgid "Some settings must be unlocked before they can be changed."
-msgstr ""
+msgstr "ზოგიერთ პარამეტრს ცვლილებამდე განბლოკვა სჭირდება."
 
-#: ../src/new-printer-dialog.ui.h:4
-#, fuzzy
+#: src/new-printer-dialog.ui:78
 msgid "_Add"
-msgstr "_დამატება..."
+msgstr "დ_ამატება"
 
+#. Translators: This button opens authentication dialog for selected server.
 #. Translators: This buttons submits the credentials for the selected server.
-#: ../src/new-printer-dialog.ui.h:6
+#: src/new-printer-dialog.ui:91 src/new-printer-dialog.ui:103
 msgid "_Unlock"
-msgstr ""
+msgstr "_განბლოკვა"
 
 #. Translators: No printers were detected
-#: ../src/new-printer-dialog.ui.h:8
-#, fuzzy
+#: src/new-printer-dialog.ui:198
 msgid "No Printers Found"
-msgstr "არავითარი ხმა"
+msgstr "პრინტერები ნაპოვნი არაა"
 
 #. Translators: The entered text should contain network address of a printer or a text which will filter found devices (their names and locations)
-#: ../src/new-printer-dialog.ui.h:10
+#: src/new-printer-dialog.ui:270
 msgid "Enter a network address or search for a printer"
-msgstr ""
+msgstr "შეიყვანეთ მისამართი ან მოძებნეთ პრინტერი"
 
-#: ../src/new-printer-dialog.ui.h:12
+#: src/new-printer-dialog.ui:337
 msgid "Enter username and password to view printers on Print Server."
 msgstr ""
+"ბეჭდვის სერვერზე პრინტერების სანახავად, აუცილებელია, მომხმარებლის "
+"სახელი და პაროლი შეიყვანოთ."
 
-#: ../src/pp-details-dialog.ui.h:1 ../src/pp-jobs-dialog.ui.h:11
-#: ../src/pp-options-dialog.ui.h:3
+#: src/pp-details-dialog.ui:25 src/pp-jobs-dialog.ui:187
+#: src/pp-options-dialog.ui:35
 msgid "Close"
-msgstr ""
+msgstr "დახურვა"
 
-#: ../src/pp-details-dialog.ui.h:2
-#, fuzzy
+#: src/pp-details-dialog.ui:40
 msgid "Name"
-msgstr "სახელი:"
+msgstr "სახელი"
 
-#: ../src/pp-details-dialog.ui.h:3 ../src/printer-entry.ui.h:11
-#, fuzzy
+#: src/pp-details-dialog.ui:68 src/printer-entry.ui:210
 msgid "Location"
-msgstr "მოქმედება"
+msgstr "მდებარეობა"
 
-#: ../src/pp-details-dialog.ui.h:4
+#: src/pp-details-dialog.ui:95
 msgid "Address"
 msgstr "მისამართი"
 
-#: ../src/pp-details-dialog.ui.h:6
+#: src/pp-details-dialog.ui:162
 msgid "Searching for preferred drivers…"
-msgstr ""
+msgstr "სასურველი დრაივერების ძებნა…"
 
-#: ../src/pp-details-dialog.ui.h:7
+#: src/pp-details-dialog.ui:191
 msgid "Search for Drivers"
-msgstr ""
+msgstr "დრაივერების ძებნა"
 
-#: ../src/pp-details-dialog.ui.h:8
+#: src/pp-details-dialog.ui:200
 msgid "Select from Database…"
-msgstr ""
+msgstr "აირჩიეთ ბაზიდან…"
 
-#: ../src/pp-details-dialog.ui.h:9
+#: src/pp-details-dialog.ui:209
 msgid "Install PPD File…"
-msgstr ""
+msgstr "PPD ფაილის დაყენება…"
 
-#: ../src/ppd-selection-dialog.ui.h:1
+#: src/ppd-selection-dialog.ui:10
 msgid "Select Printer Driver"
-msgstr ""
+msgstr "აირჩიეთ პრინტერის დრაივერი"
 
-#: ../src/ppd-selection-dialog.ui.h:3
-#, fuzzy
+#: src/ppd-selection-dialog.ui:40
 msgid "Select"
-msgstr "_არჩევა"
+msgstr "არჩევა"
 
-#: ../src/ppd-selection-dialog.ui.h:4
+#: src/ppd-selection-dialog.ui:73
 msgid "Loading drivers database…"
-msgstr ""
+msgstr "დრაივერების ბაზის ჩატვირთვა…"
 
 #. Translators: This is a windows domain used with SMB protocol.
-#: ../src/pp-jobs-dialog.ui.h:2
+#: src/pp-jobs-dialog.ui:44
 msgid "Domain"
-msgstr ""
+msgstr "დომენი"
 
 #. Translators: This button authenticates all print jobs and send them for printing.
-#: ../src/pp-jobs-dialog.ui.h:8
-#, fuzzy
+#: src/pp-jobs-dialog.ui:129
 msgid "A_uthenticate"
-msgstr "_ავტორიზაცია"
+msgstr "ავ_თენტიკაცია"
 
 #. Translators: this action removes (purges) all the listed jobs from the list.
-#: ../src/pp-jobs-dialog.ui.h:10
+#: src/pp-jobs-dialog.ui:172
 msgid "Clear All"
-msgstr ""
+msgstr "ყველას გასუფთავება"
 
 #. Translators: This button pop up authentication dialog for print jobs which need credentials.
-#: ../src/pp-jobs-dialog.ui.h:13
+#: src/pp-jobs-dialog.ui:229
 msgid "_Authenticate"
-msgstr "_ავტორიზაცია"
+msgstr "_ავთენტიკაცია"
 
 #. Translators: this label describes the dialog empty state, with no jobs listed.
-#: ../src/pp-jobs-dialog.ui.h:15
+#: src/pp-jobs-dialog.ui:356
 msgid "No Active Printer Jobs"
-msgstr ""
+msgstr "აქტიური ბეჭდვის დავალებების გარეშე"
 
-#: ../src/printer-entry.ui.h:1
-#, fuzzy
+#: src/printer-entry.ui:8
 msgid "Printing Options"
-msgstr "პარამეტრები"
+msgstr "ბეჭდვის მორგება"
 
-#: ../src/printer-entry.ui.h:2
-#, fuzzy
+#: src/printer-entry.ui:15
 msgid "Printer Details"
-msgstr "შრიფტის გამოსახვის დეტალები"
+msgstr "პრინტერის დეტალები"
 
 #. Set this printer as default
-#: ../src/printer-entry.ui.h:4
-#, fuzzy
+#: src/printer-entry.ui:22
 msgid "Use Printer by Default"
-msgstr "ნა_გულისხმევზე გადართვა"
+msgstr "პრინტერის ნაგულისხმევად გამოყენება"
 
 #. Translators: This button executes command which cleans print heads of the printer.
-#: ../src/printer-entry.ui.h:6
+#: src/printer-entry.ui:29
 msgid "Clean Print Heads"
-msgstr ""
+msgstr "თავაკების გაწმენდა"
 
-#: ../src/printer-entry.ui.h:7
-#, fuzzy
+#: src/printer-entry.ui:36
 msgid "Remove Printer"
-msgstr "რჩეულებიდან ამოშლა"
+msgstr "პრინტერის წაშლა"
 
-#: ../src/printer-entry.ui.h:9
+#: src/printer-entry.ui:142
 msgid "Options"
-msgstr "პარამეტრები"
+msgstr "მორგება"
 
-#: ../src/printer-entry.ui.h:10
-#, fuzzy
+#: src/printer-entry.ui:179
 msgid "Model"
-msgstr "მოდელები"
+msgstr "მოდელი"
 
-#: ../src/printer-entry.ui.h:12
+#: src/printer-entry.ui:239
 msgid "Ink Level"
-msgstr ""
+msgstr "მელნის დონე"
 
 #. Translators: This is the message which follows the printer error.
-#: ../src/printer-entry.ui.h:14
-#, fuzzy
+#: src/printer-entry.ui:301
 msgid "Please restart when the problem is resolved."
-msgstr "გთხოვთ დარწმუნდეთ, რომ ალპეტი სწორადაა დაყენებული"
+msgstr "გადატვირთეთ, როცა პრობლემა მოგვარდება."
 
 #. Translators: This is the button which restarts the printer.
-#: ../src/printer-entry.ui.h:16
-#, fuzzy
+#: src/printer-entry.ui:308
 msgid "Restart"
-msgstr "შ_ესვლისთანავე გაშვება"
+msgstr "გადატვირთვა"
 
 #. Translators: This is the button which allows undoing the removal of the printer.
-#: ../src/printers.ui.h:2
+#: src/printers.ui:32
 msgid "Undo"
-msgstr ""
+msgstr "ბრძანების გაუქმება"
 
-#: ../src/printers.ui.h:3
-#, fuzzy
+#: src/printers.ui:164
 msgid "No printers"
-msgstr "კურსორი"
+msgstr "პრინტერები ნაპოვნი არაა"
 
 #. Translators: The CUPS server is not running (we can not connect to it).
-#: ../src/printers.ui.h:5
+#: src/printers.ui:193
 msgid ""
 "Sorry! The system printing service\n"
 "        doesn’t seem to be available."
 msgstr ""
+"უკაცრავად, მაგრამ სისტემის ბეჭდვის სერვისი\n"
+"                             ხელმისაწვდომი არაა."
 
 #. Translators: This button adds new printer.
-#: ../src/printers.ui.h:8
+#: src/printers.ui:244
 msgid "Add a Printer…"
-msgstr ""
+msgstr "პრინტერის დამატება…"
 
+#: data/rpinters.desktop.in:4
+msgid "Add and configure printers"
+msgstr "პრინტერების დამატება და მორგება"
