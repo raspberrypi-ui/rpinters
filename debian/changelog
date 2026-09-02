@@ -1,3 +1,9 @@
+rpinters (1.10) trixie; urgency=medium
+
+  * Update Georgian translation
+
+ -- Simon Long <simon@raspberrypi.com>  Wed, 02 Sep 2026 07:25:52 +0100
+
 rpinters (1.9) trixie; urgency=medium
 
   * Add Polish translation
