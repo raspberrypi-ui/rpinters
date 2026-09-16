@@ -40,19 +40,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 /*----------------------------------------------------------------------------*/
 
 static CcPrintersPanel *cpp;
-#ifndef PLUGIN_NAME
-static GtkBuilder *builder;
-static GtkWidget *main_dlg;
-#endif
 
 /*----------------------------------------------------------------------------*/
 /* Prototypes                                                                 */
 /*----------------------------------------------------------------------------*/
-
-#ifndef PLUGIN_NAME
-static gboolean ok_main (GtkButton *button, gpointer data);
-static gboolean close_prog (GtkWidget *widget, GdkEvent *event, gpointer data);
-#endif
 
 /*----------------------------------------------------------------------------*/
 /* Function definitions                                                       */
@@ -69,8 +60,6 @@ static gboolean close_prog (GtkWidget *widget, GdkEvent *event, gpointer data);
 /*----------------------------------------------------------------------------*/
 /* Plugin interface */
 /*----------------------------------------------------------------------------*/
-
-#ifdef PLUGIN_NAME
 
 void init_plugin (GtkWidget *)
 {
@@ -119,65 +108,6 @@ gboolean reboot_needed (void)
 void free_plugin (void)
 {
 }
-
-#else
-
-/*----------------------------------------------------------------------------*/
-/* Main window button handlers                                                */
-/*----------------------------------------------------------------------------*/
-
-static gboolean ok_main (GtkButton *button, gpointer data)
-{
-    gtk_main_quit ();
-    return FALSE;
-}
-
-static gboolean close_prog (GtkWidget *widget, GdkEvent *event, gpointer data)
-{
-    gtk_main_quit ();
-    return TRUE;
-}
-
-/*----------------------------------------------------------------------------*/
-/* Main window                                                                */
-/*----------------------------------------------------------------------------*/
-
-int main (int argc, char *argv[])
-{
-    GtkWidget *wid;
-
-    setlocale (LC_ALL, "");
-    bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
-    bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
-    textdomain (GETTEXT_PACKAGE);
-
-    main_dlg = NULL;
-    gtk_init (&argc, &argv);
-    
-    cpp = g_object_new (CC_TYPE_PRINTERS_PANEL, NULL);
-
-    builder = gtk_builder_new_from_file (PACKAGE_DATA_DIR "/ui/rpinters.ui");
-
-    main_dlg = (GtkWidget *) gtk_builder_get_object (builder, "main_window");
-    g_signal_connect (main_dlg, "delete_event", G_CALLBACK (close_prog), NULL);
-
-    wid = (GtkWidget *) gtk_builder_get_object (builder, "button_ok");
-    g_signal_connect (wid, "clicked", G_CALLBACK (ok_main), NULL);
-
-    wid = (GtkWidget *) gtk_builder_get_object (builder, "box");
-    gtk_box_pack_start (GTK_BOX (wid), GTK_WIDGET (cpp), TRUE, TRUE, 5);
-    gtk_box_reorder_child (GTK_BOX (wid), GTK_WIDGET (cpp), 0);
-    
-    g_object_unref (builder);
-
-    gtk_widget_show (main_dlg);
-
-    gtk_main ();
-
-    return 0;
-}
-
-#endif
 
 /* End of file */
 /*----------------------------------------------------------------------------*/

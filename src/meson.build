@@ -73,15 +73,7 @@ gsettings = dependency('gsettings-desktop-schemas', version: '>= 42.alpha')
 
 deps = [ gtk, samba, cups, polkit, gsettings ]
 
-if build_plugin
-  shared_module(plugin_name, sources, dependencies: deps, install: true,
-    install_dir: get_option('libdir') / 'rpcc',
-    c_args : [ '-DPACKAGE_DATA_DIR="' + presource_dir + '"', '-DGETTEXT_PACKAGE="' + plugin_name + '"', '-DPLUGIN_NAME="' + plugin_name + '"' ]
-  )
-endif
-
-if build_standalone
-  executable (meson.project_name(), sources, dependencies: deps, install: true,
-    c_args : [ '-DPACKAGE_DATA_DIR="' + resource_dir + '"', '-DGETTEXT_PACKAGE="' + meson.project_name() + '"' ]
-  )
-endif
+shared_module(plugin_name, sources, dependencies: deps, install: true,
+  install_dir: get_option('libdir') / 'rpcc',
+  c_args : [ '-DPACKAGE_DATA_DIR="' + presource_dir + '"', '-DGETTEXT_PACKAGE="' + plugin_name + '"', '-DPLUGIN_NAME="' + plugin_name + '"' ]
+)

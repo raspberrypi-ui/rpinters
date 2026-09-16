@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Printers
-Comment=Add and configure printers
-Icon=printer
-Exec=rpinters
-Terminal=false
-Categories=Settings;
-StartupNotify=true
