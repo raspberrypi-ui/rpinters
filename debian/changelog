@@ -1,3 +1,9 @@
+rpinters (1.13) trixie; urgency=medium
+
+  * Don't wait for service restart
+
+ -- Simon Long <simon@raspberrypi.com>  Mon, 23 Nov 2026 12:01:10 +0000
+
 rpinters (1.12) trixie; urgency=medium
 
   * Modify polkit rule to prevent transient unit start
